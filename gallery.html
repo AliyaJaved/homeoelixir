@@ -1,0 +1,1769 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="View the Homeo Elixir Gallery — a visual journal of our premium homeopathic products, natural remedies, and media publications." />
+  <meta name="keywords" content="homeopathy gallery, homeo elixir transformations, before after, client reviews, clinical products" />
+  <title>Gallery — Homeo Elixir</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@300;400;500;600&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="gallery-page">
+
+  <!-- ===================== HEADER ===================== -->
+  <header id="site-header" class="header" role="banner">
+    <div class="header__inner container">
+
+      <!-- Logo -->
+      <a href="index.html" class="header__logo" aria-label="Homeo Elixir — Home">
+        <img
+          src="assets/header-logo.svg"
+          alt="Homeo Elixir logo"
+          class="header__logo-img"
+          width="180"
+          height="auto"
+        />
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="header__nav" aria-label="Primary navigation">
+        <ul class="header__nav-list" role="list">
+          <li><a href="index.html" class="header__nav-link">Home</a></li>
+          <li><a href="about.html" class="header__nav-link">About</a></li>
+          <li><a href="doctor.html" class="header__nav-link">Meet Dr. Farhin</a></li>
+          <li><a href="services.html" class="header__nav-link">Services</a></li>
+          <li class="header__dropdown">
+            <a href="conditions.html" class="header__nav-link">Conditions <span class="dropdown-arrow">&#9662;</span></a>
+            <div class="dropdown-menu">
+              <div class="dropdown-menu__grid">
+                <a href="conditions/womens-health.html" class="dropdown-menu__link">Women's Health</a>
+                <a href="conditions/thyroid-disorders.html" class="dropdown-menu__link">Thyroid Disorders</a>
+                <a href="conditions/diabetes-metabolic-health.html" class="dropdown-menu__link">Diabetes & Metabolic Health</a>
+                <a href="conditions/hair-concerns.html" class="dropdown-menu__link">Hair Concerns</a>
+                <a href="conditions/skin-conditions.html" class="dropdown-menu__link">Skin Conditions</a>
+                <a href="conditions/digestive-disorders.html" class="dropdown-menu__link">Digestive Disorders</a>
+                <a href="conditions/respiratory-conditions.html" class="dropdown-menu__link">Respiratory Conditions</a>
+                <a href="conditions/bone-joint-health.html" class="dropdown-menu__link">Bone & Joint Health</a>
+                <a href="conditions/neurological-conditions.html" class="dropdown-menu__link">Neurological Conditions</a>
+                <a href="conditions/mental-emotional-wellbeing.html" class="dropdown-menu__link">Mental & Emotional Wellbeing</a>
+                <a href="conditions/childrens-health.html" class="dropdown-menu__link">Children's Health</a>
+                <a href="conditions/general-wellness.html" class="dropdown-menu__link">General Wellness</a>
+              </div>
+            </div>
+          </li>
+          <li><a href="gallery.html" class="header__nav-link header__nav-link--active" aria-current="page">Gallery</a></li>
+          <li><a href="faq.html" class="header__nav-link">FAQ</a></li>
+          <li><a href="contact.html" class="header__nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- CTA -->
+      <div class="header__actions">
+        <a href="contact.html" class="btn btn--primary btn--sm" id="header-cta">
+          Book Consultation
+        </a>
+
+        <!-- Hamburger (Mobile) -->
+        <button
+          class="header__hamburger"
+          id="hamburger-btn"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+          aria-controls="mobile-nav"
+        >
+          <span class="header__hamburger-bar"></span>
+          <span class="header__hamburger-bar"></span>
+          <span class="header__hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <nav
+      class="header__mobile-nav"
+      id="mobile-nav"
+      aria-label="Mobile navigation"
+      aria-hidden="true"
+    >
+      <ul class="header__mobile-nav-list" role="list">
+        <li><a href="index.html" class="header__mobile-nav-link">Home</a></li>
+        <li><a href="about.html" class="header__mobile-nav-link">About</a></li>
+        <li><a href="doctor.html" class="header__mobile-nav-link">Meet Dr. Farhin</a></li>
+        <li><a href="services.html" class="header__mobile-nav-link">Services</a></li>
+        <li class="header__dropdown">
+          <a href="conditions.html" class="header__mobile-nav-link">Conditions</a>
+          <ul class="header__mobile-subnav-list">
+            <li><a href="conditions/womens-health.html" class="header__mobile-nav-sublink">Women's Health</a></li>
+            <li><a href="conditions/thyroid-disorders.html" class="header__mobile-nav-sublink">Thyroid Disorders</a></li>
+            <li><a href="conditions/diabetes-metabolic-health.html" class="header__mobile-nav-sublink">Diabetes &amp; Metabolic Health</a></li>
+            <li><a href="conditions/hair-concerns.html" class="header__mobile-nav-sublink">Hair Concerns</a></li>
+            <li><a href="conditions/skin-conditions.html" class="header__mobile-nav-sublink">Skin Conditions</a></li>
+            <li><a href="conditions/digestive-disorders.html" class="header__mobile-nav-sublink">Digestive Disorders</a></li>
+            <li><a href="conditions/respiratory-conditions.html" class="header__mobile-nav-sublink">Respiratory Conditions</a></li>
+            <li><a href="conditions/bone-joint-health.html" class="header__mobile-nav-sublink">Bone &amp; Joint Health</a></li>
+            <li><a href="conditions/neurological-conditions.html" class="header__mobile-nav-sublink">Neurological Conditions</a></li>
+            <li><a href="conditions/mental-emotional-wellbeing.html" class="header__mobile-nav-sublink">Mental &amp; Emotional Wellbeing</a></li>
+            <li><a href="conditions/childrens-health.html" class="header__mobile-nav-sublink">Children's Health</a></li>
+            <li><a href="conditions/general-wellness.html" class="header__mobile-nav-sublink">General Wellness</a></li>
+          </ul>
+        </li>
+        <li><a href="gallery.html" class="header__mobile-nav-link header__mobile-nav-link--active" aria-current="page">Gallery</a></li>
+        <li><a href="faq.html" class="header__mobile-nav-link">FAQ</a></li>
+        <li><a href="contact.html" class="header__mobile-nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===================== SCROLLING INFORMATION BAR ===================== -->
+  <div class="info-bar" id="info-bar" role="marquee" aria-label="Important Information">
+    <div class="info-bar__track">
+      <div class="info-bar__list">
+        <span>
+          <svg class="info-bar__icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <line x1="2" y1="12" x2="22" y2="12"/>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+          </svg>
+          Online Consultation Available
+        </span>
+        <span class="info-bar__dot" aria-hidden="true">•</span>
+        <span>
+          <svg class="info-bar__icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="1" y="3" width="15" height="13"/>
+            <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/>
+            <circle cx="5.5" cy="18.5" r="2.5"/>
+            <circle cx="18.5" cy="18.5" r="2.5"/>
+          </svg>
+          Shipping Medicines Worldwide
+        </span>
+        <span class="info-bar__dot" aria-hidden="true">•</span>
+        <span>
+          <svg class="info-bar__icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <polyline points="12 6 12 12 16 14"/>
+          </svg>
+          Consultation Hours: Mon–Fri | 12:00 PM – 6:00 PM
+        </span>
+      </div>
+      <!-- Duplicate 1 -->
+      <div class="info-bar__list" aria-hidden="true">
+        <span>
+          <svg class="info-bar__icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <line x1="2" y1="12" x2="22" y2="12"/>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+          </svg>
+          Online Consultation Available
+        </span>
+        <span class="info-bar__dot" aria-hidden="true">•</span>
+        <span>
+          <svg class="info-bar__icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="1" y="3" width="15" height="13"/>
+            <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/>
+            <circle cx="5.5" cy="18.5" r="2.5"/>
+            <circle cx="18.5" cy="18.5" r="2.5"/>
+          </svg>
+          Shipping Medicines Worldwide
+        </span>
+        <span class="info-bar__dot" aria-hidden="true">•</span>
+        <span>
+          <svg class="info-bar__icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <polyline points="12 6 12 12 16 14"/>
+          </svg>
+          Consultation Hours: Mon–Fri | 12:00 PM – 6:00 PM
+        </span>
+      </div>
+      <!-- Duplicate 2 -->
+      <div class="info-bar__list" aria-hidden="true">
+        <span>
+          <svg class="info-bar__icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <line x1="2" y1="12" x2="22" y2="12"/>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+          </svg>
+          Online Consultation Available
+        </span>
+        <span class="info-bar__dot" aria-hidden="true">•</span>
+        <span>
+          <svg class="info-bar__icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="1" y="3" width="15" height="13"/>
+            <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/>
+            <circle cx="5.5" cy="18.5" r="2.5"/>
+            <circle cx="18.5" cy="18.5" r="2.5"/>
+          </svg>
+          Shipping Medicines Worldwide
+        </span>
+        <span class="info-bar__dot" aria-hidden="true">•</span>
+        <span>
+          <svg class="info-bar__icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <polyline points="12 6 12 12 16 14"/>
+          </svg>
+          Consultation Hours: Mon–Fri | 12:00 PM – 6:00 PM
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <main id="main-content">
+
+    <!-- ===================== HERO BANNER ===================== -->
+    <section class="gallery-hero" aria-label="Gallery Intro">
+      <div class="gallery-hero__inner container">
+        <div class="gallery-hero__grid">
+          
+          <div class="gallery-hero__left">
+            <h1 class="gallery-hero__heading">Gallery</h1>
+            <p class="gallery-hero__desc">
+              Explore patient journeys, medicine dispatches, products, and heartfelt experiences.
+            </p>
+          </div>
+
+          <div class="gallery-hero__right">
+            <ul class="gallery-filter" role="tablist">
+              <li>
+                <button class="gallery-filter__btn is-active" data-filter="all" role="tab" aria-selected="true">All</button>
+              </li>
+              <li>
+                <button class="gallery-filter__btn" data-filter="before-after" role="tab" aria-selected="false">Before &amp; After</button>
+              </li>
+              <li>
+                <button class="gallery-filter__btn" data-filter="client-messages" role="tab" aria-selected="false">Client Messages</button>
+              </li>
+              <li>
+                <button class="gallery-filter__btn" data-filter="dispatching" role="tab" aria-selected="false">Dispatching</button>
+              </li>
+              <li>
+                <button class="gallery-filter__btn" data-filter="products" role="tab" aria-selected="false">Products</button>
+              </li>
+              <li>
+                <button class="gallery-filter__btn" data-filter="achievements" role="tab" aria-selected="false">Achievements</button>
+              </li>
+              <li>
+                <button class="gallery-filter__btn" data-filter="media-publications" role="tab" aria-selected="false">Media &amp; Publications</button>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== MAIN GALLERY SECTION ===================== -->
+    <section class="gallery-section" style="padding-top: 60px; padding-bottom: 100px; background-color: var(--color-ivory);">
+      <div class="container">
+        
+        <!-- Dynamic Heading (shown only when a category is filtered) -->
+        <h2 class="gallery-section-title" id="gallery-category-heading" style="display: none; font-family: var(--font-serif) !important; font-size: clamp(2rem, 3.5vw, 2.5rem); font-weight: 300; color: var(--color-charcoal); margin-bottom: 32px; text-align: center;"></h2>
+
+        <!-- Single Grid container -->
+        <div class="gallery-grid" id="gallery-grid">
+<!-- CARD 1: BEFORE & AFTER (BA-1) -->
+          <div class="gallery-card gallery-card--large-portrait" data-category="before-after">
+            <div class="gallery-card__inner" data-type="image" data-src="content/before-after/BA-1.jpeg">
+              <div class="gallery-card__media">
+                <img src="content/before-after/BA-1.jpeg" alt="Before &amp; After Patient Transformation BA-1" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 12px; background-color: var(--color-white);" />
+              </div>
+              <div class="gallery-card__overlay">
+                <h4 class="gallery-card__hover-title">Before &amp; After</h4>
+                <span class="gallery-card__hover-sub">View Transformation &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+<!-- CARD 2: CLIENT MESSAGES (Tall Portrait) -->
+          <div class="gallery-card gallery-card--tall-portrait" data-category="client-messages">
+            <div class="gallery-card__inner client-msg-card" data-type="image" data-src="content/testimonials/T-1.jpeg">
+              <div class="gallery-card__media">
+                <img src="content/testimonials/T-1.jpeg" alt="Client Message Testimonial" style="width: 100%; height: 100%; object-fit: cover;" />
+              </div>
+              <div class="gallery-card__overlay">
+                <h4 class="gallery-card__hover-title">Client Messages</h4>
+                <span class="gallery-card__hover-sub">Read Experience &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+<!-- CARD 3: DISPATCHING VIDEO 1 (Medium Landscape) -->
+          <div class="gallery-card gallery-card--medium-landscape" data-category="dispatching">
+            <div class="gallery-card__inner" data-type="video" data-src="content/dispatching-vids/dispatch-1.mp4">
+              <div class="gallery-card__media">
+                <video preload="metadata" muted playsinline src="content/dispatching-vids/dispatch-1.mp4"></video>
+              </div>
+              <div class="gallery-card__play-indicator" aria-label="Play dispatch video">
+                <svg width="14" height="14" viewBox="0 0 24 24">
+                  <polygon points="5 3 19 12 5 21 5 3"/>
+                </svg>
+              </div>
+              <div class="gallery-card__overlay">
+                <h4 class="gallery-card__hover-title">Dispatching</h4>
+                <span class="gallery-card__hover-sub">&#9654; Watch Dispatch</span>
+              </div>
+            </div>
+          </div>
+
+<!-- PRODUCT CARD 1: P-1 -->
+          <div class="gallery-card gallery-card--square" data-category="products">
+            <div class="gallery-card__inner" data-type="video" data-src="content/products/P-1.mp4">
+              <div class="gallery-card__media">
+                <video preload="metadata" muted playsinline src="content/products/P-1.mp4" style="width: 100%; height: 100%; object-fit: contain; padding: 16px; background-color: var(--color-card-linen);"></video>
+              </div>
+              <div class="gallery-card__play-indicator" aria-label="Play product video">
+                <svg width="14" height="14" viewBox="0 0 24 24">
+                  <polygon points="5 3 19 12 5 21 5 3"/>
+                </svg>
+              </div>
+              <div class="gallery-card__overlay">
+                <h4 class="gallery-card__hover-title">Products</h4>
+                <span class="gallery-card__hover-sub">Watch Video &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+<!-- CARD 29: ACHIEVEMENT (A-1) -->
+          <div class="gallery-card gallery-card--large-portrait" data-category="achievements">
+            <div class="gallery-card__inner" data-type="image" data-src="content/achievements/A-1.png">
+              <div class="gallery-card__media">
+                <img src="content/achievements/A-1.png" alt="Dr. Farhin Achievement Certificate A-1" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 16px; background-color: var(--color-white);" />
+              </div>
+              <div class="gallery-card__overlay">
+                <h4 class="gallery-card__hover-title">Achievements</h4>
+                <span class="gallery-card__hover-sub">View Certificate &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+<!-- MEDIA CARD 1: Clipping 1 -->
+          <div class="gallery-card gallery-card--square" data-category="media-publications">
+            <div class="gallery-card__inner" data-type="image" data-src="content/media/1.jpeg">
+              <div class="gallery-card__media">
+                <img src="content/media/1.jpeg" alt="Media Clipping 1" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 16px; background-color: var(--color-white);" />
+              </div>
+              <div class="gallery-card__overlay">
+                <h4 class="gallery-card__hover-title">Publications</h4>
+                <span class="gallery-card__hover-sub">Read Article &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+<!-- CARD 100: PORTRAIT (P-1) -->
+          <div class="gallery-card gallery-card--large-portrait" data-category="portraits">
+            <div class="gallery-card__inner" data-type="image" data-src="content/portraits/P-1.jpeg">
+              <div class="gallery-card__media">
+                <img src="content/portraits/P-1.jpeg" alt="Dr. Farhin Portrait P-1" loading="lazy" style="width: 100%; height: 100%; object-fit: cover;" />
+              </div>
+              <div class="gallery-card__overlay">
+                <h4 class="gallery-card__hover-title">Homeo Elixir</h4>
+                <span class="gallery-card__hover-sub">View Portrait &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+<!-- CARD 2: BEFORE & AFTER (BA-2) -->
+          <div class="gallery-card gallery-card--large-portrait" data-category="before-after">
+            <div class="gallery-card__inner" data-type="image" data-src="content/before-after/BA-2.jpeg">
+              <div class="gallery-card__media">
+                <img src="content/before-after/BA-2.jpeg" alt="Before &amp; After Patient Transformation BA-2" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 12px; background-color: var(--color-white);" />
+              </div>
+              <div class="gallery-card__overlay">
+                <h4 class="gallery-card__hover-title">Before &amp; After</h4>
+                <span class="gallery-card__hover-sub">View Transformation &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+<!-- CARD 5: CLIENT MESSAGES (Medium Portrait) -->
+          <div class="gallery-card gallery-card--tall-portrait" data-category="client-messages">
+            <div class="gallery-card__inner client-msg-card" data-type="image" data-src="content/testimonials/T-2.jpeg">
+              <div class="gallery-card__media">
+                <img src="content/testimonials/T-2.jpeg" alt="Client Message Testimonial" style="width: 100%; height: 100%; object-fit: cover;" />
+              </div>
+              <div class="gallery-card__overlay">
+                <h4 class="gallery-card__hover-title">Client Messages</h4>
+                <span class="gallery-card__hover-sub">Read Experience &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+<!-- CARD 8: DISPATCHING VIDEO 2 (Large Landscape) -->
+          <div class="gallery-card gallery-card--large-landscape" data-category="dispatching">
+            <div class="gallery-card__inner" data-type="video" data-src="content/dispatching-vids/dispatch-2.mp4">
+              <div class="gallery-card__media">
+                <video preload="metadata" muted playsinline src="content/dispatching-vids/dispatch-2.mp4"></video>
+              </div>
+              <div class="gallery-card__play-indicator" aria-label="Play dispatch video">
+                <svg width="14" height="14" viewBox="0 0 24 24">
+                  <polygon points="5 3 19 12 5 21 5 3"/>
+                </svg>
+              </div>
+              <div class="gallery-card__overlay">
+                <h4 class="gallery-card__hover-title">Dispatching</h4>
+                <span class="gallery-card__hover-sub">&#9654; Watch Dispatch</span>
+              </div>
+            </div>
+          </div>
+
+<!-- PRODUCT CARD 2: P-2 -->
+          <div class="gallery-card gallery-card--square" data-category="products">
+            <div class="gallery-card__inner" data-type="image" data-src="content/products/P-2.jpeg">
+              <div class="gallery-card__media">
+                <img src="content/products/P-2.jpeg" alt="Homeo Elixir Product P-2" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 16px; background-color: var(--color-card-linen);" />
+              </div>
+
+              <div class="gallery-card__overlay">
+                <h4 class="gallery-card__hover-title">Products</h4>
+                <span class="gallery-card__hover-sub">View Product &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+<!-- CARD 30: ACHIEVEMENT (A-2) -->
+          <div class="gallery-card gallery-card--large-portrait" data-category="achievements">
+            <div class="gallery-card__inner" data-type="image" data-src="content/achievements/A-2.png">
+              <div class="gallery-card__media">
+                <img src="content/achievements/A-2.png" alt="Dr. Farhin Achievement Certificate A-2" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 16px; background-color: var(--color-white);" />
+              </div>
+              <div class="gallery-card__overlay">
+                <h4 class="gallery-card__hover-title">Achievements</h4>
+                <span class="gallery-card__hover-sub">View Certificate &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+<!-- MEDIA CARD 2: Clipping 2 -->
+          <div class="gallery-card gallery-card--square" data-category="media-publications">
+            <div class="gallery-card__inner" data-type="image" data-src="content/media/2.jpeg">
+              <div class="gallery-card__media">
+                <img data-defer-src="content/media/2.jpeg" src="" loading="lazy" alt="Media Clipping 2" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 16px; background-color: var(--color-white);" />
+              </div>
+              <div class="gallery-card__overlay">
+                <h4 class="gallery-card__hover-title">Publications</h4>
+                <span class="gallery-card__hover-sub">Read Article &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+<!-- CARD 101: PORTRAIT (P-2) -->
+          <div class="gallery-card gallery-card--large-portrait" data-category="portraits">
+            <div class="gallery-card__inner" data-type="image" data-src="content/portraits/P-2.jpeg">
+              <div class="gallery-card__media">
+                <img data-defer-src="content/portraits/P-2.jpeg" src="" loading="lazy" alt="Dr. Farhin Portrait P-2" loading="lazy" style="width: 100%; height: 100%; object-fit: cover;" />
+              </div>
+              <div class="gallery-card__overlay">
+                <h4 class="gallery-card__hover-title">Homeo Elixir</h4>
+                <span class="gallery-card__hover-sub">View Portrait &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+<!-- CARD 3: BEFORE & AFTER (BA-3) -->
+          <div class="gallery-card gallery-card--large-portrait" data-category="before-after">
+            <div class="gallery-card__inner" data-type="image" data-src="content/before-after/BA-3.jpeg">
+              <div class="gallery-card__media">
+                <img data-defer-src="content/before-after/BA-3.jpeg" src="" loading="lazy" alt="Before &amp; After Patient Transformation BA-3" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 12px; background-color: var(--color-white);" />
+              </div>
+              <div class="gallery-card__overlay">
+                <h4 class="gallery-card__hover-title">Before &amp; After</h4>
+                <span class="gallery-card__hover-sub">View Transformation &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+<!-- CARD 9: CLIENT MESSAGES (Tall Portrait) -->
+          <div class="gallery-card gallery-card--tall-portrait" data-category="client-messages">
+            <div class="gallery-card__inner client-msg-card" data-type="image" data-src="content/testimonials/T-3.jpeg">
+              <div class="gallery-card__media">
+                <img data-defer-src="content/testimonials/T-3.jpeg" src="" loading="lazy" alt="Client Message Testimonial" style="width: 100%; height: 100%; object-fit: cover;" />
+              </div>
+              <div class="gallery-card__overlay">
+                <h4 class="gallery-card__hover-title">Client Messages</h4>
+                <span class="gallery-card__hover-sub">Read Experience &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+<!-- CARD 11: DISPATCHING VIDEO 3 (Medium Landscape) -->
+          <div class="gallery-card gallery-card--medium-landscape" data-category="dispatching">
+            <div class="gallery-card__inner" data-type="video" data-src="content/dispatching-vids/dispatch-3.mp4">
+              <div class="gallery-card__media">
+                <video preload="metadata" muted playsinline data-defer-src="content/dispatching-vids/dispatch-3.mp4" src="" preload="none"></video>
+              </div>
+              <div class="gallery-card__play-indicator" aria-label="Play dispatch video">
+                <svg width="14" height="14" viewBox="0 0 24 24">
+                  <polygon points="5 3 19 12 5 21 5 3"/>
+                </svg>
+              </div>
+              <div class="gallery-card__overlay">
+                <h4 class="gallery-card__hover-title">Dispatching</h4>
+                <span class="gallery-card__hover-sub">&#9654; Watch Dispatch</span>
+              </div>
+            </div>
+          </div>
+
+<!-- PRODUCT CARD 3: P-3 -->
+          <div class="gallery-card gallery-card--square" data-category="products">
+            <div class="gallery-card__inner" data-type="video" data-src="content/products/P-3.mp4">
+              <div class="gallery-card__media">
+                <video preload="metadata" muted playsinline data-defer-src="content/products/P-3.mp4" src="" preload="none" style="width: 100%; height: 100%; object-fit: contain; padding: 16px; background-color: var(--color-card-linen);"></video>
+              </div>
+              <div class="gallery-card__play-indicator" aria-label="Play product video">
+                <svg width="14" height="14" viewBox="0 0 24 24">
+                  <polygon points="5 3 19 12 5 21 5 3"/>
+                </svg>
+              </div>
+              <div class="gallery-card__overlay">
+                <h4 class="gallery-card__hover-title">Products</h4>
+                <span class="gallery-card__hover-sub">Watch Video &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+<!-- CARD 31: ACHIEVEMENT (A-3) -->
+          <div class="gallery-card gallery-card--large-portrait" data-category="achievements">
+            <div class="gallery-card__inner" data-type="image" data-src="content/achievements/A-3.png">
+              <div class="gallery-card__media">
+                <img data-defer-src="content/achievements/A-3.png" src="" loading="lazy" alt="Dr. Farhin Achievement Certificate A-3" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 16px; background-color: var(--color-white);" />
+              </div>
+              <div class="gallery-card__overlay">
+                <h4 class="gallery-card__hover-title">Achievements</h4>
+                <span class="gallery-card__hover-sub">View Certificate &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+<!-- MEDIA CARD 3: Clipping 3 -->
+          <div class="gallery-card gallery-card--square" data-category="media-publications">
+            <div class="gallery-card__inner" data-type="image" data-src="content/media/3.jpeg">
+              <div class="gallery-card__media">
+                <img data-defer-src="content/media/3.jpeg" src="" loading="lazy" alt="Media Clipping 3" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 16px; background-color: var(--color-white);" />
+              </div>
+              <div class="gallery-card__overlay">
+                <h4 class="gallery-card__hover-title">Publications</h4>
+                <span class="gallery-card__hover-sub">Read Article &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+<!-- CARD 102: PORTRAIT (P-4) -->
+          <div class="gallery-card gallery-card--large-portrait" data-category="portraits">
+            <div class="gallery-card__inner" data-type="image" data-src="content/portraits/P-4.jpeg">
+              <div class="gallery-card__media">
+                <img data-defer-src="content/portraits/P-4.jpeg" src="" loading="lazy" alt="Dr. Farhin Portrait P-4" loading="lazy" style="width: 100%; height: 100%; object-fit: cover;" />
+              </div>
+              <div class="gallery-card__overlay">
+                <h4 class="gallery-card__hover-title">Homeo Elixir</h4>
+                <span class="gallery-card__hover-sub">View Portrait &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+<!-- CARD 4: BEFORE & AFTER (BA-4) -->
+          <div class="gallery-card gallery-card--large-portrait" data-category="before-after">
+            <div class="gallery-card__inner" data-type="image" data-src="content/before-after/BA-4.jpeg">
+              <div class="gallery-card__media">
+                <img data-defer-src="content/before-after/BA-4.jpeg" src="" loading="lazy" alt="Before &amp; After Patient Transformation BA-4" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 12px; background-color: var(--color-white);" />
+              </div>
+              <div class="gallery-card__overlay">
+                <h4 class="gallery-card__hover-title">Before &amp; After</h4>
+                <span class="gallery-card__hover-sub">View Transformation &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+<!-- CARD 12: DISPATCHING VIDEO 4 (Large Landscape) -->
+          <div class="gallery-card gallery-card--large-landscape" data-category="dispatching">
+            <div class="gallery-card__inner" data-type="video" data-src="content/dispatching-vids/dispatch-4.mp4">
+              <div class="gallery-card__media">
+                <video preload="metadata" muted playsinline data-defer-src="content/dispatching-vids/dispatch-4.mp4" src="" preload="none"></video>
+              </div>
+              <div class="gallery-card__play-indicator" aria-label="Play dispatch video">
+                <svg width="14" height="14" viewBox="0 0 24 24">
+                  <polygon points="5 3 19 12 5 21 5 3"/>
+                </svg>
+              </div>
+              <div class="gallery-card__overlay">
+                <h4 class="gallery-card__hover-title">Dispatching</h4>
+                <span class="gallery-card__hover-sub">&#9654; Watch Dispatch</span>
+              </div>
+            </div>
+          </div>
+
+<!-- PRODUCT CARD 4: P-4 -->
+          <div class="gallery-card gallery-card--square" data-category="products">
+            <div class="gallery-card__inner" data-type="image" data-src="content/products/P-4.jpeg">
+              <div class="gallery-card__media">
+                <img data-defer-src="content/products/P-4.jpeg" src="" loading="lazy" alt="Homeo Elixir Product P-4" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 16px; background-color: var(--color-card-linen);" />
+              </div>
+
+              <div class="gallery-card__overlay">
+                <h4 class="gallery-card__hover-title">Products</h4>
+                <span class="gallery-card__hover-sub">View Product &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+<!-- CARD 32: ACHIEVEMENT (A-4) -->
+          <div class="gallery-card gallery-card--large-portrait" data-category="achievements">
+            <div class="gallery-card__inner" data-type="image" data-src="content/achievements/A-4.png">
+              <div class="gallery-card__media">
+                <img data-defer-src="content/achievements/A-4.png" src="" loading="lazy" alt="Dr. Farhin Achievement Certificate A-4" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 16px; background-color: var(--color-white);" />
+              </div>
+              <div class="gallery-card__overlay">
+                <h4 class="gallery-card__hover-title">Achievements</h4>
+                <span class="gallery-card__hover-sub">View Certificate &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+<!-- MEDIA CARD 4: Clipping 4 -->
+          <div class="gallery-card gallery-card--square" data-category="media-publications">
+            <div class="gallery-card__inner" data-type="image" data-src="content/media/4.jpeg">
+              <div class="gallery-card__media">
+                <img data-defer-src="content/media/4.jpeg" src="" loading="lazy" alt="Media Clipping 4" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 16px; background-color: var(--color-white);" />
+              </div>
+              <div class="gallery-card__overlay">
+                <h4 class="gallery-card__hover-title">Publications</h4>
+                <span class="gallery-card__hover-sub">Read Article &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+<!-- CARD 5: BEFORE & AFTER (BA-5) -->
+          <div class="gallery-card gallery-card--large-landscape" data-category="before-after">
+            <div class="gallery-card__inner" data-type="image" data-src="content/before-after/BA-5.jpeg">
+              <div class="gallery-card__media">
+                <img data-defer-src="content/before-after/BA-5.jpeg" src="" loading="lazy" alt="Before &amp; After Patient Transformation BA-5" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 12px; background-color: var(--color-white);" />
+              </div>
+              <div class="gallery-card__overlay">
+                <h4 class="gallery-card__hover-title">Before &amp; After</h4>
+                <span class="gallery-card__hover-sub">View Transformation &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+<!-- CARD 13: DISPATCHING VIDEO 5 (Medium Landscape) -->
+          <div class="gallery-card gallery-card--medium-landscape" data-category="dispatching">
+            <div class="gallery-card__inner" data-type="video" data-src="content/dispatching-vids/dispatch-5.mp4">
+              <div class="gallery-card__media">
+                <video preload="metadata" muted playsinline data-defer-src="content/dispatching-vids/dispatch-5.mp4" src="" preload="none"></video>
+              </div>
+              <div class="gallery-card__play-indicator" aria-label="Play dispatch video">
+                <svg width="14" height="14" viewBox="0 0 24 24">
+                  <polygon points="5 3 19 12 5 21 5 3"/>
+                </svg>
+              </div>
+              <div class="gallery-card__overlay">
+                <h4 class="gallery-card__hover-title">Dispatching</h4>
+                <span class="gallery-card__hover-sub">&#9654; Watch Dispatch</span>
+              </div>
+            </div>
+          </div>
+
+<!-- PRODUCT CARD 5: P-5 -->
+          <div class="gallery-card gallery-card--square" data-category="products">
+            <div class="gallery-card__inner" data-type="image" data-src="content/products/P-5.jpeg">
+              <div class="gallery-card__media">
+                <img data-defer-src="content/products/P-5.jpeg" src="" loading="lazy" alt="Homeo Elixir Product P-5" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 16px; background-color: var(--color-card-linen);" />
+              </div>
+
+              <div class="gallery-card__overlay">
+                <h4 class="gallery-card__hover-title">Products</h4>
+                <span class="gallery-card__hover-sub">View Product &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+<!-- CARD 33: ACHIEVEMENT (A-5) -->
+          <div class="gallery-card gallery-card--large-portrait" data-category="achievements">
+            <div class="gallery-card__inner" data-type="image" data-src="content/achievements/A-5.png">
+              <div class="gallery-card__media">
+                <img data-defer-src="content/achievements/A-5.png" src="" loading="lazy" alt="Dr. Farhin Achievement Certificate A-5" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 16px; background-color: var(--color-white);" />
+              </div>
+              <div class="gallery-card__overlay">
+                <h4 class="gallery-card__hover-title">Achievements</h4>
+                <span class="gallery-card__hover-sub">View Certificate &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+<!-- MEDIA CARD 5: Clipping 5 -->
+          <div class="gallery-card gallery-card--square" data-category="media-publications">
+            <div class="gallery-card__inner" data-type="image" data-src="content/media/5.jpeg">
+              <div class="gallery-card__media">
+                <img data-defer-src="content/media/5.jpeg" src="" loading="lazy" alt="Media Clipping 5" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 16px; background-color: var(--color-white);" />
+              </div>
+              <div class="gallery-card__overlay">
+                <h4 class="gallery-card__hover-title">Publications</h4>
+                <span class="gallery-card__hover-sub">Read Article &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+<!-- CARD 6: BEFORE & AFTER (BA-6) -->
+          <div class="gallery-card gallery-card--large-portrait" data-category="before-after">
+            <div class="gallery-card__inner" data-type="image" data-src="content/before-after/BA-6.jpeg">
+              <div class="gallery-card__media">
+                <img data-defer-src="content/before-after/BA-6.jpeg" src="" loading="lazy" alt="Before &amp; After Patient Transformation BA-6" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 12px; background-color: var(--color-white);" />
+              </div>
+              <div class="gallery-card__overlay">
+                <h4 class="gallery-card__hover-title">Before &amp; After</h4>
+                <span class="gallery-card__hover-sub">View Transformation &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+<!-- CARD 14: DISPATCHING VIDEO 6 (Large Landscape) -->
+          <div class="gallery-card gallery-card--large-landscape" data-category="dispatching">
+            <div class="gallery-card__inner" data-type="video" data-src="content/dispatching-vids/dispatch-6.mp4">
+              <div class="gallery-card__media">
+                <video preload="metadata" muted playsinline data-defer-src="content/dispatching-vids/dispatch-6.mp4" src="" preload="none"></video>
+              </div>
+              <div class="gallery-card__play-indicator" aria-label="Play dispatch video">
+                <svg width="14" height="14" viewBox="0 0 24 24">
+                  <polygon points="5 3 19 12 5 21 5 3"/>
+                </svg>
+              </div>
+              <div class="gallery-card__overlay">
+                <h4 class="gallery-card__hover-title">Dispatching</h4>
+                <span class="gallery-card__hover-sub">&#9654; Watch Dispatch</span>
+              </div>
+            </div>
+          </div>
+
+<!-- PRODUCT CARD 6: P-6 -->
+          <div class="gallery-card gallery-card--square" data-category="products">
+            <div class="gallery-card__inner" data-type="image" data-src="content/products/P-6.jpeg">
+              <div class="gallery-card__media">
+                <img data-defer-src="content/products/P-6.jpeg" src="" loading="lazy" alt="Homeo Elixir Product P-6" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 16px; background-color: var(--color-card-linen);" />
+              </div>
+
+              <div class="gallery-card__overlay">
+                <h4 class="gallery-card__hover-title">Products</h4>
+                <span class="gallery-card__hover-sub">View Product &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+<!-- CARD 34: ACHIEVEMENT (A-6) -->
+          <div class="gallery-card gallery-card--large-portrait" data-category="achievements">
+            <div class="gallery-card__inner" data-type="image" data-src="content/achievements/A-6.png">
+              <div class="gallery-card__media">
+                <img data-defer-src="content/achievements/A-6.png" src="" loading="lazy" alt="Dr. Farhin Achievement Certificate A-6" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 16px; background-color: var(--color-white);" />
+              </div>
+              <div class="gallery-card__overlay">
+                <h4 class="gallery-card__hover-title">Achievements</h4>
+                <span class="gallery-card__hover-sub">View Certificate &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+<!-- MEDIA CARD 6: Clipping 6 -->
+          <div class="gallery-card gallery-card--square" data-category="media-publications">
+            <div class="gallery-card__inner" data-type="image" data-src="content/media/6.jpeg">
+              <div class="gallery-card__media">
+                <img data-defer-src="content/media/6.jpeg" src="" loading="lazy" alt="Media Clipping 6" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 16px; background-color: var(--color-white);" />
+              </div>
+              <div class="gallery-card__overlay">
+                <h4 class="gallery-card__hover-title">Publications</h4>
+                <span class="gallery-card__hover-sub">Read Article &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+<!-- CARD 7: BEFORE & AFTER (BA-7) -->
+          <div class="gallery-card gallery-card--large-landscape" data-category="before-after">
+            <div class="gallery-card__inner" data-type="image" data-src="content/before-after/BA-7.jpeg">
+              <div class="gallery-card__media">
+                <img data-defer-src="content/before-after/BA-7.jpeg" src="" loading="lazy" alt="Before &amp; After Patient Transformation BA-7" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 12px; background-color: var(--color-white);" />
+              </div>
+              <div class="gallery-card__overlay">
+                <h4 class="gallery-card__hover-title">Before &amp; After</h4>
+                <span class="gallery-card__hover-sub">View Transformation &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+<!-- CARD 15: DISPATCHING VIDEO 7 (Medium Landscape) -->
+          <div class="gallery-card gallery-card--medium-landscape" data-category="dispatching">
+            <div class="gallery-card__inner" data-type="video" data-src="content/dispatching-vids/dispatch-7.mp4">
+              <div class="gallery-card__media">
+                <video preload="metadata" muted playsinline data-defer-src="content/dispatching-vids/dispatch-7.mp4" src="" preload="none"></video>
+              </div>
+              <div class="gallery-card__play-indicator" aria-label="Play dispatch video">
+                <svg width="14" height="14" viewBox="0 0 24 24">
+                  <polygon points="5 3 19 12 5 21 5 3"/>
+                </svg>
+              </div>
+              <div class="gallery-card__overlay">
+                <h4 class="gallery-card__hover-title">Dispatching</h4>
+                <span class="gallery-card__hover-sub">&#9654; Watch Dispatch</span>
+              </div>
+            </div>
+          </div>
+
+<!-- PRODUCT CARD 7: P-7 -->
+          <div class="gallery-card gallery-card--square" data-category="products">
+            <div class="gallery-card__inner" data-type="image" data-src="content/products/P-7.jpeg">
+              <div class="gallery-card__media">
+                <img data-defer-src="content/products/P-7.jpeg" src="" loading="lazy" alt="Homeo Elixir Product P-7" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 16px; background-color: var(--color-card-linen);" />
+              </div>
+
+              <div class="gallery-card__overlay">
+                <h4 class="gallery-card__hover-title">Products</h4>
+                <span class="gallery-card__hover-sub">View Product &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+<!-- CARD 35: ACHIEVEMENT (A-7) -->
+          <div class="gallery-card gallery-card--large-portrait" data-category="achievements">
+            <div class="gallery-card__inner" data-type="image" data-src="content/achievements/A-7.png">
+              <div class="gallery-card__media">
+                <img data-defer-src="content/achievements/A-7.png" src="" loading="lazy" alt="Dr. Farhin Achievement Certificate A-7" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 16px; background-color: var(--color-white);" />
+              </div>
+              <div class="gallery-card__overlay">
+                <h4 class="gallery-card__hover-title">Achievements</h4>
+                <span class="gallery-card__hover-sub">View Certificate &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+<!-- MEDIA CARD 7: Clipping 7 -->
+          <div class="gallery-card gallery-card--square" data-category="media-publications">
+            <div class="gallery-card__inner" data-type="image" data-src="content/media/7.jpeg">
+              <div class="gallery-card__media">
+                <img data-defer-src="content/media/7.jpeg" src="" loading="lazy" alt="Media Clipping 7" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 16px; background-color: var(--color-white);" />
+              </div>
+              <div class="gallery-card__overlay">
+                <h4 class="gallery-card__hover-title">Publications</h4>
+                <span class="gallery-card__hover-sub">Read Article &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+<!-- CARD 8: BEFORE & AFTER (BA-8) -->
+          <div class="gallery-card gallery-card--large-portrait" data-category="before-after">
+            <div class="gallery-card__inner" data-type="image" data-src="content/before-after/BA-8.jpeg">
+              <div class="gallery-card__media">
+                <img data-defer-src="content/before-after/BA-8.jpeg" src="" loading="lazy" alt="Before &amp; After Patient Transformation BA-8" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 12px; background-color: var(--color-white);" />
+              </div>
+              <div class="gallery-card__overlay">
+                <h4 class="gallery-card__hover-title">Before &amp; After</h4>
+                <span class="gallery-card__hover-sub">View Transformation &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+<!-- CARD 16: DISPATCHING VIDEO 8 (Large Landscape) -->
+          <div class="gallery-card gallery-card--large-landscape" data-category="dispatching">
+            <div class="gallery-card__inner" data-type="video" data-src="content/dispatching-vids/dispatch-8.mp4">
+              <div class="gallery-card__media">
+                <video preload="metadata" muted playsinline data-defer-src="content/dispatching-vids/dispatch-8.mp4" src="" preload="none"></video>
+              </div>
+              <div class="gallery-card__play-indicator" aria-label="Play dispatch video">
+                <svg width="14" height="14" viewBox="0 0 24 24">
+                  <polygon points="5 3 19 12 5 21 5 3"/>
+                </svg>
+              </div>
+              <div class="gallery-card__overlay">
+                <h4 class="gallery-card__hover-title">Dispatching</h4>
+                <span class="gallery-card__hover-sub">&#9654; Watch Dispatch</span>
+              </div>
+            </div>
+          </div>
+
+<!-- PRODUCT CARD 8: P-8 -->
+          <div class="gallery-card gallery-card--square" data-category="products">
+            <div class="gallery-card__inner" data-type="image" data-src="content/products/P-8.jpeg">
+              <div class="gallery-card__media">
+                <img data-defer-src="content/products/P-8.jpeg" src="" loading="lazy" alt="Homeo Elixir Product P-8" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 16px; background-color: var(--color-card-linen);" />
+              </div>
+
+              <div class="gallery-card__overlay">
+                <h4 class="gallery-card__hover-title">Products</h4>
+                <span class="gallery-card__hover-sub">View Product &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+<!-- CARD 36: ACHIEVEMENT (A-8) -->
+          <div class="gallery-card gallery-card--large-portrait" data-category="achievements">
+            <div class="gallery-card__inner" data-type="image" data-src="content/achievements/A-8.png">
+              <div class="gallery-card__media">
+                <img data-defer-src="content/achievements/A-8.png" src="" loading="lazy" alt="Dr. Farhin Achievement Certificate A-8" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 16px; background-color: var(--color-white);" />
+              </div>
+              <div class="gallery-card__overlay">
+                <h4 class="gallery-card__hover-title">Achievements</h4>
+                <span class="gallery-card__hover-sub">View Certificate &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+<!-- MEDIA CARD 8: Clipping 8 -->
+          <div class="gallery-card gallery-card--square" data-category="media-publications">
+            <div class="gallery-card__inner" data-type="image" data-src="content/media/8.jpeg">
+              <div class="gallery-card__media">
+                <img data-defer-src="content/media/8.jpeg" src="" loading="lazy" alt="Media Clipping 8" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 16px; background-color: var(--color-white);" />
+              </div>
+              <div class="gallery-card__overlay">
+                <h4 class="gallery-card__hover-title">Publications</h4>
+                <span class="gallery-card__hover-sub">Read Article &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+<!-- CARD 9: BEFORE & AFTER (BA-9) -->
+          <div class="gallery-card gallery-card--large-portrait" data-category="before-after">
+            <div class="gallery-card__inner" data-type="image" data-src="content/before-after/BA-9.jpeg">
+              <div class="gallery-card__media">
+                <img data-defer-src="content/before-after/BA-9.jpeg" src="" loading="lazy" alt="Before &amp; After Patient Transformation BA-9" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 12px; background-color: var(--color-white);" />
+              </div>
+              <div class="gallery-card__overlay">
+                <h4 class="gallery-card__hover-title">Before &amp; After</h4>
+                <span class="gallery-card__hover-sub">View Transformation &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+<!-- CARD 17: DISPATCHING VIDEO 9 (Medium Landscape) -->
+          <div class="gallery-card gallery-card--medium-landscape" data-category="dispatching">
+            <div class="gallery-card__inner" data-type="video" data-src="content/dispatching-vids/dispatch-9.mp4">
+              <div class="gallery-card__media">
+                <video preload="metadata" muted playsinline data-defer-src="content/dispatching-vids/dispatch-9.mp4" src="" preload="none"></video>
+              </div>
+              <div class="gallery-card__play-indicator" aria-label="Play dispatch video">
+                <svg width="14" height="14" viewBox="0 0 24 24">
+                  <polygon points="5 3 19 12 5 21 5 3"/>
+                </svg>
+              </div>
+              <div class="gallery-card__overlay">
+                <h4 class="gallery-card__hover-title">Dispatching</h4>
+                <span class="gallery-card__hover-sub">&#9654; Watch Dispatch</span>
+              </div>
+            </div>
+          </div>
+
+<!-- PRODUCT CARD 9: P-9 -->
+          <div class="gallery-card gallery-card--square" data-category="products">
+            <div class="gallery-card__inner" data-type="video" data-src="content/products/P-9.mp4">
+              <div class="gallery-card__media">
+                <video preload="metadata" muted playsinline data-defer-src="content/products/P-9.mp4" src="" preload="none" style="width: 100%; height: 100%; object-fit: contain; padding: 16px; background-color: var(--color-card-linen);"></video>
+              </div>
+              <div class="gallery-card__play-indicator" aria-label="Play product video">
+                <svg width="14" height="14" viewBox="0 0 24 24">
+                  <polygon points="5 3 19 12 5 21 5 3"/>
+                </svg>
+              </div>
+              <div class="gallery-card__overlay">
+                <h4 class="gallery-card__hover-title">Products</h4>
+                <span class="gallery-card__hover-sub">Watch Video &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+<!-- CARD 37: ACHIEVEMENT (A-9) -->
+          <div class="gallery-card gallery-card--large-portrait" data-category="achievements">
+            <div class="gallery-card__inner" data-type="image" data-src="content/achievements/A-9.jpeg">
+              <div class="gallery-card__media">
+                <img data-defer-src="content/achievements/A-9.jpeg" src="" loading="lazy" alt="Dr. Farhin Achievement Certificate A-9" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 16px; background-color: var(--color-white);" />
+              </div>
+              <div class="gallery-card__overlay">
+                <h4 class="gallery-card__hover-title">Achievements</h4>
+                <span class="gallery-card__hover-sub">View Certificate &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+<!-- CARD 10: BEFORE & AFTER (BA-10) -->
+          <div class="gallery-card gallery-card--large-portrait" data-category="before-after">
+            <div class="gallery-card__inner" data-type="image" data-src="content/before-after/BA-10.jpeg">
+              <div class="gallery-card__media">
+                <img data-defer-src="content/before-after/BA-10.jpeg" src="" loading="lazy" alt="Before &amp; After Patient Transformation BA-10" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 12px; background-color: var(--color-white);" />
+              </div>
+              <div class="gallery-card__overlay">
+                <h4 class="gallery-card__hover-title">Before &amp; After</h4>
+                <span class="gallery-card__hover-sub">View Transformation &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+<!-- CARD 18: DISPATCHING VIDEO 10 (Large Landscape) -->
+          <div class="gallery-card gallery-card--large-landscape" data-category="dispatching">
+            <div class="gallery-card__inner" data-type="video" data-src="content/dispatching-vids/dispatch-10.mp4">
+              <div class="gallery-card__media">
+                <video preload="metadata" muted playsinline data-defer-src="content/dispatching-vids/dispatch-10.mp4" src="" preload="none"></video>
+              </div>
+              <div class="gallery-card__play-indicator" aria-label="Play dispatch video">
+                <svg width="14" height="14" viewBox="0 0 24 24">
+                  <polygon points="5 3 19 12 5 21 5 3"/>
+                </svg>
+              </div>
+              <div class="gallery-card__overlay">
+                <h4 class="gallery-card__hover-title">Dispatching</h4>
+                <span class="gallery-card__hover-sub">&#9654; Watch Dispatch</span>
+              </div>
+            </div>
+          </div>
+
+<!-- PRODUCT CARD 10: P-10 -->
+          <div class="gallery-card gallery-card--square" data-category="products">
+            <div class="gallery-card__inner" data-type="image" data-src="content/products/P-10.jpeg">
+              <div class="gallery-card__media">
+                <img data-defer-src="content/products/P-10.jpeg" src="" loading="lazy" alt="Homeo Elixir Product P-10" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 16px; background-color: var(--color-card-linen);" />
+              </div>
+
+              <div class="gallery-card__overlay">
+                <h4 class="gallery-card__hover-title">Products</h4>
+                <span class="gallery-card__hover-sub">View Product &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+<!-- CARD 11: BEFORE & AFTER (BA-11) -->
+          <div class="gallery-card gallery-card--large-portrait" data-category="before-after">
+            <div class="gallery-card__inner" data-type="image" data-src="content/before-after/BA-11.jpeg">
+              <div class="gallery-card__media">
+                <img data-defer-src="content/before-after/BA-11.jpeg" src="" loading="lazy" alt="Before &amp; After Patient Transformation BA-11" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 12px; background-color: var(--color-white);" />
+              </div>
+              <div class="gallery-card__overlay">
+                <h4 class="gallery-card__hover-title">Before &amp; After</h4>
+                <span class="gallery-card__hover-sub">View Transformation &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+<!-- CARD 19: DISPATCHING VIDEO 11 (Medium Landscape) -->
+          <div class="gallery-card gallery-card--medium-landscape" data-category="dispatching">
+            <div class="gallery-card__inner" data-type="video" data-src="content/dispatching-vids/dispatch-11.mp4">
+              <div class="gallery-card__media">
+                <video preload="metadata" muted playsinline data-defer-src="content/dispatching-vids/dispatch-11.mp4" src="" preload="none"></video>
+              </div>
+              <div class="gallery-card__play-indicator" aria-label="Play dispatch video">
+                <svg width="14" height="14" viewBox="0 0 24 24">
+                  <polygon points="5 3 19 12 5 21 5 3"/>
+                </svg>
+              </div>
+              <div class="gallery-card__overlay">
+                <h4 class="gallery-card__hover-title">Dispatching</h4>
+                <span class="gallery-card__hover-sub">&#9654; Watch Dispatch</span>
+              </div>
+            </div>
+          </div>
+
+<!-- PRODUCT CARD 11: P-11 -->
+          <div class="gallery-card gallery-card--square" data-category="products">
+            <div class="gallery-card__inner" data-type="image" data-src="content/products/P-11.jpeg">
+              <div class="gallery-card__media">
+                <img data-defer-src="content/products/P-11.jpeg" src="" loading="lazy" alt="Homeo Elixir Product P-11" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 16px; background-color: var(--color-card-linen);" />
+              </div>
+
+              <div class="gallery-card__overlay">
+                <h4 class="gallery-card__hover-title">Products</h4>
+                <span class="gallery-card__hover-sub">View Product &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+<!-- CARD 12: BEFORE & AFTER (BA-12) -->
+          <div class="gallery-card gallery-card--large-portrait" data-category="before-after">
+            <div class="gallery-card__inner" data-type="image" data-src="content/before-after/BA-12.jpeg">
+              <div class="gallery-card__media">
+                <img data-defer-src="content/before-after/BA-12.jpeg" src="" loading="lazy" alt="Before &amp; After Patient Transformation BA-12" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 12px; background-color: var(--color-white);" />
+              </div>
+              <div class="gallery-card__overlay">
+                <h4 class="gallery-card__hover-title">Before &amp; After</h4>
+                <span class="gallery-card__hover-sub">View Transformation &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+<!-- CARD 20: DISPATCHING VIDEO 12 (Large Landscape) -->
+          <div class="gallery-card gallery-card--large-landscape" data-category="dispatching">
+            <div class="gallery-card__inner" data-type="video" data-src="content/dispatching-vids/dispatch-12.mp4">
+              <div class="gallery-card__media">
+                <video preload="metadata" muted playsinline data-defer-src="content/dispatching-vids/dispatch-12.mp4" src="" preload="none"></video>
+              </div>
+              <div class="gallery-card__play-indicator" aria-label="Play dispatch video">
+                <svg width="14" height="14" viewBox="0 0 24 24">
+                  <polygon points="5 3 19 12 5 21 5 3"/>
+                </svg>
+              </div>
+              <div class="gallery-card__overlay">
+                <h4 class="gallery-card__hover-title">Dispatching</h4>
+                <span class="gallery-card__hover-sub">&#9654; Watch Dispatch</span>
+              </div>
+            </div>
+          </div>
+
+<!-- PRODUCT CARD 12: P-12 -->
+          <div class="gallery-card gallery-card--square" data-category="products">
+            <div class="gallery-card__inner" data-type="image" data-src="content/products/P-12.jpeg">
+              <div class="gallery-card__media">
+                <img data-defer-src="content/products/P-12.jpeg" src="" loading="lazy" alt="Homeo Elixir Product P-12" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 16px; background-color: var(--color-card-linen);" />
+              </div>
+
+              <div class="gallery-card__overlay">
+                <h4 class="gallery-card__hover-title">Products</h4>
+                <span class="gallery-card__hover-sub">View Product &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+<!-- CARD 13: BEFORE & AFTER (BA-13) -->
+          <div class="gallery-card gallery-card--large-portrait" data-category="before-after">
+            <div class="gallery-card__inner" data-type="image" data-src="content/before-after/BA-13.jpeg">
+              <div class="gallery-card__media">
+                <img data-defer-src="content/before-after/BA-13.jpeg" src="" loading="lazy" alt="Before &amp; After Patient Transformation BA-13" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 12px; background-color: var(--color-white);" />
+              </div>
+              <div class="gallery-card__overlay">
+                <h4 class="gallery-card__hover-title">Before &amp; After</h4>
+                <span class="gallery-card__hover-sub">View Transformation &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+<!-- CARD 21: DISPATCHING VIDEO 13 (Medium Landscape) -->
+          <div class="gallery-card gallery-card--medium-landscape" data-category="dispatching">
+            <div class="gallery-card__inner" data-type="video" data-src="content/dispatching-vids/dispatch-13.mp4">
+              <div class="gallery-card__media">
+                <video preload="metadata" muted playsinline data-defer-src="content/dispatching-vids/dispatch-13.mp4" src="" preload="none"></video>
+              </div>
+              <div class="gallery-card__play-indicator" aria-label="Play dispatch video">
+                <svg width="14" height="14" viewBox="0 0 24 24">
+                  <polygon points="5 3 19 12 5 21 5 3"/>
+                </svg>
+              </div>
+              <div class="gallery-card__overlay">
+                <h4 class="gallery-card__hover-title">Dispatching</h4>
+                <span class="gallery-card__hover-sub">&#9654; Watch Dispatch</span>
+              </div>
+            </div>
+          </div>
+
+<!-- PRODUCT CARD 13: P-13 -->
+          <div class="gallery-card gallery-card--square" data-category="products">
+            <div class="gallery-card__inner" data-type="image" data-src="content/products/P-13.jpeg">
+              <div class="gallery-card__media">
+                <img data-defer-src="content/products/P-13.jpeg" src="" loading="lazy" alt="Homeo Elixir Product P-13" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 16px; background-color: var(--color-card-linen);" />
+              </div>
+
+              <div class="gallery-card__overlay">
+                <h4 class="gallery-card__hover-title">Products</h4>
+                <span class="gallery-card__hover-sub">View Product &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+<!-- CARD 14: BEFORE & AFTER (BA-14) -->
+          <div class="gallery-card gallery-card--large-portrait" data-category="before-after">
+            <div class="gallery-card__inner" data-type="image" data-src="content/before-after/BA-14.jpeg">
+              <div class="gallery-card__media">
+                <img data-defer-src="content/before-after/BA-14.jpeg" src="" loading="lazy" alt="Before &amp; After Patient Transformation BA-14" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 12px; background-color: var(--color-white);" />
+              </div>
+              <div class="gallery-card__overlay">
+                <h4 class="gallery-card__hover-title">Before &amp; After</h4>
+                <span class="gallery-card__hover-sub">View Transformation &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+<!-- CARD 22: DISPATCHING VIDEO 14 (Large Landscape) -->
+          <div class="gallery-card gallery-card--large-landscape" data-category="dispatching">
+            <div class="gallery-card__inner" data-type="video" data-src="content/dispatching-vids/dispatch-14.mp4">
+              <div class="gallery-card__media">
+                <video preload="metadata" muted playsinline data-defer-src="content/dispatching-vids/dispatch-14.mp4" src="" preload="none"></video>
+              </div>
+              <div class="gallery-card__play-indicator" aria-label="Play dispatch video">
+                <svg width="14" height="14" viewBox="0 0 24 24">
+                  <polygon points="5 3 19 12 5 21 5 3"/>
+                </svg>
+              </div>
+              <div class="gallery-card__overlay">
+                <h4 class="gallery-card__hover-title">Dispatching</h4>
+                <span class="gallery-card__hover-sub">&#9654; Watch Dispatch</span>
+              </div>
+            </div>
+          </div>
+
+<!-- PRODUCT CARD 14: P-14 -->
+          <div class="gallery-card gallery-card--square" data-category="products">
+            <div class="gallery-card__inner" data-type="image" data-src="content/products/P-14.jpeg">
+              <div class="gallery-card__media">
+                <img data-defer-src="content/products/P-14.jpeg" src="" loading="lazy" alt="Homeo Elixir Product P-14" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 16px; background-color: var(--color-card-linen);" />
+              </div>
+
+              <div class="gallery-card__overlay">
+                <h4 class="gallery-card__hover-title">Products</h4>
+                <span class="gallery-card__hover-sub">View Product &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+<!-- CARD 15: BEFORE & AFTER (BA-15) -->
+          <div class="gallery-card gallery-card--large-portrait" data-category="before-after">
+            <div class="gallery-card__inner" data-type="image" data-src="content/before-after/BA-15.jpeg">
+              <div class="gallery-card__media">
+                <img data-defer-src="content/before-after/BA-15.jpeg" src="" loading="lazy" alt="Before &amp; After Patient Transformation BA-15" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 12px; background-color: var(--color-white);" />
+              </div>
+              <div class="gallery-card__overlay">
+                <h4 class="gallery-card__hover-title">Before &amp; After</h4>
+                <span class="gallery-card__hover-sub">View Transformation &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+<!-- CARD 23: DISPATCHING VIDEO 15 (Medium Landscape) -->
+          <div class="gallery-card gallery-card--medium-landscape" data-category="dispatching">
+            <div class="gallery-card__inner" data-type="video" data-src="content/dispatching-vids/dispatch-15.mp4">
+              <div class="gallery-card__media">
+                <video preload="metadata" muted playsinline data-defer-src="content/dispatching-vids/dispatch-15.mp4" src="" preload="none"></video>
+              </div>
+              <div class="gallery-card__play-indicator" aria-label="Play dispatch video">
+                <svg width="14" height="14" viewBox="0 0 24 24">
+                  <polygon points="5 3 19 12 5 21 5 3"/>
+                </svg>
+              </div>
+              <div class="gallery-card__overlay">
+                <h4 class="gallery-card__hover-title">Dispatching</h4>
+                <span class="gallery-card__hover-sub">&#9654; Watch Dispatch</span>
+              </div>
+            </div>
+          </div>
+
+<!-- PRODUCT CARD 15: P-15 -->
+          <div class="gallery-card gallery-card--square" data-category="products">
+            <div class="gallery-card__inner" data-type="image" data-src="content/products/P-15.jpeg">
+              <div class="gallery-card__media">
+                <img data-defer-src="content/products/P-15.jpeg" src="" loading="lazy" alt="Homeo Elixir Product P-15" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 16px; background-color: var(--color-card-linen);" />
+              </div>
+
+              <div class="gallery-card__overlay">
+                <h4 class="gallery-card__hover-title">Products</h4>
+                <span class="gallery-card__hover-sub">View Product &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+<!-- CARD 16: BEFORE & AFTER (BA-16) -->
+          <div class="gallery-card gallery-card--large-portrait" data-category="before-after">
+            <div class="gallery-card__inner" data-type="image" data-src="content/before-after/BA-16.jpeg">
+              <div class="gallery-card__media">
+                <img data-defer-src="content/before-after/BA-16.jpeg" src="" loading="lazy" alt="Before &amp; After Patient Transformation BA-16" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 12px; background-color: var(--color-white);" />
+              </div>
+              <div class="gallery-card__overlay">
+                <h4 class="gallery-card__hover-title">Before &amp; After</h4>
+                <span class="gallery-card__hover-sub">View Transformation &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+<!-- CARD 24: DISPATCHING VIDEO 16 (Large Landscape) -->
+          <div class="gallery-card gallery-card--large-landscape" data-category="dispatching">
+            <div class="gallery-card__inner" data-type="video" data-src="content/dispatching-vids/dispatch-16.mp4">
+              <div class="gallery-card__media">
+                <video preload="metadata" muted playsinline data-defer-src="content/dispatching-vids/dispatch-16.mp4" src="" preload="none"></video>
+              </div>
+              <div class="gallery-card__play-indicator" aria-label="Play dispatch video">
+                <svg width="14" height="14" viewBox="0 0 24 24">
+                  <polygon points="5 3 19 12 5 21 5 3"/>
+                </svg>
+              </div>
+              <div class="gallery-card__overlay">
+                <h4 class="gallery-card__hover-title">Dispatching</h4>
+                <span class="gallery-card__hover-sub">&#9654; Watch Dispatch</span>
+              </div>
+            </div>
+          </div>
+
+<!-- PRODUCT CARD 16: P-16 -->
+          <div class="gallery-card gallery-card--square" data-category="products">
+            <div class="gallery-card__inner" data-type="image" data-src="content/products/P-16.jpeg">
+              <div class="gallery-card__media">
+                <img data-defer-src="content/products/P-16.jpeg" src="" loading="lazy" alt="Homeo Elixir Product P-16" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 16px; background-color: var(--color-card-linen);" />
+              </div>
+
+              <div class="gallery-card__overlay">
+                <h4 class="gallery-card__hover-title">Products</h4>
+                <span class="gallery-card__hover-sub">View Product &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+<!-- CARD 17: BEFORE & AFTER (BA-17) -->
+          <div class="gallery-card gallery-card--large-portrait" data-category="before-after">
+            <div class="gallery-card__inner" data-type="image" data-src="content/before-after/BA-17.jpeg">
+              <div class="gallery-card__media">
+                <img data-defer-src="content/before-after/BA-17.jpeg" src="" loading="lazy" alt="Before &amp; After Patient Transformation BA-17" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 12px; background-color: var(--color-white);" />
+              </div>
+              <div class="gallery-card__overlay">
+                <h4 class="gallery-card__hover-title">Before &amp; After</h4>
+                <span class="gallery-card__hover-sub">View Transformation &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+<!-- CARD 25: DISPATCHING VIDEO 17 (Medium Landscape) -->
+          <div class="gallery-card gallery-card--medium-landscape" data-category="dispatching">
+            <div class="gallery-card__inner" data-type="video" data-src="content/dispatching-vids/dispatch-17.mp4">
+              <div class="gallery-card__media">
+                <video preload="metadata" muted playsinline data-defer-src="content/dispatching-vids/dispatch-17.mp4" src="" preload="none"></video>
+              </div>
+              <div class="gallery-card__play-indicator" aria-label="Play dispatch video">
+                <svg width="14" height="14" viewBox="0 0 24 24">
+                  <polygon points="5 3 19 12 5 21 5 3"/>
+                </svg>
+              </div>
+              <div class="gallery-card__overlay">
+                <h4 class="gallery-card__hover-title">Dispatching</h4>
+                <span class="gallery-card__hover-sub">&#9654; Watch Dispatch</span>
+              </div>
+            </div>
+          </div>
+
+<!-- PRODUCT CARD 17: P-17 -->
+          <div class="gallery-card gallery-card--square" data-category="products">
+            <div class="gallery-card__inner" data-type="image" data-src="content/products/P-17.jpeg">
+              <div class="gallery-card__media">
+                <img data-defer-src="content/products/P-17.jpeg" src="" loading="lazy" alt="Homeo Elixir Product P-17" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 16px; background-color: var(--color-card-linen);" />
+              </div>
+
+              <div class="gallery-card__overlay">
+                <h4 class="gallery-card__hover-title">Products</h4>
+                <span class="gallery-card__hover-sub">View Product &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+<!-- CARD 26: DISPATCHING VIDEO 18 (Large Landscape) -->
+          <div class="gallery-card gallery-card--large-landscape" data-category="dispatching">
+            <div class="gallery-card__inner" data-type="video" data-src="content/dispatching-vids/dispatch-18.mp4">
+              <div class="gallery-card__media">
+                <video preload="metadata" muted playsinline data-defer-src="content/dispatching-vids/dispatch-18.mp4" src="" preload="none"></video>
+              </div>
+              <div class="gallery-card__play-indicator" aria-label="Play dispatch video">
+                <svg width="14" height="14" viewBox="0 0 24 24">
+                  <polygon points="5 3 19 12 5 21 5 3"/>
+                </svg>
+              </div>
+              <div class="gallery-card__overlay">
+                <h4 class="gallery-card__hover-title">Dispatching</h4>
+                <span class="gallery-card__hover-sub">&#9654; Watch Dispatch</span>
+              </div>
+            </div>
+          </div>
+
+<!-- PRODUCT CARD 18: P-18 -->
+          <div class="gallery-card gallery-card--square" data-category="products">
+            <div class="gallery-card__inner" data-type="image" data-src="content/products/P-18.jpeg">
+              <div class="gallery-card__media">
+                <img data-defer-src="content/products/P-18.jpeg" src="" loading="lazy" alt="Homeo Elixir Product P-18" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 16px; background-color: var(--color-card-linen);" />
+              </div>
+
+              <div class="gallery-card__overlay">
+                <h4 class="gallery-card__hover-title">Products</h4>
+                <span class="gallery-card__hover-sub">View Product &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+<!-- CARD 27: DISPATCHING VIDEO 19 (Medium Landscape) -->
+          <div class="gallery-card gallery-card--medium-landscape" data-category="dispatching">
+            <div class="gallery-card__inner" data-type="video" data-src="content/dispatching-vids/dispatch-19.mp4">
+              <div class="gallery-card__media">
+                <video preload="metadata" muted playsinline data-defer-src="content/dispatching-vids/dispatch-19.mp4" src="" preload="none"></video>
+              </div>
+              <div class="gallery-card__play-indicator" aria-label="Play dispatch video">
+                <svg width="14" height="14" viewBox="0 0 24 24">
+                  <polygon points="5 3 19 12 5 21 5 3"/>
+                </svg>
+              </div>
+              <div class="gallery-card__overlay">
+                <h4 class="gallery-card__hover-title">Dispatching</h4>
+                <span class="gallery-card__hover-sub">&#9654; Watch Dispatch</span>
+              </div>
+            </div>
+          </div>
+
+<!-- PRODUCT CARD 19: P-19 -->
+          <div class="gallery-card gallery-card--square" data-category="products">
+            <div class="gallery-card__inner" data-type="image" data-src="content/products/P-19.jpeg">
+              <div class="gallery-card__media">
+                <img data-defer-src="content/products/P-19.jpeg" src="" loading="lazy" alt="Homeo Elixir Product P-19" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 16px; background-color: var(--color-card-linen);" />
+              </div>
+
+              <div class="gallery-card__overlay">
+                <h4 class="gallery-card__hover-title">Products</h4>
+                <span class="gallery-card__hover-sub">View Product &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+<!-- CARD 28: DISPATCHING VIDEO 20 (Large Landscape) -->
+          <div class="gallery-card gallery-card--large-landscape" data-category="dispatching">
+            <div class="gallery-card__inner" data-type="video" data-src="content/dispatching-vids/dispatch-20.mp4">
+              <div class="gallery-card__media">
+                <video preload="metadata" muted playsinline data-defer-src="content/dispatching-vids/dispatch-20.mp4" src="" preload="none"></video>
+              </div>
+              <div class="gallery-card__play-indicator" aria-label="Play dispatch video">
+                <svg width="14" height="14" viewBox="0 0 24 24">
+                  <polygon points="5 3 19 12 5 21 5 3"/>
+                </svg>
+              </div>
+              <div class="gallery-card__overlay">
+                <h4 class="gallery-card__hover-title">Dispatching</h4>
+                <span class="gallery-card__hover-sub">&#9654; Watch Dispatch</span>
+              </div>
+            </div>
+          </div>
+
+<!-- PRODUCT CARD 20: P-20 -->
+          <div class="gallery-card gallery-card--square" data-category="products">
+            <div class="gallery-card__inner" data-type="image" data-src="content/products/P-20.jpeg">
+              <div class="gallery-card__media">
+                <img data-defer-src="content/products/P-20.jpeg" src="" loading="lazy" alt="Homeo Elixir Product P-20" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 16px; background-color: var(--color-card-linen);" />
+              </div>
+
+              <div class="gallery-card__overlay">
+                <h4 class="gallery-card__hover-title">Products</h4>
+                <span class="gallery-card__hover-sub">View Product &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+<!-- PRODUCT CARD 21: P-21 -->
+          <div class="gallery-card gallery-card--square" data-category="products">
+            <div class="gallery-card__inner" data-type="image" data-src="content/products/P-21.jpeg">
+              <div class="gallery-card__media">
+                <img data-defer-src="content/products/P-21.jpeg" src="" loading="lazy" alt="Homeo Elixir Product P-21" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 16px; background-color: var(--color-card-linen);" />
+              </div>
+
+              <div class="gallery-card__overlay">
+                <h4 class="gallery-card__hover-title">Products</h4>
+                <span class="gallery-card__hover-sub">View Product &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+<!-- PRODUCT CARD 22: P-22 -->
+          <div class="gallery-card gallery-card--square" data-category="products">
+            <div class="gallery-card__inner" data-type="image" data-src="content/products/P-22.jpeg">
+              <div class="gallery-card__media">
+                <img data-defer-src="content/products/P-22.jpeg" src="" loading="lazy" alt="Homeo Elixir Product P-22" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 16px; background-color: var(--color-card-linen);" />
+              </div>
+
+              <div class="gallery-card__overlay">
+                <h4 class="gallery-card__hover-title">Products</h4>
+                <span class="gallery-card__hover-sub">View Product &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+<!-- PRODUCT CARD 23: P-23 -->
+          <div class="gallery-card gallery-card--square" data-category="products">
+            <div class="gallery-card__inner" data-type="image" data-src="content/products/P-23.jpeg">
+              <div class="gallery-card__media">
+                <img data-defer-src="content/products/P-23.jpeg" src="" loading="lazy" alt="Homeo Elixir Product P-23" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 16px; background-color: var(--color-card-linen);" />
+              </div>
+
+              <div class="gallery-card__overlay">
+                <h4 class="gallery-card__hover-title">Products</h4>
+                <span class="gallery-card__hover-sub">View Product &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+<!-- PRODUCT CARD 24: P-24 -->
+          <div class="gallery-card gallery-card--square" data-category="products">
+            <div class="gallery-card__inner" data-type="image" data-src="content/products/P-24.jpeg">
+              <div class="gallery-card__media">
+                <img data-defer-src="content/products/P-24.jpeg" src="" loading="lazy" alt="Homeo Elixir Product P-24" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 16px; background-color: var(--color-card-linen);" />
+              </div>
+
+              <div class="gallery-card__overlay">
+                <h4 class="gallery-card__hover-title">Products</h4>
+                <span class="gallery-card__hover-sub">View Product &rarr;</span>
+              </div>
+            </div>
+          </div>        </div>
+
+        <!-- Load More Action -->
+        <div class="gallery-actions" style="margin-top: 40px; text-align: center;">
+          <button class="btn btn--outline btn--lg gallery-load-more" id="load-more-btn">
+            <span class="btn-text">Load More</span>
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================== GLOBAL CONSULTATION CTA ===================== -->
+    <section class="global-cta" aria-labelledby="global-cta-heading">
+      <div class="global-cta__inner container">
+        <div class="global-cta__content">
+          <span class="global-cta__label">READY TO BEGIN?</span>
+          <h2 id="global-cta-heading" class="global-cta__heading">Begin Your Healing Journey Today</h2>
+          <p class="global-cta__desc">
+            Experience personalized online consultation designed around your unique health and wellness needs.
+          </p>
+          <div class="global-cta__actions">
+            <a href="contact.html" class="btn btn--primary btn--lg">Book Consultation</a>
+            <a href="contact.html" class="btn btn--outline btn--lg">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== LIGHTBOX MODAL ===================== -->
+  <div id="gallery-lightbox" class="lightbox" aria-hidden="true" role="dialog" aria-modal="true">
+    <button class="lightbox__close" id="lightbox-close" aria-label="Close Lightbox">&times;</button>
+    <div class="lightbox__content">
+      <img id="lightbox-img" class="lightbox__img" src="" alt="" />
+      <video id="lightbox-video" class="lightbox__video" controls muted></video>
+    </div>
+  </div>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__inner container">
+      <div class="footer__grid">
+
+        <!-- Column 1: Brand info -->
+        <div class="footer__brand">
+          <img src="assets/header-logo.svg" alt="Homeo Elixir logo" class="footer__logo" width="180" height="auto" />
+          <p class="footer__tagline">
+            Treating the root cause. Restoring lasting wellness through classical homeopathy, clinical nutrition, and holistic care.
+          </p>
+        </div>
+
+        <!-- Column 2: Quick Navigation -->
+        <div class="footer__nav">
+          <h4 class="footer__heading">Navigation</h4>
+          <ul class="footer__list">
+            <li><a href="index.html" class="footer__link">Home</a></li>
+            <li><a href="about.html" class="footer__link">About</a></li>
+            <li><a href="doctor.html" class="footer__link">Meet Dr. Farhin</a></li>
+            <li><a href="services.html" class="footer__link">Services</a></li>
+            <li><a href="conditions.html" class="footer__link">Conditions</a></li>
+            <li><a href="gallery.html" class="footer__link">Gallery</a></li>
+            <li><a href="faq.html" class="footer__link">FAQ</a></li>
+            <li><a href="contact.html" class="footer__link">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Clinic Hours & Contact -->
+        <div class="footer__contact">
+          <h4 class="footer__heading">Consultation Hours</h4>
+          <p class="footer__text">Mon–Fri: 12:00 PM – 6:00 PM</p>
+          <div class="footer__badge">Online &amp; Worldwide Care</div>
+        </div>
+
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">
+          &copy; 2026 Homeo Elixir. All Rights Reserved.<br>
+          Designed with care for holistic wellness.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+
+  <!-- ===================== GALLERY LOGIC ===================== -->
+  <script>
+    'use strict';
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const filterButtons = document.querySelectorAll('.gallery-filter__btn');
+      const cards = document.querySelectorAll('.gallery-card');
+      const heading = document.getElementById('gallery-category-heading');
+      const loadMoreBtn = document.getElementById('load-more-btn');
+      const lightbox = document.getElementById('gallery-lightbox');
+      const lightboxClose = document.getElementById('lightbox-close');
+      const lightboxImg = document.getElementById('lightbox-img');
+      const lightboxVideo = document.getElementById('lightbox-video');
+
+      // Pagination configurations
+      const PREVIEW_LIMIT_ALL = 12;
+      const PREVIEW_LIMIT_CAT = 4;
+      const INCREMENT_ALL = 12;
+
+      let activeFilter = 'all';
+      let allRevealedCount = PREVIEW_LIMIT_ALL;
+      let categoryRevealed = false;
+
+      // Helper function to lazy-load card media when displayed
+      function lazyLoadCardMedia(card) {
+        const img = card.querySelector('img[data-defer-src]');
+        if (img) {
+          img.src = img.getAttribute('data-defer-src');
+          img.removeAttribute('data-defer-src');
+        }
+        const video = card.querySelector('video[data-defer-src]');
+        if (video) {
+          video.src = video.getAttribute('data-defer-src');
+          video.removeAttribute('data-defer-src');
+          video.load();
+        }
+      }
+
+      // Filter and visibility handler
+      function updateGalleryVisibility(instantFadeUp = false) {
+        let matchingCount = 0;
+        let visibleCount = 0;
+
+        // Determine current visibility limit
+        let limit = (activeFilter === 'all') 
+          ? allRevealedCount 
+          : (categoryRevealed ? 9999 : PREVIEW_LIMIT_CAT);
+
+        cards.forEach((card) => {
+          const cardCat = card.getAttribute('data-category');
+          const isMatching = (activeFilter === 'all' || cardCat === activeFilter);
+
+          if (isMatching) {
+            matchingCount++;
+            if (visibleCount < limit) {
+              card.style.display = 'block';
+              lazyLoadCardMedia(card);
+              
+              if (instantFadeUp && card.style.opacity !== '1') {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(24px) scale(0.98)';
+                card.style.transition = 'opacity 500ms ease, transform 500ms ease';
+                card.offsetHeight; // Force reflow
+                card.style.opacity = '1';
+                card.style.transform = 'translateY(0) scale(1)';
+              } else {
+                card.style.opacity = '1';
+                card.style.transform = 'translateY(0) scale(1)';
+              }
+              visibleCount++;
+            } else {
+              card.style.display = 'none';
+              card.style.opacity = '0';
+            }
+          } else {
+            card.style.display = 'none';
+            card.style.opacity = '0';
+          }
+        });
+
+        // Set dynamic category heading
+        const categoryHeadings = {
+          'products': 'Products',
+          'before-after': 'Before & After',
+          'client-messages': 'Client Messages',
+          'dispatching': 'Dispatching',
+          'achievements': 'Achievements',
+          'media-publications': 'Media & Publications'
+        };
+
+        if (activeFilter === 'all') {
+          heading.style.display = 'none';
+        } else {
+          heading.style.display = 'block';
+          heading.textContent = categoryHeadings[activeFilter] || '';
+        }
+
+        // Show/hide Load More button based on remaining hidden items
+        if (visibleCount < matchingCount) {
+          loadMoreBtn.style.display = 'inline-block';
+        } else {
+          loadMoreBtn.style.display = 'none';
+        }
+      }
+
+      // Handle Load More click
+      loadMoreBtn.addEventListener('click', () => {
+        if (activeFilter === 'all') {
+          allRevealedCount += INCREMENT_ALL;
+        } else {
+          categoryRevealed = true;
+        }
+        updateGalleryVisibility(true);
+      });
+
+      // Handle Filter button clicks
+      filterButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          filterButtons.forEach(b => {
+            b.classList.remove('is-active');
+            b.setAttribute('aria-selected', 'false');
+          });
+          btn.classList.add('is-active');
+          btn.setAttribute('aria-selected', 'true');
+
+          activeFilter = btn.getAttribute('data-filter');
+          categoryRevealed = false; // Reset pagination state for categories
+          updateGalleryVisibility();
+        });
+      });
+
+      // Initial visibility setup
+      updateGalleryVisibility();
+
+      // Lightbox Modal Logic
+      const cardInners = document.querySelectorAll('.gallery-card__inner');
+      cardInners.forEach(inner => {
+        inner.addEventListener('click', () => {
+          const type = inner.getAttribute('data-type');
+          const src = inner.getAttribute('data-src');
+
+          if (type === 'image') {
+            lightboxImg.src = src;
+            lightboxImg.style.display = 'block';
+            lightboxVideo.style.display = 'none';
+            lightboxVideo.src = '';
+          } else if (type === 'video') {
+            lightboxVideo.src = src;
+            lightboxVideo.muted = false; // Unmute sound in fullscreen mode
+            lightboxVideo.controls = true;
+            lightboxVideo.style.display = 'block';
+            lightboxImg.style.display = 'none';
+            lightboxImg.src = '';
+            lightboxVideo.play();
+          }
+
+          lightbox.classList.add('is-open');
+          lightbox.setAttribute('aria-hidden', 'false');
+          document.body.style.overflow = 'hidden'; // Stop background scrolling
+        });
+      });
+
+      function closeLightbox() {
+        lightbox.classList.remove('is-open');
+        lightbox.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = ''; // Restore background scrolling
+        
+        lightboxVideo.pause();
+        lightboxVideo.src = '';
+        lightboxImg.src = '';
+      }
+
+      lightboxClose.addEventListener('click', closeLightbox);
+      lightbox.addEventListener('click', (e) => {
+        if (e.target === lightbox) {
+          closeLightbox();
+        }
+      });
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && lightbox.classList.contains('is-open')) {
+          closeLightbox();
+        }
+      });
+    });
+  </script>
+</body>
+</html>

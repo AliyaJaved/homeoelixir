@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact Homeo Elixir — book your personalized online consultation with Dr. Farhin. Reach out for natural root-cause healing." />
+  <meta name="keywords" content="contact homeo elixir, book consultation, Dr. Farhin contact, homeopathy appointment" />
+  <title>Contact Us — Homeo Elixir</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@300;400;500;600&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="contact-page">
+
+  <!-- ===================== HEADER ===================== -->
+  <header id="site-header" class="header" role="banner">
+    <div class="header__inner container">
+
+      <!-- Logo -->
+      <a href="index.html" class="header__logo" aria-label="Homeo Elixir — Home">
+        <img
+          src="assets/header-logo.svg"
+          alt="Homeo Elixir logo"
+          class="header__logo-img"
+          width="180"
+          height="auto"
+        />
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="header__nav" aria-label="Primary navigation">
+        <ul class="header__nav-list" role="list">
+          <li><a href="index.html" class="header__nav-link">Home</a></li>
+          <li><a href="about.html" class="header__nav-link">About</a></li>
+          <li><a href="doctor.html" class="header__nav-link">Meet Dr. Farhin</a></li>
+          <li><a href="services.html" class="header__nav-link">Services</a></li>
+          <li class="header__dropdown">
+            <a href="conditions.html" class="header__nav-link">Conditions <span class="dropdown-arrow">&#9662;</span></a>
+            <div class="dropdown-menu">
+              <div class="dropdown-menu__grid">
+                <a href="conditions/womens-health.html" class="dropdown-menu__link">Women's Health</a>
+                <a href="conditions/thyroid-disorders.html" class="dropdown-menu__link">Thyroid Disorders</a>
+                <a href="conditions/diabetes-metabolic-health.html" class="dropdown-menu__link">Diabetes & Metabolic Health</a>
+                <a href="conditions/hair-concerns.html" class="dropdown-menu__link">Hair Concerns</a>
+                <a href="conditions/skin-conditions.html" class="dropdown-menu__link">Skin Conditions</a>
+                <a href="conditions/digestive-disorders.html" class="dropdown-menu__link">Digestive Disorders</a>
+                <a href="conditions/respiratory-conditions.html" class="dropdown-menu__link">Respiratory Conditions</a>
+                <a href="conditions/bone-joint-health.html" class="dropdown-menu__link">Bone & Joint Health</a>
+                <a href="conditions/neurological-conditions.html" class="dropdown-menu__link">Neurological Conditions</a>
+                <a href="conditions/mental-emotional-wellbeing.html" class="dropdown-menu__link">Mental & Emotional Wellbeing</a>
+                <a href="conditions/childrens-health.html" class="dropdown-menu__link">Children's Health</a>
+                <a href="conditions/general-wellness.html" class="dropdown-menu__link">General Wellness</a>
+              </div>
+            </div>
+          </li>
+          <li><a href="gallery.html" class="header__nav-link">Gallery</a></li>
+          <li><a href="faq.html" class="header__nav-link">FAQ</a></li>
+          <li><a href="contact.html" class="header__nav-link header__nav-link--active" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- CTA -->
+      <div class="header__actions">
+        <a href="contact.html" class="btn btn--primary btn--sm header__nav-link--active" id="header-cta">
+          Book Consultation
+        </a>
+
+        <!-- Hamburger (Mobile) -->
+        <button
+          class="header__hamburger"
+          id="hamburger-btn"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+          aria-controls="mobile-nav"
+        >
+          <span class="header__hamburger-bar"></span>
+          <span class="header__hamburger-bar"></span>
+          <span class="header__hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <nav
+      class="header__mobile-nav"
+      id="mobile-nav"
+      aria-label="Mobile navigation"
+      aria-hidden="true"
+    >
+      <ul class="header__mobile-nav-list" role="list">
+        <li><a href="index.html" class="header__mobile-nav-link">Home</a></li>
+        <li><a href="about.html" class="header__mobile-nav-link">About</a></li>
+        <li><a href="doctor.html" class="header__mobile-nav-link">Meet Dr. Farhin</a></li>
+        <li><a href="services.html" class="header__mobile-nav-link">Services</a></li>
+        <li class="header__dropdown">
+          <a href="conditions.html" class="header__mobile-nav-link">Conditions</a>
+          <div class="dropdown-menu">
+            <div class="dropdown-menu__grid">
+              <a href="conditions/womens-health.html" class="dropdown-menu__link">Women's Health</a>
+              <a href="conditions/thyroid-disorders.html" class="dropdown-menu__link">Thyroid Disorders</a>
+              <a href="conditions/diabetes-metabolic-health.html" class="dropdown-menu__link">Diabetes & Metabolic Health</a>
+              <a href="conditions/hair-concerns.html" class="dropdown-menu__link">Hair Concerns</a>
+              <a href="conditions/skin-conditions.html" class="dropdown-menu__link">Skin Conditions</a>
+              <a href="conditions/digestive-disorders.html" class="dropdown-menu__link">Digestive Disorders</a>
+              <a href="conditions/respiratory-conditions.html" class="dropdown-menu__link">Respiratory Conditions</a>
+              <a href="conditions/bone-joint-health.html" class="dropdown-menu__link">Bone & Joint Health</a>
+              <a href="conditions/neurological-conditions.html" class="dropdown-menu__link">Neurological Conditions</a>
+              <a href="conditions/mental-emotional-wellbeing.html" class="dropdown-menu__link">Mental & Emotional Wellbeing</a>
+              <a href="conditions/childrens-health.html" class="dropdown-menu__link">Children's Health</a>
+              <a href="conditions/general-wellness.html" class="dropdown-menu__link">General Wellness</a>
+            </div>
+          </div>
+        </li>
+        <li><a href="gallery.html" class="header__mobile-nav-link">Gallery</a></li>
+        <li><a href="faq.html" class="header__mobile-nav-link">FAQ</a></li>
+        <li><a href="contact.html" class="header__mobile-nav-link header__nav-link--active" aria-current="page">Contact</a></li>
+        <li>
+          <a href="contact.html" class="btn btn--primary btn--sm header__mobile-cta">
+            Book Consultation
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===================== SCROLLING INFORMATION BAR ===================== -->
+  <div class="info-bar" role="marquee" aria-label="Important Information">
+    <div class="info-bar__track">
+      <div class="info-bar__list">
+        <span>
+          <svg class="info-bar__icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <line x1="2" y1="12" x2="22" y2="12"/>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+          </svg>
+          Online Consultation Available
+        </span>
+        <span class="info-bar__dot" aria-hidden="true">•</span>
+        <span>
+          <svg class="info-bar__icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="1" y="3" width="15" height="13"/>
+            <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/>
+            <circle cx="5.5" cy="18.5" r="2.5"/>
+            <circle cx="18.5" cy="18.5" r="2.5"/>
+          </svg>
+          Shipping Medicines Worldwide
+        </span>
+        <span class="info-bar__dot" aria-hidden="true">•</span>
+        <span>
+          <svg class="info-bar__icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <polyline points="12 6 12 12 16 14"/>
+          </svg>
+          Consultation Hours: Mon–Fri | 12:00 PM – 6:00 PM
+        </span>
+      </div>
+      <!-- Duplicate 1 -->
+      <div class="info-bar__list" aria-hidden="true">
+        <span>
+          <svg class="info-bar__icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <line x1="2" y1="12" x2="22" y2="12"/>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+          </svg>
+          Online Consultation Available
+        </span>
+        <span class="info-bar__dot" aria-hidden="true">•</span>
+        <span>
+          <svg class="info-bar__icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="1" y="3" width="15" height="13"/>
+            <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/>
+            <circle cx="5.5" cy="18.5" r="2.5"/>
+            <circle cx="18.5" cy="18.5" r="2.5"/>
+          </svg>
+          Shipping Medicines Worldwide
+        </span>
+        <span class="info-bar__dot" aria-hidden="true">•</span>
+        <span>
+          <svg class="info-bar__icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <polyline points="12 6 12 12 16 14"/>
+          </svg>
+          Consultation Hours: Mon–Fri | 12:00 PM – 6:00 PM
+        </span>
+      </div>
+      <!-- Duplicate 2 -->
+      <div class="info-bar__list" aria-hidden="true">
+        <span>
+          <svg class="info-bar__icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <line x1="2" y1="12" x2="22" y2="12"/>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+          </svg>
+          Online Consultation Available
+        </span>
+        <span class="info-bar__dot" aria-hidden="true">•</span>
+        <span>
+          <svg class="info-bar__icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="1" y="3" width="15" height="13"/>
+            <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/>
+            <circle cx="5.5" cy="18.5" r="2.5"/>
+            <circle cx="18.5" cy="18.5" r="2.5"/>
+          </svg>
+          Shipping Medicines Worldwide
+        </span>
+        <span class="info-bar__dot" aria-hidden="true">•</span>
+        <span>
+          <svg class="info-bar__icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <polyline points="12 6 12 12 16 14"/>
+          </svg>
+          Consultation Hours: Mon–Fri | 12:00 PM – 6:00 PM
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <main id="main-content">
+
+    <!-- ===================== SECTION 1: HERO BANNER ===================== -->
+    <section class="contact-hero" aria-label="Contact Section Intro">
+      <div class="contact-hero__inner container">
+        <span class="contact-hero__label">CONTACT US</span>
+        <h1 class="contact-hero__heading">Begin Your Healing Journey</h1>
+        <p class="contact-hero__desc">
+          We are here to support you. Connect with Dr. Farhin to address the root causes of your health concerns and design a tailored recovery roadmap.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===================== SECTION 2: DETAILS & FORM ===================== -->
+    <section class="contact-page__section" aria-label="Contact Details and Booking Form">
+      <div class="contact-page__inner container">
+        <div class="contact-page__grid">
+
+          <!-- Left Column: Info & Map -->
+          <div class="contact-info-panel">
+            
+            <div class="contact-info-block">
+              <h3 class="contact-info-title">Consultation Hours</h3>
+              <p class="contact-info-text">
+                Mon–Fri: 12:00 PM – 6:00 PM
+              </p>
+            </div>
+
+            <div class="contact-info-block">
+              <h3 class="contact-info-title">Clinic Address</h3>
+              <p class="contact-info-text">
+                Ahmedabad, Gujarat, India
+              </p>
+            </div>
+
+            <div class="contact-info-block">
+              <h3 class="contact-info-title">Get In Touch</h3>
+              <p class="contact-info-text">
+                WhatsApp: <a href="https://wa.me/918141277377" target="_blank">+91 81412 77377</a><br>
+                Email: <a href="mailto:drfarhinbangali@gmail.com">drfarhinbangali@gmail.com</a>
+              </p>
+            </div>
+
+          </div>
+
+          <!-- Right Column: Booking Form -->
+          <div>
+            <form class="final-cta__form" id="consultation-form" novalidate style="margin-top: 0;">
+              <div class="form-grid">
+                <!-- Row 1: Name & Mobile -->
+                <div class="form-group">
+                  <label for="form-name" class="form-label">Full Name <span class="required">*</span></label>
+                  <input type="text" id="form-name" class="form-input" required placeholder="Your full name" />
+                  <span class="form-error" id="error-name" aria-live="polite"></span>
+                </div>
+                <div class="form-group">
+                  <label for="form-mobile" class="form-label">Mobile Number <span class="required">*</span></label>
+                  <input type="tel" id="form-mobile" class="form-input" required placeholder="e.g. +91 98765 43210" />
+                  <span class="form-error" id="error-mobile" aria-live="polite"></span>
+                </div>
+
+                <!-- Row 2: Email & Mode -->
+                <div class="form-group">
+                  <label for="form-email" class="form-label">Email Address</label>
+                  <input type="email" id="form-email" class="form-input" placeholder="Your email (optional)" />
+                  <span class="form-error" id="error-email" aria-live="polite"></span>
+                </div>
+                <div class="form-group">
+                  <label for="form-type" class="form-label">Consultation Mode</label>
+                  <div style="position: relative; width: 100%;">
+                    <input type="text" id="form-type" class="form-input" readonly value="Online Consultation" style="padding-right: 40px; cursor: not-allowed; background-color: rgba(194, 154, 81, 0.05);" />
+                    <span style="position: absolute; right: 14px; top: 50%; transform: translateY(-50%); color: var(--color-gold); display: flex; align-items: center; pointer-events: none;">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                        <line x1="2" y1="20" x2="22" y2="20"/>
+                        <line x1="12" y1="17" x2="12" y2="20"/>
+                      </svg>
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Row 3: Health Concern (full width) -->
+                <div class="form-group full-width">
+                  <label for="form-concern" class="form-label">Health Concern / Condition <span class="required">*</span></label>
+                  <input type="text" id="form-concern" class="form-input" required placeholder="e.g. PCOS, Skin Care, Gut Health" />
+                  <span class="form-error" id="error-concern" aria-live="polite"></span>
+                </div>
+
+                <!-- Row 4: Preferred Date & Preferred Time -->
+                <div class="form-group">
+                  <label for="form-date" class="form-label">Preferred Appointment Date</label>
+                  <input type="date" id="form-date" class="form-input" />
+                </div>
+                <div class="form-group">
+                  <label for="form-slot" class="form-label">Available Consultation Slots <span class="required">*</span></label>
+                  <select id="form-slot" class="form-select" required>
+                    <option value="" disabled selected>Select a Preferred Time Slot</option>
+                    <option value="12:00 PM">12:00 PM</option>
+                    <option value="12:30 PM">12:30 PM</option>
+                    <option value="01:00 PM">01:00 PM</option>
+                    <option value="01:30 PM">01:30 PM</option>
+                    <option value="02:00 PM">02:00 PM</option>
+                    <option value="02:30 PM">02:30 PM</option>
+                    <option value="03:00 PM">03:00 PM</option>
+                    <option value="03:30 PM">03:30 PM</option>
+                    <option value="04:00 PM">04:00 PM</option>
+                    <option value="04:30 PM">04:30 PM</option>
+                    <option value="05:00 PM">05:00 PM</option>
+                    <option value="05:30 PM">05:30 PM</option>
+                    <option value="06:00 PM">06:00 PM</option>
+                  </select>
+                  <span class="form-error" id="error-slot" aria-live="polite"></span>
+                </div>
+              </div>
+
+              <!-- Row 5: Message (full width) -->
+              <div class="form-group full-width">
+                <label for="form-message" class="form-label">Message / Symptoms</label>
+                <textarea id="form-message" class="form-textarea" placeholder="Briefly describe your symptoms or health goals..."></textarea>
+              </div>
+
+              <!-- Row 6: Submit button -->
+              <button type="submit" class="btn btn--primary btn--lg form-submit-btn">
+                Book via WhatsApp
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__inner container">
+      <div class="footer__grid">
+
+        <!-- Column 1: Brand info -->
+        <div class="footer__brand">
+          <img src="assets/header-logo.svg" alt="Homeo Elixir logo" class="footer__logo" width="180" height="auto" />
+          <p class="footer__tagline">
+            Treating the root cause. Restoring lasting wellness through classical homeopathy, clinical nutrition, and holistic care.
+          </p>
+        </div>
+
+        <!-- Column 2: Quick Navigation -->
+        <div class="footer__nav">
+          <h4 class="footer__heading">Navigation</h4>
+          <ul class="footer__list">
+            <li><a href="index.html" class="footer__link">Home</a></li>
+            <li><a href="about.html" class="footer__link">About</a></li>
+            <li><a href="doctor.html" class="footer__link">Meet Dr. Farhin</a></li>
+            <li><a href="services.html" class="footer__link">Services</a></li>
+            <li><a href="conditions.html" class="footer__link">Conditions</a></li>
+            <li><a href="gallery.html" class="footer__link">Gallery</a></li>
+            <li><a href="faq.html" class="footer__link">FAQ</a></li>
+            <li><a href="contact.html" class="footer__link">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Clinic Hours & Contact -->
+        <div class="footer__contact">
+          <h4 class="footer__heading">Consultation Hours</h4>
+          <p class="footer__text">Mon–Fri: 12:00 PM – 6:00 PM</p>
+          <div class="footer__badge">Online &amp; Worldwide Care</div>
+        </div>
+
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">
+          &copy; 2026 Homeo Elixir. All Rights Reserved.<br>
+          Designed with care for holistic wellness.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

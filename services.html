@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Explore our premium holistic services at Homeo Elixir: Classical Homeopathy, Clinical Nutrition, Yoga Therapy, Mental Health Counselling, Healthy Meal Programs, and Skin & Hair Wellness." />
+  <meta name="keywords" content="homeopathy services, clinical nutrition, yoga therapy, mental health, skin hair wellness, meal programs" />
+  <title>Our Services — Homeo Elixir</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@300;400;500;600&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="services-page">
+
+  <!-- ===================== HEADER ===================== -->
+  <header id="site-header" class="header" role="banner">
+    <div class="header__inner container">
+
+      <!-- Logo -->
+      <a href="index.html" class="header__logo" aria-label="Homeo Elixir — Home">
+        <img
+          src="assets/header-logo.svg"
+          alt="Homeo Elixir logo"
+          class="header__logo-img"
+          width="180"
+          height="auto"
+        />
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="header__nav" aria-label="Primary navigation">
+        <ul class="header__nav-list" role="list">
+          <li><a href="index.html" class="header__nav-link">Home</a></li>
+          <li><a href="about.html" class="header__nav-link">About</a></li>
+          <li><a href="doctor.html" class="header__nav-link">Meet Dr. Farhin</a></li>
+          <li><a href="services.html" class="header__nav-link header__nav-link--active" aria-current="page">Services</a></li>
+          <li class="header__dropdown">
+            <a href="conditions.html" class="header__nav-link">Conditions <span class="dropdown-arrow">&#9662;</span></a>
+            <div class="dropdown-menu">
+              <div class="dropdown-menu__grid">
+                <a href="conditions/womens-health.html" class="dropdown-menu__link">Women's Health</a>
+                <a href="conditions/thyroid-disorders.html" class="dropdown-menu__link">Thyroid Disorders</a>
+                <a href="conditions/diabetes-metabolic-health.html" class="dropdown-menu__link">Diabetes & Metabolic Health</a>
+                <a href="conditions/hair-concerns.html" class="dropdown-menu__link">Hair Concerns</a>
+                <a href="conditions/skin-conditions.html" class="dropdown-menu__link">Skin Conditions</a>
+                <a href="conditions/digestive-disorders.html" class="dropdown-menu__link">Digestive Disorders</a>
+                <a href="conditions/respiratory-conditions.html" class="dropdown-menu__link">Respiratory Conditions</a>
+                <a href="conditions/bone-joint-health.html" class="dropdown-menu__link">Bone & Joint Health</a>
+                <a href="conditions/neurological-conditions.html" class="dropdown-menu__link">Neurological Conditions</a>
+                <a href="conditions/mental-emotional-wellbeing.html" class="dropdown-menu__link">Mental & Emotional Wellbeing</a>
+                <a href="conditions/childrens-health.html" class="dropdown-menu__link">Children's Health</a>
+                <a href="conditions/general-wellness.html" class="dropdown-menu__link">General Wellness</a>
+              </div>
+            </div>
+          </li>
+          <li><a href="gallery.html" class="header__nav-link">Gallery</a></li>
+          <li><a href="faq.html" class="header__nav-link">FAQ</a></li>
+          <li><a href="contact.html" class="header__nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- CTA -->
+      <div class="header__actions">
+        <a href="contact.html" class="btn btn--primary btn--sm" id="header-cta">
+          Book Consultation
+        </a>
+
+        <!-- Hamburger (Mobile) -->
+        <button
+          class="header__hamburger"
+          id="hamburger-btn"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+          aria-controls="mobile-nav"
+        >
+          <span class="header__hamburger-bar"></span>
+          <span class="header__hamburger-bar"></span>
+          <span class="header__hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <nav
+      class="header__mobile-nav"
+      id="mobile-nav"
+      aria-label="Mobile navigation"
+      aria-hidden="true"
+    >
+      <ul class="header__mobile-nav-list" role="list">
+        <li><a href="index.html" class="header__mobile-nav-link">Home</a></li>
+        <li><a href="about.html" class="header__mobile-nav-link">About</a></li>
+        <li><a href="doctor.html" class="header__mobile-nav-link">Meet Dr. Farhin</a></li>
+        <li><a href="services.html" class="header__mobile-nav-link header__nav-link--active" aria-current="page">Services</a></li>
+        <li class="header__dropdown">
+          <a href="conditions.html" class="header__mobile-nav-link">Conditions</a>
+          <div class="dropdown-menu">
+            <div class="dropdown-menu__grid">
+              <a href="conditions/womens-health.html" class="dropdown-menu__link">Women's Health</a>
+              <a href="conditions/thyroid-disorders.html" class="dropdown-menu__link">Thyroid Disorders</a>
+              <a href="conditions/diabetes-metabolic-health.html" class="dropdown-menu__link">Diabetes & Metabolic Health</a>
+              <a href="conditions/hair-concerns.html" class="dropdown-menu__link">Hair Concerns</a>
+              <a href="conditions/skin-conditions.html" class="dropdown-menu__link">Skin Conditions</a>
+              <a href="conditions/digestive-disorders.html" class="dropdown-menu__link">Digestive Disorders</a>
+              <a href="conditions/respiratory-conditions.html" class="dropdown-menu__link">Respiratory Conditions</a>
+              <a href="conditions/bone-joint-health.html" class="dropdown-menu__link">Bone & Joint Health</a>
+              <a href="conditions/neurological-conditions.html" class="dropdown-menu__link">Neurological Conditions</a>
+              <a href="conditions/mental-emotional-wellbeing.html" class="dropdown-menu__link">Mental & Emotional Wellbeing</a>
+              <a href="conditions/childrens-health.html" class="dropdown-menu__link">Children's Health</a>
+              <a href="conditions/general-wellness.html" class="dropdown-menu__link">General Wellness</a>
+            </div>
+          </div>
+        </li>
+        <li><a href="gallery.html" class="header__mobile-nav-link">Gallery</a></li>
+        <li><a href="faq.html" class="header__mobile-nav-link">FAQ</a></li>
+        <li><a href="contact.html" class="header__mobile-nav-link">Contact</a></li>
+        <li>
+          <a href="contact.html" class="btn btn--primary btn--sm header__mobile-cta">
+            Book Consultation
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===================== SCROLLING INFORMATION BAR ===================== -->
+  <div class="info-bar" id="info-bar" role="marquee" aria-label="Important Information">
+    <div class="info-bar__track">
+      <div class="info-bar__list">
+        <span>
+          <svg class="info-bar__icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <line x1="2" y1="12" x2="22" y2="12"/>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+          </svg>
+          Online Consultation Available
+        </span>
+        <span class="info-bar__dot" aria-hidden="true">•</span>
+        <span>
+          <svg class="info-bar__icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="1" y="3" width="15" height="13"/>
+            <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/>
+            <circle cx="5.5" cy="18.5" r="2.5"/>
+            <circle cx="18.5" cy="18.5" r="2.5"/>
+          </svg>
+          Shipping Medicines Worldwide
+        </span>
+        <span class="info-bar__dot" aria-hidden="true">•</span>
+        <span>
+          <svg class="info-bar__icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <polyline points="12 6 12 12 16 14"/>
+          </svg>
+          Consultation Hours: Mon–Fri | 12:00 PM – 6:00 PM
+        </span>
+      </div>
+      <!-- Duplicate 1 -->
+      <div class="info-bar__list" aria-hidden="true">
+        <span>
+          <svg class="info-bar__icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <line x1="2" y1="12" x2="22" y2="12"/>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+          </svg>
+          Online Consultation Available
+        </span>
+        <span class="info-bar__dot" aria-hidden="true">•</span>
+        <span>
+          <svg class="info-bar__icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="1" y="3" width="15" height="13"/>
+            <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/>
+            <circle cx="5.5" cy="18.5" r="2.5"/>
+            <circle cx="18.5" cy="18.5" r="2.5"/>
+          </svg>
+          Shipping Medicines Worldwide
+        </span>
+        <span class="info-bar__dot" aria-hidden="true">•</span>
+        <span>
+          <svg class="info-bar__icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <polyline points="12 6 12 12 16 14"/>
+          </svg>
+          Consultation Hours: Mon–Fri | 12:00 PM – 6:00 PM
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <main id="main-content">
+
+    <!-- ===================== HERO SECTION ===================== -->
+    <section class="services-hero" aria-label="Services Intro">
+      <div class="services-hero__inner container">
+        <h1 class="services-hero__heading">Our Services</h1>
+        <p class="services-hero__desc">
+          At Homeo Elixir, every service is thoughtfully designed to treat the root cause of illness rather than simply managing symptoms. </p>
+        <a href="contact.html" class="btn btn--primary btn--lg">Book Consultation</a>
+      </div>
+    </section>
+
+    <!-- ===================== OUR PHILOSOPHY ===================== -->
+    <section class="philosophy" aria-label="Our Philosophy">
+      <div class="philosophy__inner container">
+        <div class="philosophy__grid">
+          <h2 class="philosophy__title">Constitutional Healing for Complete Harmony</h2>
+          <p class="philosophy__text">
+            At Homeo Elixir, we believe that true wellness is more than the absence of disease—it is a harmonious balance of physical health, emotional wellbeing, nutrition, and lifestyle. Every individual is unique, which is why our treatment approach is tailored to your complete health profile rather than isolated symptoms.
+
+Through detailed consultations, constitutional homeopathic analysis, nutritional evaluation, and lifestyle assessment, we identify the underlying causes of health concerns and create a personalized roadmap toward lasting wellness. Our goal is not only to relieve existing symptoms but also to strengthen your body's natural healing capacity and help prevent future illness. </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SERVICES TABS FEATURE ===================== -->
+    <section class="services-main" aria-label="Explore Services">
+      <div class="container">
+        
+        <!-- Desktop Tabs Split Layout (Hidden on Mobile) -->
+        <div class="services-split" id="services-desktop-split">
+          
+          <!-- Left navigation panel -->
+          <ul class="services-tabs-nav" role="tablist">
+            <li>
+              <button class="services-tab-btn is-active" data-service="homeopathy" role="tab" aria-selected="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                </svg>
+                Homeopathy
+              </button>
+            </li>
+            <li>
+              <button class="services-tab-btn" data-service="nutrition" role="tab" aria-selected="false">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                </svg>
+                Clinical Nutrition
+              </button>
+            </li>
+            <li>
+              <button class="services-tab-btn" data-service="yoga" role="tab" aria-selected="false">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"/>
+                  <path d="M8 12h8M12 8v8"/>
+                </svg>
+                Yoga Therapy
+              </button>
+            </li>
+            <li>
+              <button class="services-tab-btn" data-service="counselling" role="tab" aria-selected="false">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                </svg>
+                Mental Health Counselling
+              </button>
+            </li>
+            <li>
+              <button class="services-tab-btn" data-service="fitness" role="tab" aria-selected="false">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="6" y="3" width="12" height="18" rx="2"/>
+                  <line x1="9" y1="7" x2="15" y2="7"/>
+                  <line x1="9" y1="11" x2="15" y2="11"/>
+                  <line x1="9" y1="15" x2="15" y2="15"/>
+                </svg>
+                Personalized Fitness Guidance
+              </button>
+            </li>
+            <li>
+              <button class="services-tab-btn" data-service="meals" role="tab" aria-selected="false">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="3"/>
+                  <path d="M12 2v3M12 19v3M20 12h2M2 12h2"/>
+                </svg>
+                Healthy Meal Programs
+              </button>
+            </li>
+            <li>
+              <button class="services-tab-btn" data-service="skin-hair" role="tab" aria-selected="false">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
+                </svg>
+                Skin &amp; Hair Wellness
+              </button>
+            </li>
+            <li>
+              <button class="services-tab-btn" data-service="lifestyle" role="tab" aria-selected="false">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"/>
+                  <polyline points="12 6 12 12 16 14"/>
+                </svg>
+                Lifestyle Consultation
+              </button>
+            </li>
+          </ul>
+
+          <!-- Right side dynamic content panel -->
+          <div class="services-tab-content-panel" id="services-dynamic-content" role="tabpanel">
+            <!-- Dynamic Content Injected Here by JavaScript -->
+          </div>
+
+        </div>
+
+        <!-- Mobile Accordions Container (Hidden on Desktop, Visible on Mobile) -->
+        <div class="services-accordion-wrapper" id="services-mobile-accordion">
+          <!-- Accordion Items Injected Here by JavaScript -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================== TREATMENT PROCESS TIMELINE ===================== -->
+    <section class="process" aria-labelledby="process-heading">
+      <div class="container">
+        
+        <div class="process__header">
+          <h2 id="process-heading" class="process__title">Our Treatment Process</h2>
+        </div>
+
+        <div class="process-timeline">
+          
+          <!-- Step 1 -->
+          <div class="process-step">
+            <div class="process-step__number">01</div>
+            <h3 class="process-step__title">Book an Appointment</h3>
+            <p class="process-step__desc">Schedule your consultation and begin your journey to lasting wellness.</p>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="process-step">
+            <div class="process-step__number">02</div>
+            <h3 class="process-step__title">Initial Consultation</h3>
+            <p class="process-step__desc">Understand your health history, symptoms & goals</p>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="process-step">
+            <div class="process-step__number">03</div>
+            <h3 class="process-step__title">Comprehensive Health Assessment</h3>
+            <p class="process-step__desc">Homeopathy • Nutrition • Lifestyle • Mental Wellbeing</p>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="process-step">
+            <div class="process-step__number">04</div>
+            <h3 class="process-step__title">Personalized Treatment Plan</h3>
+            <p class="process-step__desc">Homeopathic medicines, diet, yoga, fitness & lifestyle guidance.</p>
+          </div>
+
+          <!-- Step 5 -->
+          <div class="process-step">
+            <div class="process-step__number">05</div>
+            <h3 class="process-step__title">Begin Your Wellness Journey</h3>
+            <p class="process-step__desc">Start your customized treatment and recommendations.</p>
+          </div>
+
+          <!-- Step 6 -->
+          <div class="process-step">
+            <div class="process-step__number">06</div>
+            <h3 class="process-step__title">Regular Follow-Ups</h3>
+            <p class="process-step__desc">Track progress and refine your treatment plan.</p>
+          </div>
+
+          <!-- Step 7 -->
+          <div class="process-step">
+            <div class="process-step__number">07</div>
+            <h3 class="process-step__title">Achieve Long-Term Health & Wellness</h3>
+            <p class="process-step__desc">Improved health, prevention & sustainable lifestyle.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== GLOBAL CONSULTATION CTA ===================== -->
+    <section class="global-cta" aria-labelledby="global-cta-heading">
+      <div class="global-cta__inner container">
+        <div class="global-cta__content">
+          <span class="global-cta__label">READY TO BEGIN?</span>
+          <h2 id="global-cta-heading" class="global-cta__heading">Begin Your Healing Journey Today</h2>
+          <p class="global-cta__desc">
+            Experience personalized online consultation designed around your unique health and wellness needs.
+          </p>
+          <div class="global-cta__actions">
+            <a href="contact.html" class="btn btn--primary btn--lg">Book Consultation</a>
+            <a href="contact.html" class="btn btn--outline btn--lg">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__inner container">
+      <div class="footer__grid">
+
+        <!-- Column 1: Brand info -->
+        <div class="footer__brand">
+          <img src="assets/header-logo.svg" alt="Homeo Elixir logo" class="footer__logo" width="180" height="auto" />
+          <p class="footer__tagline">
+            Treating the root cause. Restoring lasting wellness through classical homeopathy, clinical nutrition, and holistic care.
+          </p>
+        </div>
+
+        <!-- Column 2: Quick Navigation -->
+        <div class="footer__nav">
+          <h4 class="footer__heading">Navigation</h4>
+          <ul class="footer__list">
+            <li><a href="index.html" class="footer__link">Home</a></li>
+            <li><a href="about.html" class="footer__link">About</a></li>
+            <li><a href="doctor.html" class="footer__link">Meet Dr. Farhin</a></li>
+            <li><a href="services.html" class="footer__link">Services</a></li>
+            <li><a href="conditions.html" class="footer__link">Conditions</a></li>
+            <li><a href="gallery.html" class="footer__link">Gallery</a></li>
+            <li><a href="faq.html" class="footer__link">FAQ</a></li>
+            <li><a href="contact.html" class="footer__link">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Clinic Hours & Contact -->
+        <div class="footer__contact">
+          <h4 class="footer__heading">Consultation Hours</h4>
+          <p class="footer__text">Mon–Fri: 12:00 PM – 6:00 PM</p>
+          <div class="footer__badge">Online &amp; Worldwide Care</div>
+        </div>
+
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">
+          &copy; 2026 Homeo Elixir. All Rights Reserved.<br>
+          Designed with care for holistic wellness.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+
+  <!-- ===================== SERVICES CONTROLLER ===================== -->
+  <script>
+    'use strict';
+
+    document.addEventListener('DOMContentLoaded', () => {
+      // Services Dataset (reusable and easily modified later)
+      const servicesData = {
+        homeopathy: {
+          title: "Homeopathy",
+          desc: "Classical Homeopathy is a gentle and personalized system of medicine that stimulates the body's natural healing abilities. At Homeo Elixir, every treatment begins with a detailed constitutional assessment to understand your physical health, emotional wellbeing, lifestyle, and medical history. Instead of suppressing symptoms, our approach identifies the root cause and supports long-term healing through individualized remedies.",
+          benefits: [
+            "Personalized constitutional treatment",
+            "Addresses the root cause of illness",
+            "Gentle, safe, and non-invasive care",
+            "Suitable for patients of all age groups"
+          ],
+          image: "content/services/homeopathy.jpg"
+        },
+        nutrition: {
+          title: "Clinical Nutrition",
+          desc: "Nutrition is the foundation of lasting health. Our Clinical Nutrition program provides evidence-based dietary guidance tailored to your body, lifestyle, medical conditions, and wellness goals. Whether managing hormonal imbalance, weight concerns, digestive disorders, or chronic illnesses, every nutrition plan is designed to complement your healing journey naturally.",
+          benefits: [
+            "Personalized nutrition plans",
+            "Hormonal & metabolic support",
+            "Sustainable healthy eating habits",
+            "Improved energy and immunity"
+          ],
+          image: "content/services/clinical-nutrition.jpg"
+        },
+        yoga: {
+          title: "Yoga Therapy",
+          desc: "Yoga Therapy combines mindful movement, breathing techniques, and relaxation practices to improve physical flexibility, emotional wellbeing, and overall vitality. Sessions are customized according to your health condition, helping reduce stress while supporting holistic recovery alongside your treatment plan.",
+          benefits: [
+            "Improves flexibility and posture",
+            "Reduces stress and anxiety",
+            "Enhances physical strength",
+            "Promotes overall wellbeing"
+          ],
+          image: "content/services/yoga.png"
+        },
+        counselling: {
+          title: "Mental Health Counselling",
+          desc: "Mental wellness is an essential part of holistic healing. Our counselling sessions provide a safe, supportive environment where individuals can manage stress, anxiety, emotional burnout, and daily life challenges. Through compassionate guidance, we help restore emotional balance and improve overall quality of life.",
+          benefits: [
+            "Emotional support and guidance",
+            "Stress & anxiety management",
+            "Improved emotional resilience",
+            "Better work-life balance"
+          ],
+          image: "content/services/mental-health.png"
+        },
+        fitness: {
+          title: "Personalized Fitness Guidance",
+          desc: "Every body is unique, which is why fitness should never follow a one-size-fits-all approach. Our personalized fitness guidance includes customized exercise recommendations that align with your medical history, physical abilities, and health objectives, ensuring safe and sustainable progress.",
+          benefits: [
+            "Customized fitness programs",
+            "Safe exercise recommendations",
+            "Supports weight management",
+            "Builds long-term healthy habits"
+          ],
+          image: "content/services/personalised-fitness.jpg"
+        },
+        meals: {
+          title: "Healthy Meal Programs",
+          desc: "Healthy eating becomes easier with professionally planned meal programs designed to support your treatment goals. Our nutrition-guided meal recommendations focus on balanced nourishment, convenience, and long-term lifestyle improvement while making healthy choices simple and enjoyable.",
+          benefits: [
+            "Nutritionist-guided meal planning",
+            "Balanced and wholesome nutrition",
+            "Supports treatment outcomes",
+            "Convenient healthy lifestyle"
+          ],
+          image: "content/services/healthy-meal.jpg"
+        },
+        "skin-hair": {
+          title: "Skin & Hair Wellness",
+          desc: "Healthy skin and strong hair reflect internal wellness. Our holistic Skin & Hair Wellness programs combine homeopathy, nutrition, and lifestyle guidance to address concerns such as acne, pigmentation, hair fall, dandruff, premature greying, and overall skin health from within.",
+          benefits: [
+            "Holistic skin & hair care",
+            "Treats root causes naturally",
+            "Personalized treatment plans",
+            "Supports healthy, lasting results"
+          ],
+          image: "content/services/skin-and-hair.jpg"
+        },
+        lifestyle: {
+          title: "Lifestyle Consultation",
+          desc: "Small lifestyle changes can create significant improvements in long-term health. Our Lifestyle Consultation focuses on optimizing sleep, stress management, work-life balance, daily routines, and preventive healthcare to help you build sustainable habits for lifelong wellness.",
+          benefits: [
+            "Personalized lifestyle guidance",
+            "Better sleep and stress management",
+            "Preventive healthcare support",
+            "Sustainable wellness habits"
+          ],
+          image: "content/services/lifestyle.png"
+        }
+      };
+
+
+      // Desktop Tab Elements
+      const desktopTabs = document.querySelectorAll('.services-tab-btn');
+      const dynamicContentPanel = document.getElementById('services-dynamic-content');
+
+      // Mobile Accordion Container
+      const mobileAccordionContainer = document.getElementById('services-mobile-accordion');
+
+      // Helper: Generate service view HTML with original website CTA style
+      function generateServiceHTML(serviceObj) {
+        return `
+          <div class="service-view">
+            <div class="service-view__details">
+              <h3 class="service-view__heading">${serviceObj.title}</h3>
+              <p class="service-view__desc">${serviceObj.desc}</p>
+
+              <div class="service-view__meta-section">
+                <span class="service-view__meta-title">Key Benefits</span>
+                <ul class="service-view__list">
+                  ${serviceObj.benefits.map(benefit => `<li>${benefit}</li>`).join('')}
+                </ul>
+              </div>
+
+              <a href="contact.html" class="btn btn--primary btn--lg" style="margin-top: 36px; display: inline-flex;">Book Consultation</a>
+            </div>
+            
+            <div class="service-view__media-col">
+              <div class="service-image-wrap">
+                <img src="${serviceObj.image}" alt="${serviceObj.title} Photography" class="service-image" />
+              </div>
+            </div>
+          </div>
+        `;
+      }
+
+      // Initialize Desktop View
+      function selectTab(serviceKey) {
+        // Toggle Active Classes on Buttons
+        desktopTabs.forEach(btn => {
+          if (btn.getAttribute('data-service') === serviceKey) {
+            btn.classList.add('is-active');
+            btn.setAttribute('aria-selected', 'true');
+          } else {
+            btn.classList.remove('is-active');
+            btn.setAttribute('aria-selected', 'false');
+          }
+        });
+
+        // Trigger Fade Animation
+        dynamicContentPanel.classList.add('is-animating');
+        
+        setTimeout(() => {
+          const serviceObj = servicesData[serviceKey];
+          dynamicContentPanel.innerHTML = generateServiceHTML(serviceObj);
+          dynamicContentPanel.classList.remove('is-animating');
+        }, 150);
+      }
+
+      // Setup Desktop Event Listeners
+      desktopTabs.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const serviceKey = btn.getAttribute('data-service');
+          selectTab(serviceKey);
+        });
+      });
+
+      // Default load desktop homeopathy
+      selectTab('homeopathy');
+
+      // Initialize Mobile View (Build accordion HTML dynamically from the same dataset)
+      let mobileHTML = '';
+      Object.keys(servicesData).forEach(key => {
+        const item = servicesData[key];
+        mobileHTML += `
+          <div class="services-accordion-item" data-service="${key}">
+            <button class="services-accordion-trigger">
+              <span class="services-accordion-trigger__title-group">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                  <path d="M2 17l10 5 10-5"/>
+                  <path d="M2 12l10 5 10-5"/>
+                </svg>
+                ${item.title}
+              </span>
+              <svg class="services-accordion-trigger__icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </button>
+            <div class="services-accordion-content">
+              <div class="services-accordion-content__inner">
+                ${generateServiceHTML(item)}
+              </div>
+            </div>
+          </div>
+        `;
+      });
+      mobileAccordionContainer.innerHTML = mobileHTML;
+
+      // Mobile Accordion Toggle Logic
+      const accordionItems = document.querySelectorAll('.services-accordion-item');
+      accordionItems.forEach(item => {
+        const trigger = item.querySelector('.services-accordion-trigger');
+        const content = item.querySelector('.services-accordion-content');
+
+        trigger.addEventListener('click', () => {
+          const isOpen = item.classList.contains('is-open');
+
+          // Close all other accordions
+          accordionItems.forEach(otherItem => {
+            otherItem.classList.remove('is-open');
+            otherItem.querySelector('.services-accordion-content').style.maxHeight = null;
+          });
+
+          // Open selected accordion if it was closed
+          if (!isOpen) {
+            item.classList.add('is-open');
+            content.style.maxHeight = content.scrollHeight + 'px';
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>

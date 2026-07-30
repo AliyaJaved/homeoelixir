@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Frequently Asked Questions about Homeo Elixir — Find answers about consultations, treatments, safety, and our holistic wellness journey." />
+  <meta name="keywords" content="homeopathy faq, homeo elixir questions, clinic consultations faq, homeopathic medicines, safety" />
+  <title>FAQs — Homeo Elixir</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@300;400;500;600&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="faq-page">
+
+  <!-- ===================== HEADER ===================== -->
+  <header id="site-header" class="header" role="banner">
+    <div class="header__inner container">
+
+      <!-- Logo -->
+      <a href="index.html" class="header__logo" aria-label="Homeo Elixir — Home">
+        <img
+          src="assets/header-logo.svg"
+          alt="Homeo Elixir logo"
+          class="header__logo-img"
+          width="180"
+          height="auto"
+        />
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="header__nav" aria-label="Primary navigation">
+        <ul class="header__nav-list" role="list">
+          <li><a href="index.html" class="header__nav-link">Home</a></li>
+          <li><a href="about.html" class="header__nav-link">About</a></li>
+          <li><a href="doctor.html" class="header__nav-link">Meet Dr. Farhin</a></li>
+          <li><a href="services.html" class="header__nav-link">Services</a></li>
+          <li class="header__dropdown">
+            <a href="conditions.html" class="header__nav-link">Conditions <span class="dropdown-arrow">&#9662;</span></a>
+            <div class="dropdown-menu">
+              <div class="dropdown-menu__grid">
+                <a href="conditions/womens-health.html" class="dropdown-menu__link">Women's Health</a>
+                <a href="conditions/thyroid-disorders.html" class="dropdown-menu__link">Thyroid Disorders</a>
+                <a href="conditions/diabetes-metabolic-health.html" class="dropdown-menu__link">Diabetes & Metabolic Health</a>
+                <a href="conditions/hair-concerns.html" class="dropdown-menu__link">Hair Concerns</a>
+                <a href="conditions/skin-conditions.html" class="dropdown-menu__link">Skin Conditions</a>
+                <a href="conditions/digestive-disorders.html" class="dropdown-menu__link">Digestive Disorders</a>
+                <a href="conditions/respiratory-conditions.html" class="dropdown-menu__link">Respiratory Conditions</a>
+                <a href="conditions/bone-joint-health.html" class="dropdown-menu__link">Bone & Joint Health</a>
+                <a href="conditions/neurological-conditions.html" class="dropdown-menu__link">Neurological Conditions</a>
+                <a href="conditions/mental-emotional-wellbeing.html" class="dropdown-menu__link">Mental & Emotional Wellbeing</a>
+                <a href="conditions/childrens-health.html" class="dropdown-menu__link">Children's Health</a>
+                <a href="conditions/general-wellness.html" class="dropdown-menu__link">General Wellness</a>
+              </div>
+            </div>
+          </li>
+          <li><a href="gallery.html" class="header__nav-link">Gallery</a></li>
+          <li><a href="faq.html" class="header__nav-link header__nav-link--active" aria-current="page">FAQ</a></li>
+          <li><a href="contact.html" class="header__nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- CTA -->
+      <div class="header__actions">
+        <a href="contact.html" class="btn btn--primary btn--sm" id="header-cta">
+          Book Consultation
+        </a>
+
+        <!-- Hamburger (Mobile) -->
+        <button
+          class="header__hamburger"
+          id="hamburger-btn"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+          aria-controls="mobile-nav"
+        >
+          <span class="header__hamburger-bar"></span>
+          <span class="header__hamburger-bar"></span>
+          <span class="header__hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <nav
+      class="header__mobile-nav"
+      id="mobile-nav"
+      aria-label="Mobile navigation"
+      aria-hidden="true"
+    >
+      <ul class="header__mobile-nav-list" role="list">
+        <li><a href="index.html" class="header__mobile-nav-link">Home</a></li>
+        <li><a href="about.html" class="header__mobile-nav-link">About</a></li>
+        <li><a href="doctor.html" class="header__mobile-nav-link">Meet Dr. Farhin</a></li>
+        <li><a href="services.html" class="header__mobile-nav-link">Services</a></li>
+        <li class="header__dropdown">
+          <a href="conditions.html" class="header__mobile-nav-link">Conditions</a>
+          <div class="dropdown-menu">
+            <div class="dropdown-menu__grid">
+              <a href="conditions/womens-health.html" class="dropdown-menu__link">Women's Health</a>
+              <a href="conditions/thyroid-disorders.html" class="dropdown-menu__link">Thyroid Disorders</a>
+              <a href="conditions/diabetes-metabolic-health.html" class="dropdown-menu__link">Diabetes & Metabolic Health</a>
+              <a href="conditions/hair-concerns.html" class="dropdown-menu__link">Hair Concerns</a>
+              <a href="conditions/skin-conditions.html" class="dropdown-menu__link">Skin Conditions</a>
+              <a href="conditions/digestive-disorders.html" class="dropdown-menu__link">Digestive Disorders</a>
+              <a href="conditions/respiratory-conditions.html" class="dropdown-menu__link">Respiratory Conditions</a>
+              <a href="conditions/bone-joint-health.html" class="dropdown-menu__link">Bone & Joint Health</a>
+              <a href="conditions/neurological-conditions.html" class="dropdown-menu__link">Neurological Conditions</a>
+              <a href="conditions/mental-emotional-wellbeing.html" class="dropdown-menu__link">Mental & Emotional Wellbeing</a>
+              <a href="conditions/childrens-health.html" class="dropdown-menu__link">Children's Health</a>
+              <a href="conditions/general-wellness.html" class="dropdown-menu__link">General Wellness</a>
+            </div>
+          </div>
+        </li>
+        <li><a href="gallery.html" class="header__mobile-nav-link">Gallery</a></li>
+        <li><a href="faq.html" class="header__mobile-nav-link header__nav-link--active" aria-current="page">FAQ</a></li>
+        <li><a href="contact.html" class="header__mobile-nav-link">Contact</a></li>
+        <li>
+          <a href="contact.html" class="btn btn--primary btn--sm header__mobile-cta">
+            Book Consultation
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===================== SCROLLING INFORMATION BAR ===================== -->
+  <div class="info-bar" id="info-bar" role="marquee" aria-label="Important Information">
+    <div class="info-bar__track">
+      <div class="info-bar__list">
+        <span>
+          <svg class="info-bar__icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <line x1="2" y1="12" x2="22" y2="12"/>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+          </svg>
+          Online Consultation Available
+        </span>
+        <span class="info-bar__dot" aria-hidden="true">•</span>
+        <span>
+          <svg class="info-bar__icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="1" y="3" width="15" height="13"/>
+            <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/>
+            <circle cx="5.5" cy="18.5" r="2.5"/>
+            <circle cx="18.5" cy="18.5" r="2.5"/>
+          </svg>
+          Shipping Medicines Worldwide
+        </span>
+        <span class="info-bar__dot" aria-hidden="true">•</span>
+        <span>
+          <svg class="info-bar__icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <polyline points="12 6 12 12 16 14"/>
+          </svg>
+          Consultation Hours: Mon–Fri | 12:00 PM – 6:00 PM
+        </span>
+      </div>
+      <!-- Duplicate 1 -->
+      <div class="info-bar__list" aria-hidden="true">
+        <span>
+          <svg class="info-bar__icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <line x1="2" y1="12" x2="22" y2="12"/>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+          </svg>
+          Online Consultation Available
+        </span>
+        <span class="info-bar__dot" aria-hidden="true">•</span>
+        <span>
+          <svg class="info-bar__icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="1" y="3" width="15" height="13"/>
+            <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/>
+            <circle cx="5.5" cy="18.5" r="2.5"/>
+            <circle cx="18.5" cy="18.5" r="2.5"/>
+          </svg>
+          Shipping Medicines Worldwide
+        </span>
+        <span class="info-bar__dot" aria-hidden="true">•</span>
+        <span>
+          <svg class="info-bar__icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <polyline points="12 6 12 12 16 14"/>
+          </svg>
+          Consultation Hours: Mon–Fri | 12:00 PM – 6:00 PM
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <main id="main-content">
+
+    <!-- ===================== HERO SECTION ===================== -->
+    <section class="faq-hero" aria-label="FAQ Introduction">
+      <!-- Soft Leaf SVGs for Subtle Botanical Background Decor -->
+      <div class="faq-hero__leaf-decor" aria-hidden="true">
+        <svg width="380" height="380" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10 80C30 70 50 40 60 10" stroke="#B8848C" stroke-width="0.3" stroke-linecap="round" />
+          <path d="M30 65C30 65 35 55 45 52C55 49 50 62 50 62C50 62 42 63 36 67Z" fill="#B8848C" opacity="0.3" />
+          <path d="M45 48C45 48 52 40 60 41C68 42 61 52 61 52C61 52 54 50 49 52Z" fill="#6E7C4F" opacity="0.3" />
+        </svg>
+      </div>
+
+      <div class="faq-hero__container container">
+        <div class="faq-hero__illustration" aria-hidden="true">
+          <!-- Minimal Medical / Botanical Line Art Illustration -->
+          <svg width="130" height="130" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="100" cy="100" r="80" fill="#FAF8F5" stroke="#EBE4D8" stroke-width="1.5" />
+            <circle cx="100" cy="100" r="70" fill="#F3ECE0" opacity="0.5" />
+            <path d="M70 140C70 140 85 110 100 100C115 90 135 85 145 80" stroke="#6E7C4F" stroke-width="2.5" stroke-linecap="round" />
+            <path d="M100 100C100 100 95 90 85 92C75 94 80 105 80 105C80 105 90 106 96 102C99 100 100 100 100 100Z" fill="#6E7C4F" opacity="0.8" />
+            <path d="M115 90C115 90 112 78 102 78C92 78 95 90 95 90C95 90 105 92 111 88C114 86 115 90 115 90Z" fill="#B8848C" opacity="0.8" />
+            <path d="M130 85C130 85 132 72 122 70C112 68 112 82 112 82C112 82 122 82 127 80C129 79 130 85 130 85Z" fill="#6E7C4F" opacity="0.8" />
+            <path d="M85 100H95L100 90L105 110L110 100H120" stroke="#B8848C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </div>
+
+        
+
+        <h1 class="faq-hero__heading">Frequently Asked Questions</h1>
+        <p class="faq-hero__desc">
+          Find answers to the most common questions about homeopathy, treatments, consultations, and your wellness journey.
+        </p>
+
+        <!-- Rounded FAQ search bar integrated directly into hero -->
+        <div class="faq-search-wrapper">
+          <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input type="text" id="faq-search-input" placeholder="Search your question..." aria-label="Search FAQ database" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CATEGORY FILTER CHIPS ===================== -->
+    <section class="faq-categories-section" aria-label="FAQ Categories">
+      <div class="faq-categories-container container">
+        <div class="faq-categories" role="tablist">
+          <button class="faq-category-btn active" data-category="all" role="tab" aria-selected="true">All</button>
+          <button class="faq-category-btn" data-category="general" role="tab" aria-selected="false">General Homeopathy</button>
+          <button class="faq-category-btn" data-category="safety" role="tab" aria-selected="false">Medicines &amp; Safety</button>
+          <button class="faq-category-btn" data-category="treatment" role="tab" aria-selected="false">Treatment &amp; Consultation</button>
+          <button class="faq-category-btn" data-category="conditions" role="tab" aria-selected="false">Health Conditions</button>
+          <button class="faq-category-btn" data-category="demographics" role="tab" aria-selected="false">Pregnancy, Children &amp; Elderly</button>
+          <button class="faq-category-btn" data-category="lifestyle" role="tab" aria-selected="false">Lifestyle &amp; Diet</button>
+          <button class="faq-category-btn" data-category="emergency" role="tab" aria-selected="false">Emergency &amp; Medical Care</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FAQ ACCORDION SECTION ===================== -->
+    <section class="faq-accordion-section" aria-label="Frequently Asked Questions List">
+      <div class="faq-accordion-container">
+        
+        <!-- Accordion Cards Collection (20 Cards) -->
+        
+        <!-- ===================== GENERAL HOMEOPATHY ===================== -->
+        <!-- 1. What conditions can Homeopathy help manage? -->
+        <details class="faq-card" name="faq-page-accordion" data-category="general" open>
+          <summary>
+            <span class="faq-card__title">1. What conditions can Homeopathy help manage?</span>
+            <span class="faq-card__icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <line class="vertical-line" x1="12" y1="5" x2="12" y2="19"></line>
+              </svg>
+            </span>
+          </summary>
+          <div class="faq-card__answer">
+            <p>Homeopathy is commonly used to support individuals with allergies, digestive concerns, hormonal imbalances, skin conditions, hair problems, migraines, stress-related disorders, respiratory issues, joint discomfort, and many other acute and chronic health concerns.</p>
+          </div>
+        </details>
+
+        <!-- 2. Does Homeopathy only treat symptoms? -->
+        <details class="faq-card" name="faq-page-accordion" data-category="general">
+          <summary>
+            <span class="faq-card__title">2. Does Homeopathy only treat symptoms?</span>
+            <span class="faq-card__icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <line class="vertical-line" x1="12" y1="5" x2="12" y2="19"></line>
+              </svg>
+            </span>
+          </summary>
+          <div class="faq-card__answer">
+            <p>Homeopathy takes an individualised approach, considering the person’s symptoms and overall health. It is not limited to looking at one symptom alone. However, treatment depends on the condition and proper diagnosis.</p>
+          </div>
+        </details>
+
+        <!-- 3. What are the sources of Homeopathic medicines? -->
+        <details class="faq-card" name="faq-page-accordion" data-category="general">
+          <summary>
+            <span class="faq-card__title">3. What are the sources of Homeopathic medicines?</span>
+            <span class="faq-card__icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <line class="vertical-line" x1="12" y1="5" x2="12" y2="19"></line>
+              </svg>
+            </span>
+          </summary>
+          <div class="faq-card__answer">
+            <p>Homeopathic preparations may originate from plant, mineral and animal sources, as well as some other substances, and are prepared according to Homeopathic methods.</p>
+          </div>
+        </details>
+
+        <!-- 4. Can Homeopathy help prevent recurring illnesses? -->
+        <details class="faq-card" name="faq-page-accordion" data-category="general">
+          <summary>
+            <span class="faq-card__title">4. Can Homeopathy help prevent recurring illnesses?</span>
+            <span class="faq-card__icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <line class="vertical-line" x1="12" y1="5" x2="12" y2="19"></line>
+              </svg>
+            </span>
+          </summary>
+          <div class="faq-card__answer">
+            <p>Homeopathy aims to improve the body's overall balance and resilience, which may help reduce the frequency of recurring health concerns for some individuals. Results vary from person to person.</p>
+          </div>
+        </details>
+
+        <!-- ===================== MEDICINES & SAFETY ===================== -->
+        <!-- 5. Does Homeopathy have any side effects? -->
+        <details class="faq-card" name="faq-page-accordion" data-category="safety">
+          <summary>
+            <span class="faq-card__title">5. Does Homeopathy have any side effects?</span>
+            <span class="faq-card__icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <line class="vertical-line" x1="12" y1="5" x2="12" y2="19"></line>
+              </svg>
+            </span>
+          </summary>
+          <div class="faq-card__answer">
+            <p>Homeopathic products are often highly diluted, so side effects are generally uncommon. However, some products may contain active ingredients, so they should still be taken under proper guidance.</p>
+          </div>
+        </details>
+
+        <!-- 6. Do Homeopathic medicines contain steroids? -->
+        <details class="faq-card" name="faq-page-accordion" data-category="safety">
+          <summary>
+            <span class="faq-card__title">6. Do Homeopathic medicines contain steroids?</span>
+            <span class="faq-card__icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <line class="vertical-line" x1="12" y1="5" x2="12" y2="19"></line>
+              </svg>
+            </span>
+          </summary>
+          <div class="faq-card__answer">
+            <p>No. Genuine Homeopathic medicines are not supposed to contain steroids. Always use medicines from a reliable source and under the guidance of a qualified Homeopathic doctor.</p>
+          </div>
+        </details>
+
+        <!-- 7. Are Homeopathic medicines addictive? -->
+        <details class="faq-card" name="faq-page-accordion" data-category="safety">
+          <summary>
+            <span class="faq-card__title">7. Are Homeopathic medicines addictive?</span>
+            <span class="faq-card__icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <line class="vertical-line" x1="12" y1="5" x2="12" y2="19"></line>
+              </svg>
+            </span>
+          </summary>
+          <div class="faq-card__answer">
+            <p>No. Homeopathic medicines are not considered habit-forming or addictive when used appropriately.</p>
+          </div>
+        </details>
+
+        <!-- 8. Can homeopathic pills cause my symptoms to temporarily increase? -->
+        <details class="faq-card" name="faq-page-accordion" data-category="safety">
+          <summary>
+            <span class="faq-card__title">8. Can homeopathic pills cause my symptoms to temporarily increase?</span>
+            <span class="faq-card__icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <line class="vertical-line" x1="12" y1="5" x2="12" y2="19"></line>
+              </svg>
+            </span>
+          </summary>
+          <div class="faq-card__answer">
+            <p>Sometimes, patients experience a mild, temporary flare-up of their symptoms shortly after starting treatment. This is known as a homeopathic aggravation. It is generally a positive sign indicating that your body's healing mechanism has reacted to the remedy and is actively clearing out the illness. This phase passes quickly and is almost always followed by steady improvement.</p>
+          </div>
+        </details>
+
+        <!-- ===================== TREATMENT & CONSULTATION ===================== -->
+        <!-- 9. Can homeopathy be taken with Allopathic or Ayurvedic medicines? -->
+        <details class="faq-card" name="faq-page-accordion" data-category="treatment">
+          <summary>
+            <span class="faq-card__title">9. Can homeopathy be taken with Allopathic or Ayurvedic medicines?</span>
+            <span class="faq-card__icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <line class="vertical-line" x1="12" y1="5" x2="12" y2="19"></line>
+              </svg>
+            </span>
+          </summary>
+          <div class="faq-card__answer">
+            <p>Yes. Homeopathic medicines can generally be taken along with Allopathic or Ayurvedic medicines. You do not need to stop your ongoing medicines unless your doctor advises you to.</p>
+          </div>
+        </details>
+
+        <!-- 10. How long does Homeopathic treatment take? -->
+        <details class="faq-card" name="faq-page-accordion" data-category="treatment">
+          <summary>
+            <span class="faq-card__title">10. How long does Homeopathic treatment take?</span>
+            <span class="faq-card__icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <line class="vertical-line" x1="12" y1="5" x2="12" y2="19"></line>
+              </svg>
+            </span>
+          </summary>
+          <div class="faq-card__answer">
+            <p>It depends on the condition and the individual. Acute problems may improve sooner, while long-standing conditions may require longer treatment. Regular follow-ups help assess progress.</p>
+          </div>
+        </details>
+
+        <!-- 11. How is a Homeopathic consultation different from a regular consultation? -->
+        <details class="faq-card" name="faq-page-accordion" data-category="treatment">
+          <summary>
+            <span class="faq-card__title">11. How is a Homeopathic consultation different from a regular consultation?</span>
+            <span class="faq-card__icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <line class="vertical-line" x1="12" y1="5" x2="12" y2="19"></line>
+              </svg>
+            </span>
+          </summary>
+          <div class="faq-card__answer">
+            <p>A Homeopathic consultation usually involves detailed case-taking. Along with your physical symptoms, the doctor may ask about your sleep, appetite, lifestyle, emotional well-being, medical history and other individual factors before selecting treatment.</p>
+          </div>
+        </details>
+
+        <!-- ===================== HEALTH CONDITIONS ===================== -->
+        <!-- 12. Can diabetic patients take Homeopathy even though the globules are sweet? -->
+        <details class="faq-card" name="faq-page-accordion" data-category="conditions">
+          <summary>
+            <span class="faq-card__title">12. Can diabetic patients take Homeopathy even though the globules are sweet?</span>
+            <span class="faq-card__icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <line class="vertical-line" x1="12" y1="5" x2="12" y2="19"></line>
+              </svg>
+            </span>
+          </summary>
+          <div class="faq-card__answer">
+            <p>Yes. Diabetic patients can take Homeopathic medicines. The amount of sugar in the small globules is usually very low, but sugar-free or liquid forms can also be considered, especially when blood sugar needs strict control.</p>
+          </div>
+        </details>
+
+        <!-- 13. Can Homeopathy help change a person’s behaviour? -->
+        <details class="faq-card" name="faq-page-accordion" data-category="conditions">
+          <summary>
+            <span class="faq-card__title">13. Can Homeopathy help change a person’s behaviour?</span>
+            <span class="faq-card__icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <line class="vertical-line" x1="12" y1="5" x2="12" y2="19"></line>
+              </svg>
+            </span>
+          </summary>
+          <div class="faq-card__answer">
+            <p>Homeopathy cannot directly change someone’s personality or behaviour. Behavioural or emotional concerns may improve when their underlying causes are properly addressed, often with counselling, psychological care, or medical treatment when needed.</p>
+          </div>
+        </details>
+
+        <!-- 14. Can Homeopathy help in overcoming addictions like tobacco, cigarettes, alcohol or drugs? -->
+        <details class="faq-card" name="faq-page-accordion" data-category="conditions">
+          <summary>
+            <span class="faq-card__title">14. Can Homeopathy help in overcoming addictions like tobacco, cigarettes, alcohol or drugs?</span>
+            <span class="faq-card__icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <line class="vertical-line" x1="12" y1="5" x2="12" y2="19"></line>
+              </svg>
+            </span>
+          </summary>
+          <div class="faq-card__answer">
+            <p>Yes, Homeopathy can be used as supportive treatment during de-addiction. It may help with concerns such as cravings, irritability, restlessness, anxiety and sleep disturbances during the quitting process. For alcohol or drug dependence, it should be combined with appropriate medical and psychological care.</p>
+          </div>
+        </details>
+
+        <!-- 15. Can Homeopathy help with stress and emotional wellbeing? -->
+        <details class="faq-card" name="faq-page-accordion" data-category="conditions">
+          <summary>
+            <span class="faq-card__title">15. Can Homeopathy help with stress and emotional wellbeing?</span>
+            <span class="faq-card__icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <line class="vertical-line" x1="12" y1="5" x2="12" y2="19"></line>
+              </svg>
+            </span>
+          </summary>
+          <div class="faq-card__answer">
+            <p>Homeopathy considers emotional health as an important part of overall wellness. Treatment may be recommended as part of a broader, individualized approach to supporting emotional balance and stress management.</p>
+          </div>
+        </details>
+
+        <!-- ===================== PREGNANCY, CHILDREN & ELDERLY ===================== -->
+        <!-- 16. Can Homeopathy be taken by all age groups, including infants, toddlers and the elderly? -->
+        <details class="faq-card" name="faq-page-accordion" data-category="demographics">
+          <summary>
+            <span class="faq-card__title">16. Can Homeopathy be taken by all age groups, including infants, toddlers and the elderly?</span>
+            <span class="faq-card__icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <line class="vertical-line" x1="12" y1="5" x2="12" y2="19"></line>
+              </svg>
+            </span>
+          </summary>
+          <div class="faq-card__answer">
+            <p>Yes. Homeopathy can be used by people of all age groups, from infants and toddlers to adults and the elderly. For children and older adults, medicines should be taken under the guidance of a qualified practitioner.</p>
+          </div>
+        </details>
+
+        <!-- 17. Can homeopathic medicine be taken safely during pregnancy? -->
+        <details class="faq-card" name="faq-page-accordion" data-category="demographics">
+          <summary>
+            <span class="faq-card__title">17. Can homeopathic medicine be taken safely during pregnancy?</span>
+            <span class="faq-card__icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <line class="vertical-line" x1="12" y1="5" x2="12" y2="19"></line>
+              </svg>
+            </span>
+          </summary>
+          <div class="faq-card__answer">
+            <p>Yes, homeopathy is completely safe during pregnancy. Because remedies are prepared from natural substances in gentle, highly diluted doses, they do not pose any toxic risk to you or your developing baby. They provide a safe and effective way to manage common pregnancy discomforts—such as morning sickness, heartburn, fatigue, and lower back pain—without the worry of side effects associated with many conventional drugs.</p>
+          </div>
+        </details>
+
+        <!-- 18. Can homeopathy help with infertility? -->
+        <details class="faq-card" name="faq-page-accordion" data-category="demographics">
+          <summary>
+            <span class="faq-card__title">18. Can homeopathy help with infertility?</span>
+            <span class="faq-card__icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <line class="vertical-line" x1="12" y1="5" x2="12" y2="19"></line>
+              </svg>
+            </span>
+          </summary>
+          <div class="faq-card__answer">
+            <p>Yes, homeopathy can be very supportive in cases of unexplained or functional infertility. Rather than just targeting a single symptom, homeopathy works to correct underlying imbalances in the body. It can help regulate irregular menstrual cycles, manage hormonal disorders like PCOS (Polycystic Ovary Syndrome), improve overall reproductive health, and address stress related to conception. By optimizing your body's natural vitality and hormonal balance, it creates a healthier environment for natural conception.</p>
+          </div>
+        </details>
+
+        <!-- ===================== LIFESTYLE & DIET ===================== -->
+        <!-- 19. Are there any dietary restrictions during Homeopathic treatment? -->
+        <details class="faq-card" name="faq-page-accordion" data-category="lifestyle">
+          <summary>
+            <span class="faq-card__title">19. Are there any dietary restrictions during Homeopathic treatment?</span>
+            <span class="faq-card__icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <line class="vertical-line" x1="12" y1="5" x2="12" y2="19"></line>
+              </svg>
+            </span>
+          </summary>
+          <div class="faq-card__answer">
+            <p>Yes, certain precautions are recommended. During Homeopathic treatment, it is generally advised to avoid coffee, raw onion, garlic, camphor, strong mint and strong perfumes or aromas, as these may antidote or interfere with the action of the Homeopathic medicine. Dietary changes may also be advised depending on the health condition being treated.</p>
+          </div>
+        </details>
+
+        <!-- ===================== EMERGENCY & MEDICAL CARE ===================== -->
+        <!-- 20. Is Homeopathy a replacement for emergency medical care? -->
+        <details class="faq-card" name="faq-page-accordion" data-category="emergency">
+          <summary>
+            <span class="faq-card__title">20. Is Homeopathy a replacement for emergency medical care?</span>
+            <span class="faq-card__icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <line class="vertical-line" x1="12" y1="5" x2="12" y2="19"></line>
+              </svg>
+            </span>
+          </summary>
+          <div class="faq-card__answer">
+            <p>No. Homeopathy should never replace emergency medical care. Conditions such as severe breathing difficulty, chest pain, major injuries, heavy bleeding, seizures or loss of consciousness require immediate medical attention.</p>
+          </div>
+        </details>
+
+      </div>
+    </section>
+
+    <!-- ===================== GLOBAL CONSULTATION CTA ===================== -->
+    <section class="global-cta" aria-labelledby="global-cta-heading">
+      <div class="global-cta__inner container">
+        <div class="global-cta__content">
+          <span class="global-cta__label">READY TO BEGIN?</span>
+          <h2 id="global-cta-heading" class="global-cta__heading">Begin Your Healing Journey Today</h2>
+          <p class="global-cta__desc">
+            Experience personalized online consultation designed around your unique health and wellness needs.
+          </p>
+          <div class="global-cta__actions">
+            <a href="contact.html" class="btn btn--primary btn--lg">Book Consultation</a>
+            <a href="contact.html" class="btn btn--outline btn--lg">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__inner container">
+      <div class="footer__grid">
+
+        <!-- Column 1: Brand info -->
+        <div class="footer__brand">
+          <img src="assets/header-logo.svg" alt="Homeo Elixir logo" class="footer__logo" width="180" height="auto" />
+          <p class="footer__tagline">
+            Treating the root cause. Restoring lasting wellness through classical homeopathy, clinical nutrition, and holistic care.
+          </p>
+        </div>
+
+        <!-- Column 2: Quick Navigation -->
+        <div class="footer__nav">
+          <h4 class="footer__heading">Navigation</h4>
+          <ul class="footer__list">
+            <li><a href="index.html" class="footer__link">Home</a></li>
+            <li><a href="about.html" class="footer__link">About</a></li>
+            <li><a href="doctor.html" class="footer__link">Meet Dr. Farhin</a></li>
+            <li><a href="services.html" class="footer__link">Services</a></li>
+            <li><a href="conditions.html" class="footer__link">Conditions</a></li>
+            <li><a href="gallery.html" class="footer__link">Gallery</a></li>
+            <li><a href="faq.html" class="footer__link">FAQ</a></li>
+            <li><a href="contact.html" class="footer__link">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Clinic Hours & Contact -->
+        <div class="footer__contact">
+          <h4 class="footer__heading">Consultation Hours</h4>
+          <p class="footer__text">Mon–Fri: 12:00 PM – 6:00 PM</p>
+          <div class="footer__badge">Online &amp; Worldwide Care</div>
+        </div>
+
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">
+          &copy; 2026 Homeo Elixir. All Rights Reserved.<br>
+          Designed with care for holistic wellness.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+
+  <!-- ===================== FAQ ACCORDION AND FILTER SCRIPT ===================== -->
+  <script>
+    'use strict';
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const filterButtons = document.querySelectorAll('.faq-category-btn');
+      const faqCards = document.querySelectorAll('.faq-card');
+      const searchInput = document.getElementById('faq-search-input');
+
+      function filterFAQs() {
+        const activeBtn = document.querySelector('.faq-category-btn.active');
+        const activeCategory = activeBtn ? activeBtn.dataset.category : 'all';
+        const searchQuery = searchInput.value.toLowerCase().trim();
+
+        faqCards.forEach(card => {
+          const category = card.dataset.category;
+          const questionText = card.querySelector('.faq-card__title').textContent.toLowerCase();
+          const answerText = card.querySelector('.faq-card__answer').textContent.toLowerCase();
+          
+          const matchesCategory = (activeCategory === 'all' || category === activeCategory);
+          const matchesSearch = (questionText.includes(searchQuery) || answerText.includes(searchQuery));
+          
+          if (matchesCategory && matchesSearch) {
+            card.style.display = 'block';
+          } else {
+            card.style.display = 'none';
+            card.removeAttribute('open'); // close if hidden
+          }
+        });
+      }
+
+      filterButtons.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          e.preventDefault();
+          filterButtons.forEach(b => {
+            b.classList.remove('active');
+            b.setAttribute('aria-selected', 'false');
+          });
+          btn.classList.add('active');
+          btn.setAttribute('aria-selected', 'true');
+          filterFAQs();
+        });
+      });
+
+      searchInput.addEventListener('input', filterFAQs);
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Holistic and natural treatment for migraines, sciatica, neuralgias, and chronic nerve conditions at Homeo Elixir.">
+  <title>Neurological Conditions | Homeo Elixir</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@300;400;500;600&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="header" id="site-header" role="banner">
+    <div class="header__inner container">
+      <!-- Logo -->
+      <a href="../index.html" class="header__logo-link" aria-label="Homeo Elixir Home">
+        <img
+          src="../assets/header-logo.svg"
+          alt="Homeo Elixir"
+          class="header__logo-img"
+          width="180"
+          height="auto"
+        />
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="header__nav" aria-label="Primary navigation">
+        <ul class="header__nav-list" role="list">
+          <li><a href="../index.html" class="header__nav-link">Home</a></li>
+          <li><a href="../about.html" class="header__nav-link">About</a></li>
+          <li><a href="../doctor.html" class="header__nav-link">Meet Dr. Farhin</a></li>
+          <li><a href="../services.html" class="header__nav-link">Services</a></li>
+          <li class="header__dropdown">
+            <a href="../conditions.html" class="header__nav-link header__nav-link--active" aria-current="page">Conditions <span class="dropdown-arrow">&#9662;</span></a>
+            <div class="dropdown-menu">
+              <div class="dropdown-menu__grid">
+                <a href="womens-health.html" class="dropdown-menu__link">Women's Health</a>
+                <a href="thyroid-disorders.html" class="dropdown-menu__link">Thyroid Disorders</a>
+                <a href="diabetes-metabolic-health.html" class="dropdown-menu__link">Diabetes & Metabolic Health</a>
+                <a href="hair-concerns.html" class="dropdown-menu__link">Hair Concerns</a>
+                <a href="skin-conditions.html" class="dropdown-menu__link">Skin Conditions</a>
+                <a href="digestive-disorders.html" class="dropdown-menu__link">Digestive Disorders</a>
+                <a href="respiratory-conditions.html" class="dropdown-menu__link">Respiratory Conditions</a>
+                <a href="bone-joint-health.html" class="dropdown-menu__link">Bone & Joint Health</a>
+                <a href="neurological-conditions.html" class="dropdown-menu__link">Neurological Conditions</a>
+                <a href="mental-emotional-wellbeing.html" class="dropdown-menu__link">Mental & Emotional Wellbeing</a>
+                <a href="childrens-health.html" class="dropdown-menu__link">Children's Health</a>
+                <a href="general-wellness.html" class="dropdown-menu__link">General Wellness</a>
+              </div>
+            </div>
+          </li>
+          <li><a href="../gallery.html" class="header__nav-link">Gallery</a></li>
+          <li><a href="../faq.html" class="header__nav-link">FAQ</a></li>
+          <li><a href="../contact.html" class="header__nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- CTA -->
+      <div class="header__actions">
+        <a href="../contact.html" class="btn btn--primary btn--sm" id="header-cta">
+          Book Consultation
+        </a>
+
+        <!-- Hamburger (Mobile) -->
+        <button
+          class="header__hamburger"
+          id="hamburger-btn"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+          aria-controls="mobile-nav"
+        >
+          <span class="header__hamburger-bar"></span>
+          <span class="header__hamburger-bar"></span>
+          <span class="header__hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <nav
+      class="header__mobile-nav"
+      id="mobile-nav"
+      aria-label="Mobile navigation"
+      aria-hidden="true"
+    >
+      <ul class="header__mobile-nav-list" role="list">
+        <li><a href="../index.html" class="header__mobile-nav-link">Home</a></li>
+        <li><a href="../about.html" class="header__mobile-nav-link">About</a></li>
+        <li><a href="../doctor.html" class="header__mobile-nav-link">Meet Dr. Farhin</a></li>
+        <li><a href="../services.html" class="header__mobile-nav-link">Services</a></li>
+        <li class="header__dropdown">
+          <a href="../conditions.html" class="header__mobile-nav-link header__nav-link--active" aria-current="page">Conditions</a>
+          <div class="dropdown-menu">
+            <div class="dropdown-menu__grid">
+              <a href="womens-health.html" class="dropdown-menu__link">Women's Health</a>
+              <a href="thyroid-disorders.html" class="dropdown-menu__link">Thyroid Disorders</a>
+              <a href="diabetes-metabolic-health.html" class="dropdown-menu__link">Diabetes & Metabolic Health</a>
+              <a href="hair-concerns.html" class="dropdown-menu__link">Hair Concerns</a>
+              <a href="skin-conditions.html" class="dropdown-menu__link">Skin Conditions</a>
+              <a href="digestive-disorders.html" class="dropdown-menu__link">Digestive Disorders</a>
+              <a href="respiratory-conditions.html" class="dropdown-menu__link">Respiratory Conditions</a>
+              <a href="bone-joint-health.html" class="dropdown-menu__link">Bone & Joint Health</a>
+              <a href="neurological-conditions.html" class="dropdown-menu__link">Neurological Conditions</a>
+              <a href="mental-emotional-wellbeing.html" class="dropdown-menu__link">Mental & Emotional Wellbeing</a>
+              <a href="childrens-health.html" class="dropdown-menu__link">Children's Health</a>
+              <a href="general-wellness.html" class="dropdown-menu__link">General Wellness</a>
+            </div>
+          </div>
+        </li>
+        <li><a href="../gallery.html" class="header__mobile-nav-link">Gallery</a></li>
+        <li><a href="../faq.html" class="header__mobile-nav-link">FAQ</a></li>
+        <li><a href="../contact.html" class="header__mobile-nav-link">Contact</a></li>
+        <li>
+          <a href="../contact.html" class="btn btn--primary btn--sm header__mobile-cta">
+            Book Consultation
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===================== SCROLLING INFORMATION BAR ===================== -->
+  <div class="info-bar" id="info-bar" role="marquee" aria-label="Important Information">
+    <div class="info-bar__track">
+      <div class="info-bar__list">
+        <span>
+          <svg class="info-bar__icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <line x1="2" y1="12" x2="22" y2="12"/>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+          </svg>
+          Online Consultation Available
+        </span>
+        <span class="info-bar__dot" aria-hidden="true">•</span>
+        <span>
+          <svg class="info-bar__icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="1" y="3" width="15" height="13"/>
+            <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/>
+            <circle cx="5.5" cy="18.5" r="2.5"/>
+            <circle cx="18.5" cy="18.5" r="2.5"/>
+          </svg>
+          Shipping Medicines Worldwide
+        </span>
+        <span class="info-bar__dot" aria-hidden="true">•</span>
+        <span>
+          <svg class="info-bar__icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <polyline points="12 6 12 12 16 14"/>
+          </svg>
+          Consultation Hours: Mon–Fri | 12:00 PM – 6:00 PM
+        </span>
+      </div>
+      <!-- Duplicate 1 -->
+      <div class="info-bar__list" aria-hidden="true">
+        <span>
+          <svg class="info-bar__icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <line x1="2" y1="12" x2="22" y2="12"/>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+          </svg>
+          Online Consultation Available
+        </span>
+        <span class="info-bar__dot" aria-hidden="true">•</span>
+        <span>
+          <svg class="info-bar__icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="1" y="3" width="15" height="13"/>
+            <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/>
+            <circle cx="5.5" cy="18.5" r="2.5"/>
+            <circle cx="18.5" cy="18.5" r="2.5"/>
+          </svg>
+          Shipping Medicines Worldwide
+        </span>
+        <span class="info-bar__dot" aria-hidden="true">•</span>
+        <span>
+          <svg class="info-bar__icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <polyline points="12 6 12 12 16 14"/>
+          </svg>
+          Consultation Hours: Mon–Fri | 12:00 PM – 6:00 PM
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <main id="main-content">
+
+    <!-- ===================== HERO SECTION ===================== -->
+    <section class="services-hero" style="padding-top: clamp(150px, 12vh, 180px); background-color: var(--color-secondary-bg);" aria-label="Neurological Conditions Intro">
+      <div class="container" style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; max-width: 1200px; margin-inline: auto;">
+        <div>
+          <h1 style="font-family: var(--font-serif); font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 300; line-height: 1.15; color: var(--color-charcoal); margin: 0 0 20px;">Neurological Conditions</h1>
+          <p style="font-family: var(--font-sans); font-size: clamp(1rem, 1.3vw, 1.15rem); font-weight: 300; line-height: 1.7; color: var(--color-charcoal-60); margin: 0 0 30px;">
+            Soothe nervous system sensitivity, relieve headaches, and restore balanced cognitive functions. Our homeopathic protocols target neural stressors to reduce migraine triggers and promote restorative, natural sleep patterns.
+          </p>
+          <a href="../contact.html" class="btn btn--primary btn--lg">Book Consultation</a>
+        </div>
+        <div style="border-radius: 20px; overflow: hidden; box-shadow: var(--shadow-md);">
+          <img src="https://images.unsplash.com/photo-1507413245164-6160d8298b31?auto=format&fit=crop&w=800&q=80" alt="Calm Lifestyle" style="width: 100%; height: 100%; object-fit: cover;" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ABOUT CATEGORY ===================== -->
+    <section style="padding-block: 80px; background-color: var(--color-ivory);">
+      <div class="container" style="max-width: 800px; margin-inline: auto; text-align: center;">
+        <h2 style="font-family: var(--font-serif); font-size: 2rem; font-weight: 300; color: var(--color-charcoal); margin-bottom: 24px;">Calming Neural Pathways</h2>
+        <p style="font-family: var(--font-sans); font-size: 1.05rem; line-height: 1.8; color: var(--color-charcoal-60); margin: 0;">
+          The nervous system coordinates cellular pathways, focus, and physical sensations. Our integrated approach treats chronic migraines, tension headaches, sciatica, and peripheral neuralgias at the constitutional root.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===================== CONDITIONS COVERED ===================== -->
+    <section style="padding-block: 60px 80px; background-color: var(--color-white);">
+      <div class="container" style="max-width: 1200px; margin-inline: auto;">
+        <h2 style="font-family: var(--font-serif); font-size: 2rem; font-weight: 300; color: var(--color-charcoal); text-align: center; margin-bottom: 40px;">Conditions We Address</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 24px;">
+          
+          <div class="faq-card" style="padding: 30px;">
+            <h3 style="font-family: var(--font-serif); font-size: 1.25rem; font-weight: 400; color: var(--color-charcoal); margin-bottom: 12px;">Migraine</h3>
+            <p style="font-family: var(--font-sans); font-size: 0.9rem; line-height: 1.6; color: var(--color-charcoal-60); margin: 0;">
+              Reducing vascular spasms, sensitivity to light/sound, throbbing pain, and migraine frequency naturally.
+            </p>
+          </div>
+
+          <div class="faq-card" style="padding: 30px;">
+            <h3 style="font-family: var(--font-serif); font-size: 1.25rem; font-weight: 400; color: var(--color-charcoal); margin-bottom: 12px;">Headaches</h3>
+            <p style="font-family: var(--font-sans); font-size: 0.9rem; line-height: 1.6; color: var(--color-charcoal-60); margin: 0;">
+              Relieving tension headaches, sinus headaches, and chronic daily pressure symptoms safely.
+            </p>
+          </div>
+
+          <div class="faq-card" style="padding: 30px;">
+            <h3 style="font-family: var(--font-serif); font-size: 1.25rem; font-weight: 400; color: var(--color-charcoal); margin-bottom: 12px;">Vertigo</h3>
+            <p style="font-family: var(--font-sans); font-size: 0.9rem; line-height: 1.6; color: var(--color-charcoal-60); margin: 0;">
+              Addressing inner ear imbalances and dizziness symptoms to restore physical stability and comfort.
+            </p>
+          </div>
+
+          <div class="faq-card" style="padding: 30px;">
+            <h3 style="font-family: var(--font-serif); font-size: 1.25rem; font-weight: 400; color: var(--color-charcoal); margin-bottom: 12px;">Sleep Disorders</h3>
+            <p style="font-family: var(--font-sans); font-size: 0.9rem; line-height: 1.6; color: var(--color-charcoal-60); margin: 0;">
+              Soothing mental hyperactivity to resolve insomnia and naturally restore deep, restorative sleep cycles.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== TREATMENT PHILOSOPHY ===================== -->
+    <section style="padding-block: 80px; background-color: var(--color-secondary-bg);">
+      <div class="container" style="max-width: 900px; margin-inline: auto; text-align: center;">
+        <h2 style="font-family: var(--font-serif); font-size: 2rem; font-weight: 300; color: var(--color-charcoal); margin-bottom: 24px;">Our Homeopathic Treatment Philosophy</h2>
+        <p style="font-family: var(--font-sans); font-size: 1.05rem; line-height: 1.8; color: var(--color-charcoal-60); margin: 0 0 30px;">
+          Nerve-related pain can be debilitating. Homeopathy addresses neurological health by calming hyper-excitable nerves, improving myelin sheath health, and reducing vascular spasms. Constitutional remedies are chosen based on exact sensation types and local triggers.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===================== WHY CHOOSE US ===================== -->
+    <section style="padding-block: 80px; background-color: var(--color-white);">
+      <div class="container" style="max-width: 1200px; margin-inline: auto;">
+        <h2 style="font-family: var(--font-serif); font-size: 2rem; font-weight: 300; color: var(--color-charcoal); text-align: center; margin-bottom: 50px;">Why Trust Homeo Elixir</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px;">
+          
+          <div class="faq-card" style="padding: 30px; text-align: center;">
+            <h3 style="font-family: var(--font-serif); font-size: 1.2rem; font-weight: 400; color: var(--color-charcoal); margin-bottom: 12px;">Desensitizes Pain Triggers</h3>
+            <p style="font-family: var(--font-sans); font-size: 0.9rem; line-height: 1.6; color: var(--color-charcoal-60); margin: 0;">
+              Remedies aim to lower nerve sensitivities and prevent recurring headache or migraine patterns.
+            </p>
+          </div>
+
+          <div class="faq-card" style="padding: 30px; text-align: center;">
+            <h3 style="font-family: var(--font-serif); font-size: 1.2rem; font-weight: 400; color: var(--color-charcoal); margin-bottom: 12px;">Nerve Rejuvenation</h3>
+            <p style="font-family: var(--font-sans); font-size: 0.9rem; line-height: 1.6; color: var(--color-charcoal-60); margin: 0;">
+              Clinical nutrition supports nerve recovery and myelination with healthy fats and vitamins.
+            </p>
+          </div>
+
+          <div class="faq-card" style="padding: 30px; text-align: center;">
+            <h3 style="font-family: var(--font-serif); font-size: 1.2rem; font-weight: 400; color: var(--color-charcoal); margin-bottom: 12px;">Zero Sedative Side Effects</h3>
+            <p style="font-family: var(--font-sans); font-size: 0.9rem; line-height: 1.6; color: var(--color-charcoal-60); margin: 0;">
+              Our natural remedies do not cause drowsiness, lethargy, or mental fog, keeping you active.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+    <!-- ===================== GLOBAL CONSULTATION CTA ===================== -->
+    <section class="global-cta" aria-labelledby="global-cta-heading">
+      <div class="global-cta__inner container">
+        <div class="global-cta__content">
+          <span class="global-cta__label">READY TO BEGIN?</span>
+          <h2 id="global-cta-heading" class="global-cta__heading">Begin Your Healing Journey Today</h2>
+          <p class="global-cta__desc">
+            Experience personalized online consultation designed around your unique health and wellness needs.
+          </p>
+          <div class="global-cta__actions">
+            <a href="../contact.html" class="btn btn--primary btn--lg">Book Consultation</a>
+            <a href="../contact.html" class="btn btn--outline btn--lg">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__inner container">
+      <div class="footer__grid">
+
+        <!-- Column 1: Brand info -->
+        <div class="footer__brand">
+          <img src="../assets/header-logo.svg" alt="Homeo Elixir logo" class="footer__logo" width="180" height="auto" />
+          <p class="footer__tagline">
+            Treating the root cause. Restoring lasting wellness through classical homeopathy, clinical nutrition, and holistic care.
+          </p>
+        </div>
+
+        <!-- Column 2: Quick Navigation -->
+        <div class="footer__nav">
+          <h4 class="footer__heading">Navigation</h4>
+          <ul class="footer__list">
+            <li><a href="../index.html" class="footer__link">Home</a></li>
+            <li><a href="../about.html" class="footer__link">About</a></li>
+            <li><a href="../doctor.html" class="footer__link">Meet Dr. Farhin</a></li>
+            <li><a href="../services.html" class="footer__link">Services</a></li>
+            <li><a href="../conditions.html" class="footer__link">Conditions</a></li>
+            <li><a href="../gallery.html" class="footer__link">Gallery</a></li>
+            <li><a href="../faq.html" class="footer__link">FAQ</a></li>
+            <li><a href="../contact.html" class="footer__link">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Clinic Hours & Contact -->
+        <div class="footer__contact">
+          <h4 class="footer__heading">Consultation Hours</h4>
+          <p class="footer__text">Mon–Fri: 12:00 PM – 6:00 PM</p>
+          <div class="footer__details">
+            <p><strong>Email:</strong> <a href="mailto:drfarhinbangali@gmail.com">drfarhinbangali@gmail.com</a></p>
+            <p><strong>WhatsApp:</strong> <a href="https://wa.me/918141277377" target="_blank" rel="noopener">+91 81412 77377</a></p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer__bottom">
+        <p class="footer__copy">&copy; 2026 Homeo Elixir. All rights reserved.</p>
+        <p class="footer__design">Designed with care for holistic healing.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="../main.js"></script>
+
+</body>
+</html>

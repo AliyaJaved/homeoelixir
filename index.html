@@ -1,0 +1,1237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Homeo Elixir — Holistic wellness and homeopathy care designed to heal the root cause through natural medicine, nutrition and personalized wellness." />
+  <meta name="keywords" content="homeopathy, holistic wellness, natural healing, Dr. Farhin, online consultation" />
+  <meta property="og:title" content="Homeo Elixir — Healing Begins From Within" />
+  <meta property="og:description" content="Experience holistic healthcare designed to heal the root cause through homeopathy, nutrition and wellness." />
+  <meta property="og:type" content="website" />
+  <title>Homeo Elixir</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@300;400;500;600&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="home-page">
+
+  <!-- ===================== PRELOADER ===================== -->
+  <div id="preloader" class="preloader" aria-hidden="true" role="presentation">
+    <video
+      id="intro-video"
+      class="preloader__video"
+      autoplay
+      muted
+      playsinline
+      preload="auto"
+      aria-hidden="true"
+    >
+      <source src="assets/intro-video.mp4" type="video/mp4" />
+    </video>
+
+    <!-- Fallback when video doesn't exist -->
+    <div class="preloader__fallback" id="preloader-fallback">
+      <img
+        src="assets/header-logo.svg"
+        alt="Homeo Elixir"
+        class="preloader__fallback-logo"
+      />
+    </div>
+
+    <!-- Fade overlay for cinematic transition -->
+    <div class="preloader__vignette"></div>
+  </div>
+
+  <!-- ===================== HEADER ===================== -->
+  <header id="site-header" class="header" role="banner">
+    <div class="header__inner container">
+
+      <!-- Logo -->
+      <a href="#hero" class="header__logo" aria-label="Homeo Elixir — Home">
+        <img
+          id="header-logo-img"
+          src="assets/header-logo.svg"
+          alt="Homeo Elixir logo"
+          class="header__logo-img"
+          width="180"
+          height="auto"
+        />
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="header__nav" aria-label="Primary navigation">
+        <ul class="header__nav-list" role="list">
+          <li><a href="#hero" class="header__nav-link" aria-current="page">Home</a></li>
+          <li><a href="about.html" class="header__nav-link">About</a></li>
+          <li><a href="doctor.html" class="header__nav-link">Meet Dr. Farhin</a></li>
+          <li><a href="services.html" class="header__nav-link">Services</a></li>
+          <li class="header__dropdown">
+            <a href="conditions.html" class="header__nav-link">Conditions <span class="dropdown-arrow">&#9662;</span></a>
+            <div class="dropdown-menu">
+              <div class="dropdown-menu__grid">
+                <a href="conditions/womens-health.html" class="dropdown-menu__link">Women's Health</a>
+                <a href="conditions/thyroid-disorders.html" class="dropdown-menu__link">Thyroid Disorders</a>
+                <a href="conditions/diabetes-metabolic-health.html" class="dropdown-menu__link">Diabetes & Metabolic Health</a>
+                <a href="conditions/hair-concerns.html" class="dropdown-menu__link">Hair Concerns</a>
+                <a href="conditions/skin-conditions.html" class="dropdown-menu__link">Skin Conditions</a>
+                <a href="conditions/digestive-disorders.html" class="dropdown-menu__link">Digestive Disorders</a>
+                <a href="conditions/respiratory-conditions.html" class="dropdown-menu__link">Respiratory Conditions</a>
+                <a href="conditions/bone-joint-health.html" class="dropdown-menu__link">Bone & Joint Health</a>
+                <a href="conditions/neurological-conditions.html" class="dropdown-menu__link">Neurological Conditions</a>
+                <a href="conditions/mental-emotional-wellbeing.html" class="dropdown-menu__link">Mental & Emotional Wellbeing</a>
+                <a href="conditions/childrens-health.html" class="dropdown-menu__link">Children's Health</a>
+                <a href="conditions/general-wellness.html" class="dropdown-menu__link">General Wellness</a>
+              </div>
+            </div>
+          </li>
+          <li><a href="gallery.html" class="header__nav-link">Gallery</a></li>
+          <li><a href="faq.html" class="header__nav-link">FAQ</a></li>
+          <li><a href="contact.html" class="header__nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- CTA -->
+      <div class="header__actions">
+        <a href="contact.html" class="btn btn--primary btn--sm" id="header-cta">
+          Book Consultation
+        </a>
+
+        <!-- Hamburger (Mobile) -->
+        <button
+          class="header__hamburger"
+          id="hamburger-btn"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+          aria-controls="mobile-nav"
+        >
+          <span class="header__hamburger-bar"></span>
+          <span class="header__hamburger-bar"></span>
+          <span class="header__hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <nav
+      class="header__mobile-nav"
+      id="mobile-nav"
+      aria-label="Mobile navigation"
+      aria-hidden="true"
+    >
+      <ul class="header__mobile-nav-list" role="list">
+        <li><a href="#hero" class="header__mobile-nav-link">Home</a></li>
+        <li><a href="about.html" class="header__mobile-nav-link">About</a></li>
+        <li><a href="doctor.html" class="header__mobile-nav-link">Meet Dr. Farhin</a></li>
+        <li><a href="services.html" class="header__mobile-nav-link">Services</a></li>
+        <li class="header__dropdown">
+          <a href="conditions.html" class="header__mobile-nav-link">Conditions</a>
+          <div class="dropdown-menu">
+            <div class="dropdown-menu__grid">
+              <a href="conditions/womens-health.html" class="dropdown-menu__link">Women's Health</a>
+              <a href="conditions/thyroid-disorders.html" class="dropdown-menu__link">Thyroid Disorders</a>
+              <a href="conditions/diabetes-metabolic-health.html" class="dropdown-menu__link">Diabetes & Metabolic Health</a>
+              <a href="conditions/hair-concerns.html" class="dropdown-menu__link">Hair Concerns</a>
+              <a href="conditions/skin-conditions.html" class="dropdown-menu__link">Skin Conditions</a>
+              <a href="conditions/digestive-disorders.html" class="dropdown-menu__link">Digestive Disorders</a>
+              <a href="conditions/respiratory-conditions.html" class="dropdown-menu__link">Respiratory Conditions</a>
+              <a href="conditions/bone-joint-health.html" class="dropdown-menu__link">Bone & Joint Health</a>
+              <a href="conditions/neurological-conditions.html" class="dropdown-menu__link">Neurological Conditions</a>
+              <a href="conditions/mental-emotional-wellbeing.html" class="dropdown-menu__link">Mental & Emotional Wellbeing</a>
+              <a href="conditions/childrens-health.html" class="dropdown-menu__link">Children's Health</a>
+              <a href="conditions/general-wellness.html" class="dropdown-menu__link">General Wellness</a>
+            </div>
+          </div>
+        </li>
+        <li><a href="gallery.html" class="header__mobile-nav-link">Gallery</a></li>
+        <li><a href="faq.html" class="header__mobile-nav-link">FAQ</a></li>
+        <li><a href="contact.html" class="header__mobile-nav-link">Contact</a></li>
+        <li>
+          <a href="contact.html" class="btn btn--primary btn--sm header__mobile-cta">
+            Book Consultation
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===================== SCROLLING INFORMATION BAR ===================== -->
+  <div class="info-bar" id="info-bar" role="marquee" aria-label="Important Information">
+    <div class="info-bar__track">
+      <div class="info-bar__list">
+        <span>
+          <svg class="info-bar__icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <line x1="2" y1="12" x2="22" y2="12"/>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+          </svg>
+          Online Consultation Available
+        </span>
+        <span class="info-bar__dot" aria-hidden="true">•</span>
+        <span>
+          <svg class="info-bar__icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="1" y="3" width="15" height="13"/>
+            <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/>
+            <circle cx="5.5" cy="18.5" r="2.5"/>
+            <circle cx="18.5" cy="18.5" r="2.5"/>
+          </svg>
+          Shipping Medicines Worldwide
+        </span>
+        <span class="info-bar__dot" aria-hidden="true">•</span>
+        <span>
+          <svg class="info-bar__icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <polyline points="12 6 12 12 16 14"/>
+          </svg>
+          Consultation Hours: Mon–Fri | 12:00 PM – 6:00 PM
+        </span>
+      </div>
+      <!-- Duplicate 1 -->
+      <div class="info-bar__list" aria-hidden="true">
+        <span>
+          <svg class="info-bar__icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <line x1="2" y1="12" x2="22" y2="12"/>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+          </svg>
+          Online Consultation Available
+        </span>
+        <span class="info-bar__dot" aria-hidden="true">•</span>
+        <span>
+          <svg class="info-bar__icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="1" y="3" width="15" height="13"/>
+            <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/>
+            <circle cx="5.5" cy="18.5" r="2.5"/>
+            <circle cx="18.5" cy="18.5" r="2.5"/>
+          </svg>
+          Shipping Medicines Worldwide
+        </span>
+        <span class="info-bar__dot" aria-hidden="true">•</span>
+        <span>
+          <svg class="info-bar__icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <polyline points="12 6 12 12 16 14"/>
+          </svg>
+          Consultation Hours: Mon–Fri | 12:00 PM – 6:00 PM
+        </span>
+      </div>
+      <!-- Duplicate 2 -->
+      <div class="info-bar__list" aria-hidden="true">
+        <span>
+          <svg class="info-bar__icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <line x1="2" y1="12" x2="22" y2="12"/>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+          </svg>
+          Online Consultation Available
+        </span>
+        <span class="info-bar__dot" aria-hidden="true">•</span>
+        <span>
+          <svg class="info-bar__icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="1" y="3" width="15" height="13"/>
+            <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/>
+            <circle cx="5.5" cy="18.5" r="2.5"/>
+            <circle cx="18.5" cy="18.5" r="2.5"/>
+          </svg>
+          Shipping Medicines Worldwide
+        </span>
+        <span class="info-bar__dot" aria-hidden="true">•</span>
+        <span>
+          <svg class="info-bar__icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <polyline points="12 6 12 12 16 14"/>
+          </svg>
+          Consultation Hours: Mon–Fri | 12:00 PM – 6:00 PM
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== HERO ===================== -->
+  <main id="main-content">
+    <section
+      id="hero"
+      class="hero"
+      aria-label="Hero — Healing Begins From Within"
+    >
+      <!-- Background image -->
+      <div class="hero__bg" aria-hidden="true"></div>
+
+      <!-- Dark overlay for readability -->
+      <div class="hero__overlay" aria-hidden="true"></div>
+
+      <!-- Grain texture overlay for editorial feel -->
+      <div class="hero__grain" aria-hidden="true"></div>
+
+      <!-- Hero content -->
+      <div class="hero__content container">
+
+        <!-- Heading -->
+        <h1 class="hero__heading">
+          Where Holistic Healing <br />
+          <em>Meets Modern Wellness.</em>
+        </h1>
+
+        <!-- Sub-heading -->
+        <p class="hero__sub">
+          Experience holistic healthcare designed to heal the root cause<br class="hero__br" />
+          through homeopathy, nutrition and wellness.
+        </p>
+
+        <!-- CTA buttons -->
+        <div class="hero__actions" role="group" aria-label="Call to action">
+          <a href="contact.html" class="btn btn--primary btn--lg" id="hero-book-btn">
+            Book Consultation
+          </a>
+          <a href="#services" class="btn btn--outline btn--lg" id="hero-explore-btn">
+            Explore Services
+          </a>
+        </div>
+
+
+
+      </div>
+
+      <!-- Scroll indicator -->
+      <div class="hero__scroll-indicator" aria-hidden="true">
+        <span class="hero__scroll-line"></span>
+        <span class="hero__scroll-label">Scroll</span>
+      </div>
+
+    </section>
+
+    <!-- ===================== ABOUT HOMEO ELIXIR ===================== -->
+    <section
+      id="about"
+      class="about"
+      aria-labelledby="about-heading"
+    >
+      <div class="about__inner container">
+
+        <!-- Left column: image placeholder with official logo -->
+        <div class="about__media" aria-hidden="true">
+          <div class="about__placeholder-card">
+            <div class="about__placeholder-logo-wrap">
+              <img
+                src="assets/header-logo.svg"
+                alt="Homeo Elixir — temporary placeholder"
+                class="about__placeholder-logo"
+                width="200"
+                height="auto"
+                draggable="false"
+              />
+              <span class="about__placeholder-caption">
+                Logo explanation image coming soon
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right column: editorial content -->
+        <div class="about__content">
+
+          <!-- Label -->
+          <p class="about__label">About Homeo Elixir</p>
+
+          <!-- Heading -->
+          <h2 id="about-heading" class="about__heading">
+            Treating the Root Cause.<br />
+            <em>Restoring Lasting Wellness.</em>
+          </h2>
+
+          <!-- Body paragraphs -->
+          <div class="about__body">
+            <p class="about__para">
+              At Homeo Elixir, we believe that true healing begins by understanding the person behind 
+              the symptoms. Our approach combines homeopathy, clinical nutrition, yoga therapy, and 
+              holistic wellness to provide personalized care that addresses the root cause of health 
+              concerns.
+            </p>
+            <p class="about__para">
+              With compassion, expertise, and a patient-first approach, Homeo Elixir is dedicated to 
+              empowering you to live a healthier, happier, and more balanced life.
+            </p>
+          </div>
+
+          <!-- Callout note -->
+          <blockquote class="about__callout" aria-label="Philosophy note">
+            <p class="about__callout-text">
+              "Our logo represents the philosophy behind Homeo Elixir. The story
+              behind it is showcased alongside."
+            </p>
+          </blockquote>
+
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== MISSION · VISION · PHILOSOPHY ===================== -->
+    <section id="foundation" class="foundation" aria-labelledby="foundation-heading">
+      <div class="foundation__inner container">
+
+        <!-- Header -->
+        <div class="foundation__header">
+          <p class="foundation__label">OUR FOUNDATION</p>
+          <h2 id="foundation-heading" class="foundation__heading">
+            Mission, Vision &amp; Philosophy
+          </h2>
+        </div>
+
+        <!-- Three cards -->
+        <ul class="foundation__cards" role="list">
+
+          <!-- Mission -->
+          <li class="foundation__card" style="--card-delay:0ms">
+            <div class="foundation__card-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <circle cx="12" cy="12" r="4"/>
+                <line x1="12" y1="2" x2="12" y2="6"/>
+                <line x1="12" y1="18" x2="12" y2="22"/>
+                <line x1="2" y1="12" x2="6" y2="12"/>
+                <line x1="18" y1="12" x2="22" y2="12"/>
+              </svg>
+            </div>
+            <h3 class="foundation__card-title">Mission</h3>
+            <p class="foundation__card-text">
+              Our mission is to help every patient heal naturally, live healthier, and thrive with confidence.  </p>
+          </li>
+
+          <!-- Vision -->
+          <li class="foundation__card" style="--card-delay:110ms">
+            <div class="foundation__card-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/>
+                <circle cx="12" cy="12" r="3"/>
+                <line x1="2" y1="20" x2="22" y2="20"/>
+              </svg>
+            </div>
+            <h3 class="foundation__card-title">Vision</h3>
+            <p class="foundation__card-text">
+              To create a healthier future where every individual experiences complete wellness through 
+personalized care.</p>
+          </li>
+
+          <!-- Philosophy -->
+          <li class="foundation__card" style="--card-delay:220ms">
+            <div class="foundation__card-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 3c-4.5 4.5-5 9.5-2 14 3.5 1.5 8 1.5 11.5 0 3-4.5 2.5-9.5-2-14z"/>
+                <path d="M12 3c4.5 4.5 5 9.5 2 14-3.5 1.5-8 1.5-11.5 0-3-4.5-2.5-9.5 2-14z"/>
+                <path d="M12 3v18"/>
+              </svg>
+            </div>
+            <h3 class="foundation__card-title">Philosophy</h3>
+            <p class="foundation__card-text">
+              We believe that healing is more than eliminating symptoms.</p>
+          </li>
+
+        </ul>
+        <div class="foundation__action">
+          <a href="about.html" class="btn btn--primary btn--lg">
+            Read More About Us
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== MEET DR. FARHIN (PREVIEW) ===================== -->
+    <section
+      id="meet-doctor"
+      class="doctor"
+      aria-labelledby="doctor-heading"
+    >
+      <div class="doctor__inner container">
+
+        <!-- Left column: portrait placeholder -->
+        <div class="doctor__portrait-col">
+          <div class="doctor__portrait-card">
+            <div class="doctor__portrait-img-wrap">
+              <img src="content/portraits/P-3.jpeg" alt="Dr. Farhin" class="doctor__portrait-img" />
+            </div>
+
+            <!-- Decorative credential tag -->
+            <div class="doctor__credential-tag" aria-hidden="true">
+              <span class="doctor__credential-line">Consulting Homeopathic physician</span>
+              <span class="doctor__credential-line">Holistic Wellness Expert</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right column: editorial content -->
+        <div class="doctor__content">
+
+          <!-- Label -->
+          <p class="doctor__label">Meet Dr. Farhin</p>
+
+          <!-- Heading -->
+          <h2 id="doctor-heading" class="doctor__heading">
+            Compassionate Care<br />
+            <em>Rooted in Nature</em>
+          </h2>
+
+          <!-- Description -->
+          <div class="doctor__body">
+            <p class="doctor__para">
+              At Homeo Elixir, Dr. Farhin believes that every individual deserves care
+              that goes beyond treating symptoms. Her approach combines classical
+              homeopathy, clinical nutrition, yoga therapy, and holistic wellness to
+              identify the root cause of health concerns and create personalized
+              healing journeys.
+            </p>
+          </div>
+
+          
+
+          <!-- Quote block -->
+          <blockquote class="doctor__quote" aria-label="Dr. Farhin's philosophy">
+            <span class="doctor__quote-mark" aria-hidden="true">"</span>
+            <p class="doctor__quote-text">
+              Healing is not just about treating illness — it is about restoring
+              harmony between the mind, body, and soul.
+            </p>
+            <cite class="doctor__quote-cite">— Dr. Farhin Bangali</cite>
+          </blockquote>
+
+          <!-- CTA -->
+          <a href="doctor.html" class="btn btn--primary btn--lg doctor__cta">
+            Learn More About Dr. Farhin Bangali
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== WHY CHOOSE HOMEO ELIXIR ===================== -->
+    <section id="why-us" class="why-us" aria-labelledby="why-us-heading">
+      <div class="why-us__inner container">
+
+        <!-- Header -->
+        <div class="why-us__header">
+          <p class="why-us__label">WHY CHOOSE US</p>
+          <h2 id="why-us-heading" class="why-us__heading">
+            Why Patients Trust Homeo Elixir
+          </h2>
+          <p class="why-us__sub">
+ We started Homeo Elixir with the belief that healthcare should be personal, compassionate, and 
+focused on the whole person. Our mission is to help people heal naturally, prevent future illness, and 
+lead healthier, more balanced lives through an integrated approach to wellness.         </p>
+        </div>
+
+        <!-- 6 Feature Cards -->
+        <div class="why-us__grid">
+
+          <!-- Card 1 -->
+          <article class="why-us__card" style="--card-delay:0ms">
+            <div class="why-us__card-icon-wrap" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                <path d="M12 8v4M12 16h.01"/>
+              </svg>
+            </div>
+            <h3 class="why-us__card-title">Personalized Care</h3>
+            <p class="why-us__card-desc">
+              Every care plan is tailored to your unique health needs.
+            </p>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="why-us__card" style="--card-delay:80ms">
+            <div class="why-us__card-icon-wrap" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8"/>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                <line x1="11" y1="8" x2="11" y2="14"/>
+                <line x1="8" y1="11" x2="14" y2="11"/>
+              </svg>
+            </div>
+            <h3 class="why-us__card-title">Root Cause Healing</h3>
+            <p class="why-us__card-desc">
+              We focus on identifying the underlying cause rather than masking symptoms.
+            </p>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="why-us__card" style="--card-delay:160ms">
+            <div class="why-us__card-icon-wrap" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10"/>
+                <path d="M12 6c0 3.5-2.5 6-5 7"/>
+                <path d="M12 6c0 3.5 2.5 6 5 7"/>
+                <line x1="12" y1="6" x2="12" y2="18"/>
+              </svg>
+            </div>
+            <h3 class="why-us__card-title">Integrated Wellness</h3>
+            <p class="why-us__card-desc">
+              Homeopathy, nutrition, yoga therapy, and holistic care together.
+            </p>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="why-us__card" style="--card-delay:240ms">
+            <div class="why-us__card-icon-wrap" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+              </svg>
+            </div>
+            <h3 class="why-us__card-title">Compassionate Consultations</h3>
+            <p class="why-us__card-desc">
+              Every consultation is built on trust, active listening, and empathy.
+            </p>
+          </article>
+
+          <!-- Card 5 -->
+          <article class="why-us__card" style="--card-delay:320ms">
+            <div class="why-us__card-icon-wrap" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <line x1="2" y1="12" x2="22" y2="12"/>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+              </svg>
+            </div>
+            <h3 class="why-us__card-title">Preventive Healthcare</h3>
+            <p class="why-us__card-desc">
+              Helping you stay healthy and resilient before illness develops.
+            </p>
+          </article>
+
+          <!-- Card 6 -->
+          <article class="why-us__card" style="--card-delay:400ms">
+            <div class="why-us__card-icon-wrap" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+              </svg>
+            </div>
+            <h3 class="why-us__card-title">Long-Term Wellness</h3>
+            <p class="why-us__card-desc">
+              Sustainable healing with balanced lifestyle and natural guidance.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== OUR TREATMENT PROCESS ===================== -->
+    <section id="process" class="process" aria-labelledby="process-heading">
+      <div class="process__inner container">
+
+        <!-- Header -->
+        <div class="process__header">
+          <p class="process__label">OUR PROCESS</p>
+          <h2 id="process-heading" class="process__heading">
+            Your Healing Journey
+          </h2>
+          <p class="process__sub">
+            Simple, personalized, and designed around you.
+          </p>
+        </div>
+
+        <!-- 7 Connected Timeline Steps -->
+        <div class="process__timeline">
+          <!-- Connecting Line Element -->
+          <div class="process__line" aria-hidden="true">
+            <div class="process__line-progress"></div>
+          </div>
+
+          <ol class="process__steps" role="list">
+
+            <!-- Step 1 -->
+            <li class="process__step" style="--step-delay:0ms">
+              <div class="process__node-wrap">
+                <div class="process__node" aria-hidden="true">
+                  <span class="process__number">01</span>
+                </div>
+              </div>
+              <div class="process__card">
+                <span class="process__step-tag">Step 01</span>
+                <h3 class="process__step-title">Book an Appointment</h3>
+                <p class="process__step-desc">
+                  Schedule your consultation and begin your journey to lasting wellness.
+                </p>
+              </div>
+            </li>
+
+            <!-- Step 2 -->
+            <li class="process__step" style="--step-delay:80ms">
+              <div class="process__node-wrap">
+                <div class="process__node" aria-hidden="true">
+                  <span class="process__number">02</span>
+                </div>
+              </div>
+              <div class="process__card">
+                <span class="process__step-tag">Step 02</span>
+                <h3 class="process__step-title">Initial Consultation </h3>
+                <p class="process__step-desc">
+                  Understand your health history, symptoms & goals</p>
+              </div>
+            </li>
+
+            <!-- Step 3 -->
+            <li class="process__step" style="--step-delay:160ms">
+              <div class="process__node-wrap">
+                <div class="process__node" aria-hidden="true">
+                  <span class="process__number">03</span>
+                </div>
+              </div>
+              <div class="process__card">
+                <span class="process__step-tag">Step 03</span>
+                <h3 class="process__step-title">Comprehensive Health Assessment </h3>
+                <p class="process__step-desc">Homeopathy • Nutrition • Lifestyle • Mental Wellbeing
+                </p>
+              </div>
+            </li>
+
+            <!-- Step 4 -->
+            <li class="process__step" style="--step-delay:240ms">
+              <div class="process__node-wrap">
+                <div class="process__node" aria-hidden="true">
+                  <span class="process__number">04</span>
+                </div>
+              </div>
+              <div class="process__card">
+                <span class="process__step-tag">Step 04</span>
+                <h3 class="process__step-title">Personalized Treatment Plan </h3>
+                <p class="process__step-desc">Homeopathic medicines, diet, yoga, fitness & lifestyle guidance.
+                </p>
+              </div>
+            </li>
+
+            <!-- Step 5 -->
+            <li class="process__step" style="--step-delay:320ms">
+              <div class="process__node-wrap">
+                <div class="process__node" aria-hidden="true">
+                  <span class="process__number">05</span>
+                </div>
+              </div>
+              <div class="process__card">
+                <span class="process__step-tag">Step 05</span>
+                <h3 class="process__step-title">Begin Your Wellness Journey </h3>
+                <p class="process__step-desc">Start your customized treatment and recommendations.
+                </p>
+              </div>
+            </li>
+
+            <!-- Step 6 -->
+            <li class="process__step" style="--step-delay:400ms">
+              <div class="process__node-wrap">
+                <div class="process__node" aria-hidden="true">
+                  <span class="process__number">06</span>
+                </div>
+              </div>
+              <div class="process__card">
+                <span class="process__step-tag">Step 06</span>
+                <h3 class="process__step-title">Regular Follow-Ups </h3>
+                <p class="process__step-desc">Track progress and refine your treatment plan.
+                </p>
+              </div>
+            </li>
+
+            <!-- Step 7 -->
+            <li class="process__step" style="--step-delay:480ms">
+              <div class="process__node-wrap">
+                <div class="process__node" aria-hidden="true">
+                  <span class="process__number">07</span>
+                </div>
+              </div>
+              <div class="process__card">
+                <span class="process__step-tag">Step 07</span>
+                <h3 class="process__step-title">Achieve Long-Term Health & Wellness </h3>
+                <p class="process__step-desc">Improved health, prevention & sustainable lifestyle.
+                </p>
+              </div>
+            </li>
+
+          </ol>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================== SERVICES PREVIEW ===================== -->
+    <section id="services" class="services-preview" aria-labelledby="services-heading">
+      <div class="services-preview__inner container">
+        <div class="services-preview__header">
+          <p class="services-preview__label">OUR SERVICES</p>
+          <h2 id="services-heading" class="services-preview__heading">
+            Holistic Care &amp; Specialized Therapies
+          </h2>
+          <p class="services-preview__sub">
+            Gentle, personalized remedies integrated with lifestyle, clinical nutrition, and preventive wellness.
+          </p>
+        </div>
+
+        <div class="services-preview__grid">
+          <article class="services-preview__card" style="--card-delay:0ms">
+            <div class="services-preview__icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M8 12h8M12 8v8"/>
+              </svg>
+            </div>
+            <h3 class="services-preview__card-title">Homeopathy</h3>
+            <p class="services-preview__card-desc">
+              Personalized homeopathic treatment focused on addressing the root cause of illness and 
+promoting natural, long-term healing. </p>
+          </article>
+
+          <article class="services-preview__card" style="--card-delay:90ms">
+            <div class="services-preview__icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 7H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/>
+                <circle cx="12" cy="12" r="2"/>
+              </svg>
+            </div>
+            <h3 class="services-preview__card-title">Clinical Nutrition</h3>
+            <p class="services-preview__card-desc">
+              Evidence-based nutrition counselling and customized diet plans to support weight 
+management, hormonal balance, chronic disease management, and overall wellness.</p>
+          </article>
+
+          <article class="services-preview__card" style="--card-delay:180ms">
+            <div class="services-preview__icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="5" r="2"/>
+                <path d="M5 22v-5l2-4 5 2 5-2 2 4v5"/>
+              </svg>
+            </div>
+            <h3 class="services-preview__card-title">Yoga Therapy</h3>
+            <p class="services-preview__card-desc">
+              Therapeutic yoga sessions designed to improve physical health, flexibility, stress 
+management, and overall wellbeing. </p>
+          </article>
+
+          <article class="services-preview__card" style="--card-delay:270ms">
+            <div class="services-preview__icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10"/>
+                <path d="M12 6c0 3.5-2.5 6-5 7"/>
+                <path d="M12 6c0 3.5 2.5 6 5 7"/>
+                <line x1="12" y1="6" x2="12" y2="18"/>
+              </svg>
+            </div>
+            <h3 class="services-preview__card-title">Mental Health Counselling </h3>
+            <p class="services-preview__card-desc">
+              Compassionate counselling services that support emotional wellbeing, stress management, 
+anxiety, and a balanced, healthier lifestyle.  </p>
+          </article>
+        </div>
+
+        <div class="services-preview__action">
+          <a href="services.html" class="btn btn--outline btn--lg">
+            View All Services
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONDITIONS WE TREAT PREVIEW ===================== -->
+    <section id="conditions" class="conditions-preview" aria-labelledby="conditions-heading">
+      <div class="conditions-preview__inner container">
+        <div class="conditions-preview__header">
+          <p class="conditions-preview__label">CONDITIONS WE TREAT</p>
+          <h2 id="conditions-heading" class="conditions-preview__heading">
+            Restoring Health Across Vital Areas
+          </h2>
+          <p class="conditions-preview__sub">
+            We provide holistic treatment for a wide range of acute and chronic health conditions, 
+including:  </p>
+        </div>
+
+        <div class="conditions-preview__grid">
+          <article class="conditions-preview__card" style="--card-delay:0ms">
+            <div class="conditions-preview__icon" aria-hidden="true">
+              <!-- Skin/Sparkle Icon -->
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 3v1M12 20v1M21 12h-1M4 12H3M18.364 5.636l-.707.707M6.343 17.657l-.707.707m0-12.728l.707.707m11.314 11.314l.707.707M12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8z"/>
+              </svg>
+            </div>
+            <h3 class="conditions-preview__title">Women's Hormonal Health</h3>
+            <p class="conditions-preview__desc">
+              Holistic care for PCOS, PCOD, hormonal imbalance, menstrual concerns, infertility support, menopause, and overall women's wellness.</p>
+          </article>
+
+          <article class="conditions-preview__card" style="--card-delay:80ms">
+            <div class="conditions-preview__icon" aria-hidden="true">
+              <!-- Hair/Drop Icon -->
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22a7 7 0 0 0 7-7c0-4.3-7-13-7-13S5 10.7 5 15a7 7 0 0 0 7 7z"/>
+              </svg>
+            </div>
+            <h3 class="conditions-preview__title">Thyroid Disorders</h3>
+            <p class="conditions-preview__desc">
+              Natural management for hypothyroidism, hyperthyroidism, autoimmune thyroid disorders, and balanced metabolic health. </p>
+          </article>
+
+          <article class="conditions-preview__card" style="--card-delay:160ms">
+            <div class="conditions-preview__icon" aria-hidden="true">
+              <!-- Hormones/Moon Icon -->
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/>
+              </svg>
+            </div>
+            <h3 class="conditions-preview__title">Diabetes & Metabolic Health</h3>
+            <p class="conditions-preview__desc">
+              Comprehensive support for Type 2 diabetes, insulin resistance, obesity, high cholesterol, and metabolic wellness.</p>
+          </article>
+
+          <article class="conditions-preview__card" style="--card-delay:240ms">
+            <div class="conditions-preview__icon" aria-hidden="true">
+              <!-- Gut/Shield Icon -->
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <h3 class="conditions-preview__title">Hair & Scalp Care</h3>
+            <p class="conditions-preview__desc">
+              Targeted solutions for hair fall, alopecia, dandruff, premature greying, weak hair, and healthy hair growth.</p>
+          </article>
+
+          <article class="conditions-preview__card" style="--card-delay:320ms">
+            <div class="conditions-preview__icon" aria-hidden="true">
+              <!-- Sleep/Cloud Icon -->
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17.5 19A3.5 3.5 0 0 0 21 15.5c0-2.79-2.54-4.5-5-4.5-.42 0-.83.04-1.24.11a7 7 0 0 0-12.76 3.89A4.5 4.5 0 0 0 6.5 24h11a3.5 3.5 0 0 0 0-5z"/>
+              </svg>
+            </div>
+            <h3 class="conditions-preview__title">Skin & Dermatological Health</h3>
+            <p class="conditions-preview__desc">
+              Natural treatment for acne, pigmentation, eczema, psoriasis, fungal infections, allergies, and healthy glowing skin. </p>
+          </article>
+
+          <article class="conditions-preview__card" style="--card-delay:400ms">
+            <div class="conditions-preview__icon" aria-hidden="true">
+              <!-- Respiratory/Wind Icon -->
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2"/>
+              </svg>
+            </div>
+            <h3 class="conditions-preview__title">Digestive & Gut Health</h3>
+            <p class="conditions-preview__desc">
+              Personalized care for acidity, gastritis, IBS, constipation, bloating, indigestion, and digestive balance.</p>
+          </article>
+        </div>
+
+        <div class="conditions-preview__action">
+          <a href="conditions.html" class="btn btn--outline btn--lg">
+            View All Conditions
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== TESTIMONIALS ===================== -->
+    <section id="testimonials" class="testimonials" aria-labelledby="testimonials-heading">
+      <div class="testimonials__inner container">
+        <div class="testimonials__header">
+          <p class="testimonials__label">PATIENT TESTIMONIALS</p>
+          <h2 id="testimonials-heading" class="testimonials__heading">
+            Stories of Healing &amp; Transformation
+          </h2>
+          <p class="testimonials__sub">
+            Real experiences from patients who achieved lasting vitality and balance.
+          </p>
+        </div>
+
+        <div class="testimonials__grid">
+          <blockquote class="testimonials__card" style="--card-delay:0ms">
+            <div class="testimonials__quote" aria-hidden="true">&ldquo;</div>
+            <div class="testimonials__stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="testimonials__text">
+              "I had been experiencing rapid hair fall with no new hair growth for a long time, and the quality of my hair had significantly deteriorated. After starting Dr. Farhin's treatment with the prescribed oil, drops, and shampoo, I noticed an incredible transformation within just over a month. Many new hairs started growing, my hair fall reduced to almost zero, and the overall quality of my hair improved remarkably. The treatment has been fantastic. Thank you so much!"  </p>
+            <cite class="testimonials__author">
+              <span class="testimonials__name">Riya Desai</span>
+              <span class="testimonials__meta">Hair Fall & Hair Regrowth</span>
+            </cite>
+          </blockquote>
+
+          <blockquote class="testimonials__card" style="--card-delay:80ms">
+            <div class="testimonials__quote" aria-hidden="true">&ldquo;</div>
+            <div class="testimonials__stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="testimonials__text">
+              "Since starting homeopathic treatment with Dr. Farhin, I've noticed a significant improvement in my skin. My acne has reduced considerably, my skin feels much healthier, and my overall skin texture has improved. I feel more confident and comfortable in my skin now. I'm truly grateful for Dr. Farhin's guidance, dedication, and compassionate care throughout my healing journey." </p>
+            <cite class="testimonials__author">
+              <span class="testimonials__name">Zainab Khan</span>
+              <span class="testimonials__meta">Acne & Skin Health</span>
+            </cite>
+          </blockquote>
+
+          <blockquote class="testimonials__card" style="--card-delay:160ms">
+            <div class="testimonials__quote" aria-hidden="true">&ldquo;</div>
+            <div class="testimonials__stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="testimonials__text">
+              "I had been taking medicines for high blood pressure and believed I would need lifelong allopathic medication. After beginning homeopathic treatment with Dr. Farhin, my blood pressure gradually returned to normal, and I was able to stop my allopathic medicines under proper guidance. Today, I feel healthy and balanced. I'm incredibly thankful for the care, support, and natural healing I received." </p>
+            <cite class="testimonials__author">
+              <span class="testimonials__name">Mukesh Shah</span>
+              <span class="testimonials__meta">Blood Pressure Management</span>
+            </cite>
+          </blockquote>
+
+          <blockquote class="testimonials__card" style="--card-delay:240ms">
+            <div class="testimonials__quote" aria-hidden="true">&ldquo;</div>
+            <div class="testimonials__stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="testimonials__text">
+              "I was struggling with secondary infertility and had been taking allopathic medicines for almost nine months without success. Dr. Farhin carefully listened to my concerns and focused on balancing my hormones through homeopathic treatment. Within just two months, I conceived naturally. I am deeply grateful for her patience, compassionate guidance, and the personalized care she provided throughout my journey." </p>
+            <cite class="testimonials__author">
+              <span class="testimonials__name">Mariya Patel</span>
+              <span class="testimonials__meta">Secondary Infertility & Hormonal Balance</span>
+            </cite>
+          </blockquote>
+        </div>
+
+
+      </div>
+    </section>
+
+    <!-- ===================== GALLERY PREVIEW ===================== -->
+    <section id="gallery" class="gallery-preview" aria-labelledby="gallery-heading">
+      <div class="gallery-preview__inner container">
+        <div class="gallery-preview__header">
+          <p class="gallery-preview__label">OUR SPACE &amp; ESSENCE</p>
+          <h2 id="gallery-heading" class="gallery-preview__heading">
+            Experience Homeo Elixir
+          </h2>
+          <p class="gallery-preview__sub">
+            Discover the calming spaces, holistic environment, and thoughtfully designed interiors that reflect our philosophy of natural healing and patient-centered wellness.
+          </p>
+        </div>
+
+        <!-- Interactive Overlapping Gallery Preview Carousel -->
+        <div class="gallery-preview__wrapper">
+          <div class="gallery-carousel" id="gallery-carousel">
+            
+            <button class="gallery-carousel__btn gallery-carousel__btn--prev" id="gallery-prev-btn" aria-label="Previous gallery image">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+            </button>
+
+            <div class="gallery-carousel__viewport">
+              <div class="gallery-carousel__track" id="gallery-track">
+
+                <!-- Slide 1 -->
+                <div class="gallery-carousel__card is-active">
+                  <div class="gallery-carousel__card-inner" style="background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80');">
+                    <span class="gallery-carousel__tag">SANCTUARY</span>
+                    <h3 class="gallery-carousel__title">Luxury Consultation Room</h3>
+                  </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="gallery-carousel__card">
+                  <div class="gallery-carousel__card-inner" style="background-image: url('https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&w=800&q=80');">
+                    <span class="gallery-carousel__tag">APOTHECARY</span>
+                    <h3 class="gallery-carousel__title">Premium Homeopathy Setup</h3>
+                  </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="gallery-carousel__card">
+                  <div class="gallery-carousel__card-inner" style="background-image: url('https://images.unsplash.com/photo-1611080626919-7cf5a9dbab5b?auto=format&fit=crop&w=800&q=80');">
+                    <span class="gallery-carousel__tag">REMEDIES</span>
+                    <h3 class="gallery-carousel__title">Herbal Remedies</h3>
+                  </div>
+                </div>
+
+                <!-- Slide 4 -->
+                <div class="gallery-carousel__card">
+                  <div class="gallery-carousel__card-inner" style="background-image: url('https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80');">
+                    <span class="gallery-carousel__tag">NATURE</span>
+                    <h3 class="gallery-carousel__title">Natural Ingredients</h3>
+                  </div>
+                </div>
+
+                
+
+              </div>
+            </div>
+
+            <button class="gallery-carousel__btn gallery-carousel__btn--next" id="gallery-next-btn" aria-label="Next gallery image">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+
+          </div>
+        </div>
+
+        <div class="gallery-preview__action">
+          <a href="gallery.html" class="btn btn--outline btn--lg">
+            View Full Gallery
+            </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FREQUENTLY ASKED QUESTIONS ===================== -->
+    <section id="faq" class="home-faq" aria-labelledby="home-faq-heading">
+      <div class="home-faq__inner container">
+        <div class="home-faq__grid">
+          
+          <!-- Left Column -->
+          <div class="home-faq__left">
+            <span class="home-faq__label">FAQ</span>
+            <h2 id="home-faq-heading" class="home-faq__heading">Frequently Asked Questions</h2>
+            <p class="home-faq__subheading">
+              Quick answers to help you understand homeopathy and our personalized approach to wellness.
+            </p>
+            <div class="home-faq__floral-decor" aria-hidden="true"></div>
+          </div>
+
+          <!-- Right Column -->
+          <div class="home-faq__right">
+            <div class="home-faq__accordion">
+              
+              <!-- Accordion Card 1 -->
+              <details class="home-faq__item" name="home-faq-accordion" open>
+                <summary class="home-faq__summary">
+                  <span>Can Homeopathy be taken with Allopathic or Ayurvedic medicines?</span>
+                  <span class="home-faq__icon" aria-hidden="true">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <line class="vertical-line" x1="12" y1="5" x2="12" y2="19"></line>
+                    </svg>
+                  </span>
+                </summary>
+                <div class="home-faq__answer">
+                  <p>
+                    Yes. Homeopathic medicines can generally be taken along with Allopathic or Ayurvedic medicines. You do not need to stop your ongoing medicines unless your doctor advises you to.
+                  </p>
+                </div>
+              </details>
+
+              <!-- Accordion Card 2 -->
+              <details class="home-faq__item" name="home-faq-accordion">
+                <summary class="home-faq__summary">
+                  <span>What conditions can Homeopathy help manage?</span>
+                  <span class="home-faq__icon" aria-hidden="true">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <line class="vertical-line" x1="12" y1="5" x2="12" y2="19"></line>
+                    </svg>
+                  </span>
+                </summary>
+                <div class="home-faq__answer">
+                  <p>
+                    Homeopathy is commonly used to support individuals with allergies, digestive concerns, hormonal imbalances, skin conditions, hair problems, migraines, stress-related disorders, respiratory issues, joint discomfort, and many other acute and chronic health concerns.
+                  </p>
+                </div>
+              </details>
+
+              <!-- Accordion Card 3 -->
+              <details class="home-faq__item" name="home-faq-accordion">
+                <summary class="home-faq__summary">
+                  <span>Does Homeopathy have any side effects?</span>
+                  <span class="home-faq__icon" aria-hidden="true">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <line class="vertical-line" x1="12" y1="5" x2="12" y2="19"></line>
+                    </svg>
+                  </span>
+                </summary>
+                <div class="home-faq__answer">
+                  <p>
+                    Homeopathic products are often highly diluted, so side effects are generally uncommon. However, some products may contain active ingredients, so they should still be taken under proper guidance.
+                  </p>
+                </div>
+              </details>
+
+              <!-- Accordion Card 4 -->
+              <details class="home-faq__item" name="home-faq-accordion">
+                <summary class="home-faq__summary">
+                  <span>How long does Homeopathic treatment take?</span>
+                  <span class="home-faq__icon" aria-hidden="true">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <line class="vertical-line" x1="12" y1="5" x2="12" y2="19"></line>
+                    </svg>
+                  </span>
+                </summary>
+                <div class="home-faq__answer">
+                  <p>
+                    It depends on the condition and the individual. Acute problems may improve sooner, while long-standing conditions may require longer treatment. Regular follow-ups help assess progress.
+                  </p>
+                </div>
+              </details>
+
+            </div>
+
+            <div class="home-faq__action">
+              <a href="faq.html" class="home-faq__more-link">
+                View All FAQs <span class="arrow">&rarr;</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== GLOBAL CONSULTATION CTA ===================== -->
+    <section class="global-cta" aria-labelledby="global-cta-heading">
+      <div class="global-cta__inner container">
+        <div class="global-cta__content">
+          <span class="global-cta__label">READY TO BEGIN?</span>
+          <h2 id="global-cta-heading" class="global-cta__heading">Begin Your Healing Journey Today</h2>
+          <p class="global-cta__desc">
+            Experience personalized online consultation designed around your unique health and wellness needs.
+          </p>
+          <div class="global-cta__actions">
+            <a href="contact.html" class="btn btn--primary btn--lg">Book Consultation</a>
+            <a href="contact.html" class="btn btn--outline btn--lg">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="footer" role="contentinfo">
+      <div class="footer__inner container">
+        <div class="footer__grid">
+
+          <!-- Column 1: Brand info -->
+          <div class="footer__brand">
+            <img src="assets/header-logo.svg" alt="Homeo Elixir logo" class="footer__logo" width="180" height="auto" />
+            <p class="footer__tagline">
+              Treating the root cause. Restoring lasting wellness through classical homeopathy, clinical nutrition, and holistic care.
+            </p>
+          </div>
+
+          <!-- Column 2: Quick Navigation -->
+          <div class="footer__nav">
+            <h4 class="footer__heading">Navigation</h4>
+            <ul class="footer__list">
+              <li><a href="index.html" class="footer__link">Home</a></li>
+              <li><a href="about.html" class="footer__link">About</a></li>
+              <li><a href="doctor.html" class="footer__link">Meet Dr. Farhin</a></li>
+              <li><a href="services.html" class="footer__link">Services</a></li>
+              <li><a href="conditions.html" class="footer__link">Conditions</a></li>
+              <li><a href="gallery.html" class="footer__link">Gallery</a></li>
+              <li><a href="faq.html" class="footer__link">FAQ</a></li>
+              <li><a href="contact.html" class="footer__link">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 3: Clinic Hours & Contact -->
+          <div class="footer__contact">
+            <h4 class="footer__heading">Consultation Hours</h4>
+            <p class="footer__text">Mon–Fri: 12:00 PM – 6:00 PM</p>
+            <div class="footer__badge">Online &amp; Worldwide Care</div>
+          </div>
+
+        </div>
+
+        <div class="footer__bottom">
+          <p class="footer__copyright">
+            &copy; 2026 Homeo Elixir. All Rights Reserved.<br>
+            Designed with care for holistic wellness.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>

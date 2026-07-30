@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Learn about Homeo Elixir — our story, mission, holistic vision, core values, and approach to healing the root cause." />
+  <meta name="keywords" content="about homeo elixir, homeopathy clinic, holistic healing, natural wellness" />
+  <title>About Us — Homeo Elixir</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@300;400;500;600&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="about-page">
+
+  <!-- ===================== HEADER ===================== -->
+  <header id="site-header" class="header" role="banner">
+    <div class="header__inner container">
+
+      <!-- Logo -->
+      <a href="index.html" class="header__logo" aria-label="Homeo Elixir — Home">
+        <img
+          src="assets/header-logo.svg"
+          alt="Homeo Elixir logo"
+          class="header__logo-img"
+          width="180"
+          height="auto"
+        />
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="header__nav" aria-label="Primary navigation">
+        <ul class="header__nav-list" role="list">
+          <li><a href="index.html" class="header__nav-link">Home</a></li>
+          <li><a href="about.html" class="header__nav-link header__nav-link--active" aria-current="page">About</a></li>
+          <li><a href="doctor.html" class="header__nav-link">Meet Dr. Farhin</a></li>
+          <li><a href="services.html" class="header__nav-link">Services</a></li>
+          <li class="header__dropdown">
+            <a href="conditions.html" class="header__nav-link">Conditions <span class="dropdown-arrow">&#9662;</span></a>
+            <div class="dropdown-menu">
+              <div class="dropdown-menu__grid">
+                <a href="conditions/womens-health.html" class="dropdown-menu__link">Women's Health</a>
+                <a href="conditions/thyroid-disorders.html" class="dropdown-menu__link">Thyroid Disorders</a>
+                <a href="conditions/diabetes-metabolic-health.html" class="dropdown-menu__link">Diabetes & Metabolic Health</a>
+                <a href="conditions/hair-concerns.html" class="dropdown-menu__link">Hair Concerns</a>
+                <a href="conditions/skin-conditions.html" class="dropdown-menu__link">Skin Conditions</a>
+                <a href="conditions/digestive-disorders.html" class="dropdown-menu__link">Digestive Disorders</a>
+                <a href="conditions/respiratory-conditions.html" class="dropdown-menu__link">Respiratory Conditions</a>
+                <a href="conditions/bone-joint-health.html" class="dropdown-menu__link">Bone & Joint Health</a>
+                <a href="conditions/neurological-conditions.html" class="dropdown-menu__link">Neurological Conditions</a>
+                <a href="conditions/mental-emotional-wellbeing.html" class="dropdown-menu__link">Mental & Emotional Wellbeing</a>
+                <a href="conditions/childrens-health.html" class="dropdown-menu__link">Children's Health</a>
+                <a href="conditions/general-wellness.html" class="dropdown-menu__link">General Wellness</a>
+              </div>
+            </div>
+          </li>
+          <li><a href="gallery.html" class="header__nav-link">Gallery</a></li>
+          <li><a href="faq.html" class="header__nav-link">FAQ</a></li>
+          <li><a href="contact.html" class="header__nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- CTA -->
+      <div class="header__actions">
+        <a href="contact.html" class="btn btn--primary btn--sm" id="header-cta">
+          Book Consultation
+        </a>
+
+        <!-- Hamburger (Mobile) -->
+        <button
+          class="header__hamburger"
+          id="hamburger-btn"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+          aria-controls="mobile-nav"
+        >
+          <span class="header__hamburger-bar"></span>
+          <span class="header__hamburger-bar"></span>
+          <span class="header__hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <nav
+      class="header__mobile-nav"
+      id="mobile-nav"
+      aria-label="Mobile navigation"
+      aria-hidden="true"
+    >
+      <ul class="header__mobile-nav-list" role="list">
+        <li><a href="index.html" class="header__mobile-nav-link">Home</a></li>
+        <li><a href="about.html" class="header__mobile-nav-link header__nav-link--active" aria-current="page">About</a></li>
+        <li><a href="doctor.html" class="header__mobile-nav-link">Meet Dr. Farhin</a></li>
+        <li><a href="services.html" class="header__mobile-nav-link">Services</a></li>
+        <li class="header__dropdown">
+          <a href="conditions.html" class="header__mobile-nav-link">Conditions</a>
+          <div class="dropdown-menu">
+            <div class="dropdown-menu__grid">
+              <a href="conditions/womens-health.html" class="dropdown-menu__link">Women's Health</a>
+              <a href="conditions/thyroid-disorders.html" class="dropdown-menu__link">Thyroid Disorders</a>
+              <a href="conditions/diabetes-metabolic-health.html" class="dropdown-menu__link">Diabetes & Metabolic Health</a>
+              <a href="conditions/hair-concerns.html" class="dropdown-menu__link">Hair Concerns</a>
+              <a href="conditions/skin-conditions.html" class="dropdown-menu__link">Skin Conditions</a>
+              <a href="conditions/digestive-disorders.html" class="dropdown-menu__link">Digestive Disorders</a>
+              <a href="conditions/respiratory-conditions.html" class="dropdown-menu__link">Respiratory Conditions</a>
+              <a href="conditions/bone-joint-health.html" class="dropdown-menu__link">Bone & Joint Health</a>
+              <a href="conditions/neurological-conditions.html" class="dropdown-menu__link">Neurological Conditions</a>
+              <a href="conditions/mental-emotional-wellbeing.html" class="dropdown-menu__link">Mental & Emotional Wellbeing</a>
+              <a href="conditions/childrens-health.html" class="dropdown-menu__link">Children's Health</a>
+              <a href="conditions/general-wellness.html" class="dropdown-menu__link">General Wellness</a>
+            </div>
+          </div>
+        </li>
+        <li><a href="gallery.html" class="header__mobile-nav-link">Gallery</a></li>
+        <li><a href="faq.html" class="header__mobile-nav-link">FAQ</a></li>
+        <li><a href="contact.html" class="header__mobile-nav-link">Contact</a></li>
+        <li>
+          <a href="contact.html" class="btn btn--primary btn--sm header__mobile-cta">
+            Book Consultation
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===================== SCROLLING INFORMATION BAR ===================== -->
+  <div class="info-bar" role="marquee" aria-label="Important Information">
+    <div class="info-bar__track">
+      <div class="info-bar__list">
+        <span>
+          <svg class="info-bar__icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <line x1="2" y1="12" x2="22" y2="12"/>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+          </svg>
+          Online Consultation Available
+        </span>
+        <span class="info-bar__dot" aria-hidden="true">•</span>
+        <span>
+          <svg class="info-bar__icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="1" y="3" width="15" height="13"/>
+            <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/>
+            <circle cx="5.5" cy="18.5" r="2.5"/>
+            <circle cx="18.5" cy="18.5" r="2.5"/>
+          </svg>
+          Shipping Medicines Worldwide
+        </span>
+        <span class="info-bar__dot" aria-hidden="true">•</span>
+        <span>
+          <svg class="info-bar__icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <polyline points="12 6 12 12 16 14"/>
+          </svg>
+          Consultation Hours: Mon–Fri | 12:00 PM – 6:00 PM
+        </span>
+      </div>
+      <!-- Duplicate 1 -->
+      <div class="info-bar__list" aria-hidden="true">
+        <span>
+          <svg class="info-bar__icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <line x1="2" y1="12" x2="22" y2="12"/>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+          </svg>
+          Online Consultation Available
+        </span>
+        <span class="info-bar__dot" aria-hidden="true">•</span>
+        <span>
+          <svg class="info-bar__icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="1" y="3" width="15" height="13"/>
+            <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/>
+            <circle cx="5.5" cy="18.5" r="2.5"/>
+            <circle cx="18.5" cy="18.5" r="2.5"/>
+          </svg>
+          Shipping Medicines Worldwide
+        </span>
+        <span class="info-bar__dot" aria-hidden="true">•</span>
+        <span>
+          <svg class="info-bar__icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <polyline points="12 6 12 12 16 14"/>
+          </svg>
+          Consultation Hours: Mon–Fri | 12:00 PM – 6:00 PM
+        </span>
+      </div>
+      <!-- Duplicate 2 -->
+      <div class="info-bar__list" aria-hidden="true">
+        <span>
+          <svg class="info-bar__icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <line x1="2" y1="12" x2="22" y2="12"/>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+          </svg>
+          Online Consultation Available
+        </span>
+        <span class="info-bar__dot" aria-hidden="true">•</span>
+        <span>
+          <svg class="info-bar__icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="1" y="3" width="15" height="13"/>
+            <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/>
+            <circle cx="5.5" cy="18.5" r="2.5"/>
+            <circle cx="18.5" cy="18.5" r="2.5"/>
+          </svg>
+          Shipping Medicines Worldwide
+        </span>
+        <span class="info-bar__dot" aria-hidden="true">•</span>
+        <span>
+          <svg class="info-bar__icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <polyline points="12 6 12 12 16 14"/>
+          </svg>
+          Consultation Hours: Mon–Fri | 12:00 PM – 6:00 PM
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <main id="main-content">
+
+    <!-- ===================== SECTION 1: HERO BANNER ===================== -->
+    <section class="about-hero" aria-label="About Homeo Elixir Intro">
+      <div class="about-hero__bg" aria-hidden="true"></div>
+      <div class="about-hero__inner container">
+        <div class="about-hero__content">
+          <span class="about-hero__label">ABOUT HOMEO ELIXIR</span>
+          <h1 class="about-hero__heading">Healing Beyond Symptoms,<br>Rooted in Compassion.</h1>
+          <p class="about-hero__desc">
+           At Homeo Elixir, we believe that true healing begins by understanding the person behind the illness—not just the symptoms they experience. 
+          <div class="about-hero__actions">
+            <a href="contact.html" class="btn btn--primary btn--lg">Book Consultation</a>
+            <a href="doctor.html" class="btn btn--outline btn--lg">Meet Dr. Farhin</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SECTION 2: OUR STORY ===================== -->
+    <section class="about-story" aria-labelledby="story-heading">
+      <div class="about-story__inner container">
+        <div class="about-story__grid">
+          <div class="about-story__img-col">
+            <div class="about-story__img-wrapper">
+              <div class="about-story__placeholder" style="display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; color: var(--color-charcoal); font-style: italic; font-family: var(--font-serif); font-size: 1.25rem;">
+                Homeo Elixir Story Image
+              </div>
+            </div>
+          </div>
+          <div class="about-story__content">
+            <h2 id="story-heading" class="about-story__heading">Our Story</h2>
+            <div class="about-story__text">
+              <p style="color: #2E2E2E; margin-bottom: var(--space-4);">
+                Homeo Elixir was founded with a simple yet powerful vision: healthcare should be personal, compassionate, and focused on the whole individual rather than isolated symptoms. What began as a patient-centered consultation practice has grown into a modern holistic wellness clinic that combines classical homeopathy with evidence-based nutrition, yoga therapy, lifestyle medicine, and preventive healthcare. </p>
+              Today, Homeo Elixir proudly serves individuals seeking natural solutions for hormonal health, skin and hair concerns, chronic illnesses, digestive disorders, metabolic health, emotional wellbeing, and preventive care—helping patients not only recover from illness but achieve lifelong vitality.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SECTION 3: MISSION, VISION & PHILOSOPHY ===================== -->
+    <section class="about-foundation" aria-labelledby="foundation-heading">
+      <div class="about-foundation__inner container">
+        <div class="about-foundation__grid">
+          
+          <!-- Mission Card -->
+          <article class="about-foundation__card">
+            <h3 class="about-foundation__title">Our Mission</h3>
+            <p class="about-foundation__desc">
+             Our mission is to empower every individual to take control of their health through personalized, non-invasive, and scientifically guided homeopathic care.
+
+By combining natural medicine, clinical nutrition, lifestyle optimization, and compassionate patient support, we strive to activate the body's own healing mechanisms and create lasting improvements in overall wellbeing.
+
+Every patient deserves healthcare that is thoughtful, individualized, and focused on restoring complete physical, mental, and emotional balance—not simply managing symptoms. </p>
+          </article>
+
+          <!-- Vision Card -->
+          <article class="about-foundation__card">
+            <h3 class="about-foundation__title">Our Vision</h3>
+            <p class="about-foundation__desc">
+              We envision a future where holistic healthcare becomes the first choice for people seeking long-term wellness rather than temporary symptom relief.
+
+Our goal is to make personalized root-cause healing accessible across the world while setting new standards in patient care, preventive medicine, clinical excellence, and compassionate healthcare.
+
+Through innovation, education, and continuous research, Homeo Elixir aims to inspire healthier communities built on prevention, wellness, and sustainable healing.</p>
+          </article>
+
+          <!-- Philosophy Card -->
+          <article class="about-foundation__card">
+            <h3 class="about-foundation__title">Our Philosophy</h3>
+            <p class="about-foundation__desc">
+              At Homeo Elixir, we believe that healing is far more than eliminating symptoms.
+
+Every illness has an underlying story shaped by physical health, emotional wellbeing, nutrition, daily habits, stress, lifestyle, and environmental influences.
+Our philosophy is built upon four guiding principles:
+
+Treat the person, not just the disease.
+Identify and address the root cause.
+Encourage the body's innate healing ability.
+Build long-term health through prevention and lifestyle transformation.
+
+Because lasting wellness comes from restoring harmony—not suppressing symptoms.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ===================== SECTION 5: OUR HOLISTIC APPROACH ===================== -->
+    <section class="about-approach" aria-labelledby="approach-heading">
+      <div class="about-approach__inner container">
+        <div class="about-approach__header">
+          <h2 id="approach-heading" class="about-approach__heading">Our Holistic Approach</h2>
+        </div>
+        
+        <div class="about-approach__diagram">
+          <!-- Central Circle -->
+          <div class="about-approach__center">
+            <span class="about-approach__center-text">Whole-Person<br>Healing</span>
+          </div>
+
+          <!-- Circular Orbit Path (Desktop Only) -->
+          <div class="about-approach__orbit" aria-hidden="true"></div>
+
+          <!-- Connected Outer Elements -->
+          <div class="about-approach__node node--top">
+            <span class="about-approach__node-text">Homeopathy</span>
+          </div>
+          <div class="about-approach__node node--top-right">
+            <span class="about-approach__node-text">Clinical Nutrition</span>
+          </div>
+          <div class="about-approach__node node--bottom-right">
+            <span class="about-approach__node-text">Lifestyle Guidance</span>
+          </div>
+          <div class="about-approach__node node--bottom">
+            <span class="about-approach__node-text">Preventive Care</span>
+          </div>
+          <div class="about-approach__node node--bottom-left">
+            <span class="about-approach__node-text">Yoga Therapy</span>
+          </div>
+          <div class="about-approach__node node--top-left">
+            <span class="about-approach__node-text">Holistic Wellness</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================== SECTION 6: WHY HOMEO ELIXIR WAS FOUNDED ===================== -->
+    <section class="about-founded" aria-labelledby="founded-heading">
+      <div class="about-founded__inner container">
+        <div class="about-founded__grid">
+          <div class="about-founded__quote-col">
+            <blockquote class="about-founded__quote">
+              "Healthcare should heal the person, not just the symptoms."
+            </blockquote>
+          </div>
+          <div class="about-founded__content">
+            <h2 id="founded-heading" class="about-founded__heading">Why Homeo Elixir Was Founded</h2>
+            <p class="about-founded__text">
+              Homeo Elixir was established after recognizing a significant gap in modern healthcare.
+
+Many conventional treatments focus primarily on suppressing symptoms or providing temporary relief, often without identifying the deeper physiological, nutritional, metabolic, or emotional factors contributing to illness.
+</p>           <p class="about-founded__text">
+              
+Dr. Farhin envisioned a healthcare practice where every patient receives the time, attention, and personalized care needed to truly understand their health.
+
+By integrating classical homeopathy with clinical nutrition, lifestyle medicine, yoga therapy, and preventive care, Homeo Elixir offers a comprehensive healing experience that supports the body, mind, and overall wellbeing. </p>
+  </p>
+            <span class="about-founded__signature">Dr. Farhin Bangali</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== GLOBAL CONSULTATION CTA ===================== -->
+    <section class="global-cta" aria-labelledby="global-cta-heading">
+      <div class="global-cta__inner container">
+        <div class="global-cta__content">
+          <span class="global-cta__label">READY TO BEGIN?</span>
+          <h2 id="global-cta-heading" class="global-cta__heading">Begin Your Healing Journey Today</h2>
+          <p class="global-cta__desc">
+            Experience personalized online consultation designed around your unique health and wellness needs.
+          </p>
+          <div class="global-cta__actions">
+            <a href="contact.html" class="btn btn--primary btn--lg">Book Consultation</a>
+            <a href="contact.html" class="btn btn--outline btn--lg">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__inner container">
+      <div class="footer__grid">
+
+        <!-- Column 1: Brand info -->
+        <div class="footer__brand">
+          <img src="assets/header-logo.svg" alt="Homeo Elixir logo" class="footer__logo" width="180" height="auto" />
+          <p class="footer__tagline">
+            Treating the root cause. Restoring lasting wellness through classical homeopathy, clinical nutrition, and holistic care.
+          </p>
+        </div>
+
+        <!-- Column 2: Quick Navigation -->
+        <div class="footer__nav">
+          <h4 class="footer__heading">Navigation</h4>
+          <ul class="footer__list">
+            <li><a href="index.html" class="footer__link">Home</a></li>
+            <li><a href="about.html" class="footer__link">About</a></li>
+            <li><a href="doctor.html" class="footer__link">Meet Dr. Farhin</a></li>
+            <li><a href="services.html" class="footer__link">Services</a></li>
+            <li><a href="conditions.html" class="footer__link">Conditions</a></li>
+            <li><a href="gallery.html" class="footer__link">Gallery</a></li>
+            <li><a href="faq.html" class="footer__link">FAQ</a></li>
+            <li><a href="contact.html" class="footer__link">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Clinic Hours & Contact -->
+        <div class="footer__contact">
+          <h4 class="footer__heading">Consultation Hours</h4>
+          <p class="footer__text">Mon–Fri: 12:00 PM – 6:00 PM</p>
+          <div class="footer__badge">Online &amp; Worldwide Care</div>
+        </div>
+
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">
+          &copy; 2026 Homeo Elixir. All Rights Reserved.<br>
+          Designed with care for holistic wellness.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
