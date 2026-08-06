@@ -94,6 +94,12 @@
   -webkit-tap-highlight-color: transparent;
 }
 
+/* Explicit tap highlight reset for mobile touch control elements */
+a, button, summary, [role="button"], input, select, textarea {
+  -webkit-tap-highlight-color: transparent !important;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
+}
+
 html {
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
@@ -362,6 +368,9 @@ button {
 @media (max-width: 768px) {
   .preloader__video {
     object-fit: contain !important;
+    left: 50% !important;
+    top: 50% !important;
+    transform: translate(-50%, -50%) !important;
   }
 }
 
@@ -2399,6 +2408,8 @@ button {
   .process__card {
     grid-column: auto !important;
     justify-self: stretch !important;
+    flex: 1;
+    min-width: 0;
     max-width: 100%;
     align-items: flex-start !important;
     text-align: left !important;
@@ -6755,8 +6766,8 @@ button {
     transform: none !important;
     width: 100%;
     opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
+    visibility: inherit;
+    pointer-events: inherit;
     box-shadow: none;
     border: none;
     background: transparent;

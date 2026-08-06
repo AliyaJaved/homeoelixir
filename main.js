@@ -609,5 +609,16 @@ I look forward to your response.`;
   });
 })();
 
+/* ──────────────────────────────────────────
+   COLLAPSE ALL DETAILS ON PAGE LOAD
+   (Prevents browsers from restoring open state on refresh)
+────────────────────────────────────────── */
+(function initFaqCollapse() {
+  document.querySelectorAll('details').forEach(el => {
+    el.removeAttribute('open');
+  });
+})();
+
+
 
 
