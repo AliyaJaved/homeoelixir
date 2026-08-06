@@ -13,6 +13,40 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@300;400;500;600&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="style.css" />
+
+  <!-- Premium Dynamic Card Height Overrides -->
+  <style>
+    /* Reset heights and ratios to let columns masonry flow naturally */
+    .gallery-grid .gallery-card {
+      margin-bottom: 32px;
+      break-inside: avoid;
+      display: block;
+    }
+    .gallery-grid .gallery-card__inner {
+      aspect-ratio: auto !important;
+      height: auto !important;
+      background-color: var(--color-white) !important;
+    }
+    .gallery-grid .gallery-card[data-category="products"] .gallery-card__inner {
+      background-color: var(--color-card-linen) !important;
+    }
+    .gallery-grid .gallery-card__media {
+      height: auto !important;
+      position: relative;
+      padding: 24px !important; /* Premium equal padding around media */
+      background: transparent !important;
+    }
+    .gallery-grid .gallery-card__media img,
+    .gallery-grid .gallery-card__media video {
+      width: 100% !important;
+      height: auto !important;
+      display: block !important;
+      object-fit: contain !important;
+      border-radius: 8px; /* Inner rounding for clean aesthetics */
+      max-height: none !important;
+      background: transparent !important;
+    }
+  </style>
 </head>
 <body class="gallery-page">
 
@@ -266,10 +300,10 @@
         <!-- Single Grid container -->
         <div class="gallery-grid" id="gallery-grid">
 <!-- CARD 1: BEFORE & AFTER (BA-1) -->
-          <div class="gallery-card gallery-card--large-portrait" data-category="before-after">
+          <div class="gallery-card" data-category="before-after">
             <div class="gallery-card__inner" data-type="image" data-src="content/before-after/BA-1.jpeg">
               <div class="gallery-card__media">
-                <img src="content/before-after/BA-1.jpeg" alt="Before &amp; After Patient Transformation BA-1" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 12px; background-color: var(--color-white);" />
+                <img src="content/before-after/BA-1.jpeg" alt="Before &amp; After Patient Transformation BA-1" loading="lazy" />
               </div>
               <div class="gallery-card__overlay">
                 <h4 class="gallery-card__hover-title">Before &amp; After</h4>
@@ -279,10 +313,10 @@
           </div>
 
 <!-- CARD 2: CLIENT MESSAGES (Tall Portrait) -->
-          <div class="gallery-card gallery-card--tall-portrait" data-category="client-messages">
+          <div class="gallery-card" data-category="client-messages">
             <div class="gallery-card__inner client-msg-card" data-type="image" data-src="content/testimonials/T-1.jpeg">
               <div class="gallery-card__media">
-                <img src="content/testimonials/T-1.jpeg" alt="Client Message Testimonial" style="width: 100%; height: 100%; object-fit: cover;" />
+                <img src="content/testimonials/T-1.jpeg" alt="Client Message Testimonial" />
               </div>
               <div class="gallery-card__overlay">
                 <h4 class="gallery-card__hover-title">Client Messages</h4>
@@ -292,7 +326,7 @@
           </div>
 
 <!-- CARD 3: DISPATCHING VIDEO 1 (Medium Landscape) -->
-          <div class="gallery-card gallery-card--medium-landscape" data-category="dispatching">
+          <div class="gallery-card" data-category="dispatching">
             <div class="gallery-card__inner" data-type="video" data-src="content/dispatching-vids/dispatch-1.mp4">
               <div class="gallery-card__media">
                 <video preload="metadata" muted playsinline src="content/dispatching-vids/dispatch-1.mp4"></video>
@@ -310,10 +344,10 @@
           </div>
 
 <!-- PRODUCT CARD 1: P-1 -->
-          <div class="gallery-card gallery-card--square" data-category="products">
+          <div class="gallery-card" data-category="products">
             <div class="gallery-card__inner" data-type="video" data-src="content/products/P-1.mp4">
               <div class="gallery-card__media">
-                <video preload="metadata" muted playsinline src="content/products/P-1.mp4" style="width: 100%; height: 100%; object-fit: contain; padding: 16px; background-color: var(--color-card-linen);"></video>
+                <video preload="metadata" muted playsinline src="content/products/P-1.mp4"></video>
               </div>
               <div class="gallery-card__play-indicator" aria-label="Play product video">
                 <svg width="14" height="14" viewBox="0 0 24 24">
@@ -328,10 +362,10 @@
           </div>
 
 <!-- CARD 29: ACHIEVEMENT (A-1) -->
-          <div class="gallery-card gallery-card--large-portrait" data-category="achievements">
+          <div class="gallery-card" data-category="achievements">
             <div class="gallery-card__inner" data-type="image" data-src="content/achievements/A-1.png">
               <div class="gallery-card__media">
-                <img src="content/achievements/A-1.png" alt="Dr. Farhin Achievement Certificate A-1" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 16px; background-color: var(--color-white);" />
+                <img src="content/achievements/A-1.png" alt="Dr. Farhin Achievement Certificate A-1" loading="lazy" />
               </div>
               <div class="gallery-card__overlay">
                 <h4 class="gallery-card__hover-title">Achievements</h4>
@@ -341,10 +375,10 @@
           </div>
 
 <!-- MEDIA CARD 1: Clipping 1 -->
-          <div class="gallery-card gallery-card--square" data-category="media-publications">
+          <div class="gallery-card" data-category="media-publications">
             <div class="gallery-card__inner" data-type="image" data-src="content/media/1.jpeg">
               <div class="gallery-card__media">
-                <img src="content/media/1.jpeg" alt="Media Clipping 1" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 16px; background-color: var(--color-white);" />
+                <img src="content/media/1.jpeg" alt="Media Clipping 1" loading="lazy" />
               </div>
               <div class="gallery-card__overlay">
                 <h4 class="gallery-card__hover-title">Publications</h4>
@@ -354,10 +388,10 @@
           </div>
 
 <!-- CARD 100: PORTRAIT (P-1) -->
-          <div class="gallery-card gallery-card--large-portrait" data-category="portraits">
+          <div class="gallery-card" data-category="portraits">
             <div class="gallery-card__inner" data-type="image" data-src="content/portraits/P-1.jpeg">
               <div class="gallery-card__media">
-                <img src="content/portraits/P-1.jpeg" alt="Dr. Farhin Portrait P-1" loading="lazy" style="width: 100%; height: 100%; object-fit: cover;" />
+                <img src="content/portraits/P-1.jpeg" alt="Dr. Farhin Portrait P-1" loading="lazy" />
               </div>
               <div class="gallery-card__overlay">
                 <h4 class="gallery-card__hover-title">Homeo Elixir</h4>
@@ -367,10 +401,10 @@
           </div>
 
 <!-- CARD 2: BEFORE & AFTER (BA-2) -->
-          <div class="gallery-card gallery-card--large-portrait" data-category="before-after">
+          <div class="gallery-card" data-category="before-after">
             <div class="gallery-card__inner" data-type="image" data-src="content/before-after/BA-2.jpeg">
               <div class="gallery-card__media">
-                <img src="content/before-after/BA-2.jpeg" alt="Before &amp; After Patient Transformation BA-2" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 12px; background-color: var(--color-white);" />
+                <img src="content/before-after/BA-2.jpeg" alt="Before &amp; After Patient Transformation BA-2" loading="lazy" />
               </div>
               <div class="gallery-card__overlay">
                 <h4 class="gallery-card__hover-title">Before &amp; After</h4>
@@ -380,10 +414,10 @@
           </div>
 
 <!-- CARD 5: CLIENT MESSAGES (Medium Portrait) -->
-          <div class="gallery-card gallery-card--tall-portrait" data-category="client-messages">
+          <div class="gallery-card" data-category="client-messages">
             <div class="gallery-card__inner client-msg-card" data-type="image" data-src="content/testimonials/T-2.jpeg">
               <div class="gallery-card__media">
-                <img src="content/testimonials/T-2.jpeg" alt="Client Message Testimonial" style="width: 100%; height: 100%; object-fit: cover;" />
+                <img src="content/testimonials/T-2.jpeg" alt="Client Message Testimonial" />
               </div>
               <div class="gallery-card__overlay">
                 <h4 class="gallery-card__hover-title">Client Messages</h4>
@@ -393,7 +427,7 @@
           </div>
 
 <!-- CARD 8: DISPATCHING VIDEO 2 (Large Landscape) -->
-          <div class="gallery-card gallery-card--large-landscape" data-category="dispatching">
+          <div class="gallery-card" data-category="dispatching">
             <div class="gallery-card__inner" data-type="video" data-src="content/dispatching-vids/dispatch-2.mp4">
               <div class="gallery-card__media">
                 <video preload="metadata" muted playsinline src="content/dispatching-vids/dispatch-2.mp4"></video>
@@ -411,10 +445,10 @@
           </div>
 
 <!-- PRODUCT CARD 2: P-2 -->
-          <div class="gallery-card gallery-card--square" data-category="products">
+          <div class="gallery-card" data-category="products">
             <div class="gallery-card__inner" data-type="image" data-src="content/products/P-2.jpeg">
               <div class="gallery-card__media">
-                <img src="content/products/P-2.jpeg" alt="Homeo Elixir Product P-2" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 16px; background-color: var(--color-card-linen);" />
+                <img src="content/products/P-2.jpeg" alt="Homeo Elixir Product P-2" loading="lazy" />
               </div>
 
               <div class="gallery-card__overlay">
@@ -425,10 +459,10 @@
           </div>
 
 <!-- CARD 30: ACHIEVEMENT (A-2) -->
-          <div class="gallery-card gallery-card--large-portrait" data-category="achievements">
+          <div class="gallery-card" data-category="achievements">
             <div class="gallery-card__inner" data-type="image" data-src="content/achievements/A-2.png">
               <div class="gallery-card__media">
-                <img src="content/achievements/A-2.png" alt="Dr. Farhin Achievement Certificate A-2" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 16px; background-color: var(--color-white);" />
+                <img src="content/achievements/A-2.png" alt="Dr. Farhin Achievement Certificate A-2" loading="lazy" />
               </div>
               <div class="gallery-card__overlay">
                 <h4 class="gallery-card__hover-title">Achievements</h4>
@@ -438,10 +472,10 @@
           </div>
 
 <!-- MEDIA CARD 2: Clipping 2 -->
-          <div class="gallery-card gallery-card--square" data-category="media-publications">
+          <div class="gallery-card" data-category="media-publications">
             <div class="gallery-card__inner" data-type="image" data-src="content/media/2.jpeg">
               <div class="gallery-card__media">
-                <img data-defer-src="content/media/2.jpeg" src="" loading="lazy" alt="Media Clipping 2" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 16px; background-color: var(--color-white);" />
+                <img data-defer-src="content/media/2.jpeg" src="" loading="lazy" alt="Media Clipping 2" loading="lazy" />
               </div>
               <div class="gallery-card__overlay">
                 <h4 class="gallery-card__hover-title">Publications</h4>
@@ -451,10 +485,10 @@
           </div>
 
 <!-- CARD 101: PORTRAIT (P-2) -->
-          <div class="gallery-card gallery-card--large-portrait" data-category="portraits">
+          <div class="gallery-card" data-category="portraits">
             <div class="gallery-card__inner" data-type="image" data-src="content/portraits/P-2.jpeg">
               <div class="gallery-card__media">
-                <img data-defer-src="content/portraits/P-2.jpeg" src="" loading="lazy" alt="Dr. Farhin Portrait P-2" loading="lazy" style="width: 100%; height: 100%; object-fit: cover;" />
+                <img data-defer-src="content/portraits/P-2.jpeg" src="" loading="lazy" alt="Dr. Farhin Portrait P-2" loading="lazy" />
               </div>
               <div class="gallery-card__overlay">
                 <h4 class="gallery-card__hover-title">Homeo Elixir</h4>
@@ -464,10 +498,10 @@
           </div>
 
 <!-- CARD 3: BEFORE & AFTER (BA-3) -->
-          <div class="gallery-card gallery-card--large-portrait" data-category="before-after">
+          <div class="gallery-card" data-category="before-after">
             <div class="gallery-card__inner" data-type="image" data-src="content/before-after/BA-3.jpeg">
               <div class="gallery-card__media">
-                <img data-defer-src="content/before-after/BA-3.jpeg" src="" loading="lazy" alt="Before &amp; After Patient Transformation BA-3" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 12px; background-color: var(--color-white);" />
+                <img data-defer-src="content/before-after/BA-3.jpeg" src="" loading="lazy" alt="Before &amp; After Patient Transformation BA-3" loading="lazy" />
               </div>
               <div class="gallery-card__overlay">
                 <h4 class="gallery-card__hover-title">Before &amp; After</h4>
@@ -477,10 +511,10 @@
           </div>
 
 <!-- CARD 9: CLIENT MESSAGES (Tall Portrait) -->
-          <div class="gallery-card gallery-card--tall-portrait" data-category="client-messages">
+          <div class="gallery-card" data-category="client-messages">
             <div class="gallery-card__inner client-msg-card" data-type="image" data-src="content/testimonials/T-3.jpeg">
               <div class="gallery-card__media">
-                <img data-defer-src="content/testimonials/T-3.jpeg" src="" loading="lazy" alt="Client Message Testimonial" style="width: 100%; height: 100%; object-fit: cover;" />
+                <img data-defer-src="content/testimonials/T-3.jpeg" src="" loading="lazy" alt="Client Message Testimonial" />
               </div>
               <div class="gallery-card__overlay">
                 <h4 class="gallery-card__hover-title">Client Messages</h4>
@@ -490,7 +524,7 @@
           </div>
 
 <!-- CARD 11: DISPATCHING VIDEO 3 (Medium Landscape) -->
-          <div class="gallery-card gallery-card--medium-landscape" data-category="dispatching">
+          <div class="gallery-card" data-category="dispatching">
             <div class="gallery-card__inner" data-type="video" data-src="content/dispatching-vids/dispatch-3.mp4">
               <div class="gallery-card__media">
                 <video preload="metadata" muted playsinline data-defer-src="content/dispatching-vids/dispatch-3.mp4" src="" preload="none"></video>
@@ -508,10 +542,10 @@
           </div>
 
 <!-- PRODUCT CARD 3: P-3 -->
-          <div class="gallery-card gallery-card--square" data-category="products">
+          <div class="gallery-card" data-category="products">
             <div class="gallery-card__inner" data-type="video" data-src="content/products/P-3.mp4">
               <div class="gallery-card__media">
-                <video preload="metadata" muted playsinline data-defer-src="content/products/P-3.mp4" src="" preload="none" style="width: 100%; height: 100%; object-fit: contain; padding: 16px; background-color: var(--color-card-linen);"></video>
+                <video preload="metadata" muted playsinline data-defer-src="content/products/P-3.mp4" src="" preload="none"></video>
               </div>
               <div class="gallery-card__play-indicator" aria-label="Play product video">
                 <svg width="14" height="14" viewBox="0 0 24 24">
@@ -526,10 +560,10 @@
           </div>
 
 <!-- CARD 31: ACHIEVEMENT (A-3) -->
-          <div class="gallery-card gallery-card--large-portrait" data-category="achievements">
+          <div class="gallery-card" data-category="achievements">
             <div class="gallery-card__inner" data-type="image" data-src="content/achievements/A-3.png">
               <div class="gallery-card__media">
-                <img data-defer-src="content/achievements/A-3.png" src="" loading="lazy" alt="Dr. Farhin Achievement Certificate A-3" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 16px; background-color: var(--color-white);" />
+                <img data-defer-src="content/achievements/A-3.png" src="" loading="lazy" alt="Dr. Farhin Achievement Certificate A-3" loading="lazy" />
               </div>
               <div class="gallery-card__overlay">
                 <h4 class="gallery-card__hover-title">Achievements</h4>
@@ -539,10 +573,10 @@
           </div>
 
 <!-- MEDIA CARD 3: Clipping 3 -->
-          <div class="gallery-card gallery-card--square" data-category="media-publications">
+          <div class="gallery-card" data-category="media-publications">
             <div class="gallery-card__inner" data-type="image" data-src="content/media/3.jpeg">
               <div class="gallery-card__media">
-                <img data-defer-src="content/media/3.jpeg" src="" loading="lazy" alt="Media Clipping 3" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 16px; background-color: var(--color-white);" />
+                <img data-defer-src="content/media/3.jpeg" src="" loading="lazy" alt="Media Clipping 3" loading="lazy" />
               </div>
               <div class="gallery-card__overlay">
                 <h4 class="gallery-card__hover-title">Publications</h4>
@@ -552,10 +586,10 @@
           </div>
 
 <!-- CARD 102: PORTRAIT (P-4) -->
-          <div class="gallery-card gallery-card--large-portrait" data-category="portraits">
+          <div class="gallery-card" data-category="portraits">
             <div class="gallery-card__inner" data-type="image" data-src="content/portraits/P-4.jpeg">
               <div class="gallery-card__media">
-                <img data-defer-src="content/portraits/P-4.jpeg" src="" loading="lazy" alt="Dr. Farhin Portrait P-4" loading="lazy" style="width: 100%; height: 100%; object-fit: cover;" />
+                <img data-defer-src="content/portraits/P-4.jpeg" src="" loading="lazy" alt="Dr. Farhin Portrait P-4" loading="lazy" />
               </div>
               <div class="gallery-card__overlay">
                 <h4 class="gallery-card__hover-title">Homeo Elixir</h4>
@@ -565,10 +599,10 @@
           </div>
 
 <!-- CARD 4: BEFORE & AFTER (BA-4) -->
-          <div class="gallery-card gallery-card--large-portrait" data-category="before-after">
+          <div class="gallery-card" data-category="before-after">
             <div class="gallery-card__inner" data-type="image" data-src="content/before-after/BA-4.jpeg">
               <div class="gallery-card__media">
-                <img data-defer-src="content/before-after/BA-4.jpeg" src="" loading="lazy" alt="Before &amp; After Patient Transformation BA-4" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 12px; background-color: var(--color-white);" />
+                <img data-defer-src="content/before-after/BA-4.jpeg" src="" loading="lazy" alt="Before &amp; After Patient Transformation BA-4" loading="lazy" />
               </div>
               <div class="gallery-card__overlay">
                 <h4 class="gallery-card__hover-title">Before &amp; After</h4>
@@ -578,7 +612,7 @@
           </div>
 
 <!-- CARD 12: DISPATCHING VIDEO 4 (Large Landscape) -->
-          <div class="gallery-card gallery-card--large-landscape" data-category="dispatching">
+          <div class="gallery-card" data-category="dispatching">
             <div class="gallery-card__inner" data-type="video" data-src="content/dispatching-vids/dispatch-4.mp4">
               <div class="gallery-card__media">
                 <video preload="metadata" muted playsinline data-defer-src="content/dispatching-vids/dispatch-4.mp4" src="" preload="none"></video>
@@ -596,10 +630,10 @@
           </div>
 
 <!-- PRODUCT CARD 4: P-4 -->
-          <div class="gallery-card gallery-card--square" data-category="products">
+          <div class="gallery-card" data-category="products">
             <div class="gallery-card__inner" data-type="image" data-src="content/products/P-4.jpeg">
               <div class="gallery-card__media">
-                <img data-defer-src="content/products/P-4.jpeg" src="" loading="lazy" alt="Homeo Elixir Product P-4" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 16px; background-color: var(--color-card-linen);" />
+                <img data-defer-src="content/products/P-4.jpeg" src="" loading="lazy" alt="Homeo Elixir Product P-4" loading="lazy" />
               </div>
 
               <div class="gallery-card__overlay">
@@ -610,10 +644,10 @@
           </div>
 
 <!-- CARD 32: ACHIEVEMENT (A-4) -->
-          <div class="gallery-card gallery-card--large-portrait" data-category="achievements">
+          <div class="gallery-card" data-category="achievements">
             <div class="gallery-card__inner" data-type="image" data-src="content/achievements/A-4.png">
               <div class="gallery-card__media">
-                <img data-defer-src="content/achievements/A-4.png" src="" loading="lazy" alt="Dr. Farhin Achievement Certificate A-4" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 16px; background-color: var(--color-white);" />
+                <img data-defer-src="content/achievements/A-4.png" src="" loading="lazy" alt="Dr. Farhin Achievement Certificate A-4" loading="lazy" />
               </div>
               <div class="gallery-card__overlay">
                 <h4 class="gallery-card__hover-title">Achievements</h4>
@@ -623,10 +657,10 @@
           </div>
 
 <!-- MEDIA CARD 4: Clipping 4 -->
-          <div class="gallery-card gallery-card--square" data-category="media-publications">
+          <div class="gallery-card" data-category="media-publications">
             <div class="gallery-card__inner" data-type="image" data-src="content/media/4.jpeg">
               <div class="gallery-card__media">
-                <img data-defer-src="content/media/4.jpeg" src="" loading="lazy" alt="Media Clipping 4" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 16px; background-color: var(--color-white);" />
+                <img data-defer-src="content/media/4.jpeg" src="" loading="lazy" alt="Media Clipping 4" loading="lazy" />
               </div>
               <div class="gallery-card__overlay">
                 <h4 class="gallery-card__hover-title">Publications</h4>
@@ -636,10 +670,10 @@
           </div>
 
 <!-- CARD 5: BEFORE & AFTER (BA-5) -->
-          <div class="gallery-card gallery-card--large-landscape" data-category="before-after">
+          <div class="gallery-card" data-category="before-after">
             <div class="gallery-card__inner" data-type="image" data-src="content/before-after/BA-5.jpeg">
               <div class="gallery-card__media">
-                <img data-defer-src="content/before-after/BA-5.jpeg" src="" loading="lazy" alt="Before &amp; After Patient Transformation BA-5" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 12px; background-color: var(--color-white);" />
+                <img data-defer-src="content/before-after/BA-5.jpeg" src="" loading="lazy" alt="Before &amp; After Patient Transformation BA-5" loading="lazy" />
               </div>
               <div class="gallery-card__overlay">
                 <h4 class="gallery-card__hover-title">Before &amp; After</h4>
@@ -649,7 +683,7 @@
           </div>
 
 <!-- CARD 13: DISPATCHING VIDEO 5 (Medium Landscape) -->
-          <div class="gallery-card gallery-card--medium-landscape" data-category="dispatching">
+          <div class="gallery-card" data-category="dispatching">
             <div class="gallery-card__inner" data-type="video" data-src="content/dispatching-vids/dispatch-5.mp4">
               <div class="gallery-card__media">
                 <video preload="metadata" muted playsinline data-defer-src="content/dispatching-vids/dispatch-5.mp4" src="" preload="none"></video>
@@ -667,10 +701,10 @@
           </div>
 
 <!-- PRODUCT CARD 5: P-5 -->
-          <div class="gallery-card gallery-card--square" data-category="products">
+          <div class="gallery-card" data-category="products">
             <div class="gallery-card__inner" data-type="image" data-src="content/products/P-5.jpeg">
               <div class="gallery-card__media">
-                <img data-defer-src="content/products/P-5.jpeg" src="" loading="lazy" alt="Homeo Elixir Product P-5" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 16px; background-color: var(--color-card-linen);" />
+                <img data-defer-src="content/products/P-5.jpeg" src="" loading="lazy" alt="Homeo Elixir Product P-5" loading="lazy" />
               </div>
 
               <div class="gallery-card__overlay">
@@ -681,10 +715,10 @@
           </div>
 
 <!-- CARD 33: ACHIEVEMENT (A-5) -->
-          <div class="gallery-card gallery-card--large-portrait" data-category="achievements">
+          <div class="gallery-card" data-category="achievements">
             <div class="gallery-card__inner" data-type="image" data-src="content/achievements/A-5.png">
               <div class="gallery-card__media">
-                <img data-defer-src="content/achievements/A-5.png" src="" loading="lazy" alt="Dr. Farhin Achievement Certificate A-5" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 16px; background-color: var(--color-white);" />
+                <img data-defer-src="content/achievements/A-5.png" src="" loading="lazy" alt="Dr. Farhin Achievement Certificate A-5" loading="lazy" />
               </div>
               <div class="gallery-card__overlay">
                 <h4 class="gallery-card__hover-title">Achievements</h4>
@@ -694,10 +728,10 @@
           </div>
 
 <!-- MEDIA CARD 5: Clipping 5 -->
-          <div class="gallery-card gallery-card--square" data-category="media-publications">
+          <div class="gallery-card" data-category="media-publications">
             <div class="gallery-card__inner" data-type="image" data-src="content/media/5.jpeg">
               <div class="gallery-card__media">
-                <img data-defer-src="content/media/5.jpeg" src="" loading="lazy" alt="Media Clipping 5" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 16px; background-color: var(--color-white);" />
+                <img data-defer-src="content/media/5.jpeg" src="" loading="lazy" alt="Media Clipping 5" loading="lazy" />
               </div>
               <div class="gallery-card__overlay">
                 <h4 class="gallery-card__hover-title">Publications</h4>
@@ -707,10 +741,10 @@
           </div>
 
 <!-- CARD 6: BEFORE & AFTER (BA-6) -->
-          <div class="gallery-card gallery-card--large-portrait" data-category="before-after">
+          <div class="gallery-card" data-category="before-after">
             <div class="gallery-card__inner" data-type="image" data-src="content/before-after/BA-6.jpeg">
               <div class="gallery-card__media">
-                <img data-defer-src="content/before-after/BA-6.jpeg" src="" loading="lazy" alt="Before &amp; After Patient Transformation BA-6" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 12px; background-color: var(--color-white);" />
+                <img data-defer-src="content/before-after/BA-6.jpeg" src="" loading="lazy" alt="Before &amp; After Patient Transformation BA-6" loading="lazy" />
               </div>
               <div class="gallery-card__overlay">
                 <h4 class="gallery-card__hover-title">Before &amp; After</h4>
@@ -720,7 +754,7 @@
           </div>
 
 <!-- CARD 14: DISPATCHING VIDEO 6 (Large Landscape) -->
-          <div class="gallery-card gallery-card--large-landscape" data-category="dispatching">
+          <div class="gallery-card" data-category="dispatching">
             <div class="gallery-card__inner" data-type="video" data-src="content/dispatching-vids/dispatch-6.mp4">
               <div class="gallery-card__media">
                 <video preload="metadata" muted playsinline data-defer-src="content/dispatching-vids/dispatch-6.mp4" src="" preload="none"></video>
@@ -738,10 +772,10 @@
           </div>
 
 <!-- PRODUCT CARD 6: P-6 -->
-          <div class="gallery-card gallery-card--square" data-category="products">
+          <div class="gallery-card" data-category="products">
             <div class="gallery-card__inner" data-type="image" data-src="content/products/P-6.jpeg">
               <div class="gallery-card__media">
-                <img data-defer-src="content/products/P-6.jpeg" src="" loading="lazy" alt="Homeo Elixir Product P-6" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 16px; background-color: var(--color-card-linen);" />
+                <img data-defer-src="content/products/P-6.jpeg" src="" loading="lazy" alt="Homeo Elixir Product P-6" loading="lazy" />
               </div>
 
               <div class="gallery-card__overlay">
@@ -752,10 +786,10 @@
           </div>
 
 <!-- CARD 34: ACHIEVEMENT (A-6) -->
-          <div class="gallery-card gallery-card--large-portrait" data-category="achievements">
+          <div class="gallery-card" data-category="achievements">
             <div class="gallery-card__inner" data-type="image" data-src="content/achievements/A-6.png">
               <div class="gallery-card__media">
-                <img data-defer-src="content/achievements/A-6.png" src="" loading="lazy" alt="Dr. Farhin Achievement Certificate A-6" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 16px; background-color: var(--color-white);" />
+                <img data-defer-src="content/achievements/A-6.png" src="" loading="lazy" alt="Dr. Farhin Achievement Certificate A-6" loading="lazy" />
               </div>
               <div class="gallery-card__overlay">
                 <h4 class="gallery-card__hover-title">Achievements</h4>
@@ -765,10 +799,10 @@
           </div>
 
 <!-- MEDIA CARD 6: Clipping 6 -->
-          <div class="gallery-card gallery-card--square" data-category="media-publications">
+          <div class="gallery-card" data-category="media-publications">
             <div class="gallery-card__inner" data-type="image" data-src="content/media/6.jpeg">
               <div class="gallery-card__media">
-                <img data-defer-src="content/media/6.jpeg" src="" loading="lazy" alt="Media Clipping 6" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 16px; background-color: var(--color-white);" />
+                <img data-defer-src="content/media/6.jpeg" src="" loading="lazy" alt="Media Clipping 6" loading="lazy" />
               </div>
               <div class="gallery-card__overlay">
                 <h4 class="gallery-card__hover-title">Publications</h4>
@@ -778,10 +812,10 @@
           </div>
 
 <!-- CARD 7: BEFORE & AFTER (BA-7) -->
-          <div class="gallery-card gallery-card--large-landscape" data-category="before-after">
+          <div class="gallery-card" data-category="before-after">
             <div class="gallery-card__inner" data-type="image" data-src="content/before-after/BA-7.jpeg">
               <div class="gallery-card__media">
-                <img data-defer-src="content/before-after/BA-7.jpeg" src="" loading="lazy" alt="Before &amp; After Patient Transformation BA-7" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 12px; background-color: var(--color-white);" />
+                <img data-defer-src="content/before-after/BA-7.jpeg" src="" loading="lazy" alt="Before &amp; After Patient Transformation BA-7" loading="lazy" />
               </div>
               <div class="gallery-card__overlay">
                 <h4 class="gallery-card__hover-title">Before &amp; After</h4>
@@ -791,7 +825,7 @@
           </div>
 
 <!-- CARD 15: DISPATCHING VIDEO 7 (Medium Landscape) -->
-          <div class="gallery-card gallery-card--medium-landscape" data-category="dispatching">
+          <div class="gallery-card" data-category="dispatching">
             <div class="gallery-card__inner" data-type="video" data-src="content/dispatching-vids/dispatch-7.mp4">
               <div class="gallery-card__media">
                 <video preload="metadata" muted playsinline data-defer-src="content/dispatching-vids/dispatch-7.mp4" src="" preload="none"></video>
@@ -809,10 +843,10 @@
           </div>
 
 <!-- PRODUCT CARD 7: P-7 -->
-          <div class="gallery-card gallery-card--square" data-category="products">
+          <div class="gallery-card" data-category="products">
             <div class="gallery-card__inner" data-type="image" data-src="content/products/P-7.jpeg">
               <div class="gallery-card__media">
-                <img data-defer-src="content/products/P-7.jpeg" src="" loading="lazy" alt="Homeo Elixir Product P-7" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 16px; background-color: var(--color-card-linen);" />
+                <img data-defer-src="content/products/P-7.jpeg" src="" loading="lazy" alt="Homeo Elixir Product P-7" loading="lazy" />
               </div>
 
               <div class="gallery-card__overlay">
@@ -823,10 +857,10 @@
           </div>
 
 <!-- CARD 35: ACHIEVEMENT (A-7) -->
-          <div class="gallery-card gallery-card--large-portrait" data-category="achievements">
+          <div class="gallery-card" data-category="achievements">
             <div class="gallery-card__inner" data-type="image" data-src="content/achievements/A-7.png">
               <div class="gallery-card__media">
-                <img data-defer-src="content/achievements/A-7.png" src="" loading="lazy" alt="Dr. Farhin Achievement Certificate A-7" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 16px; background-color: var(--color-white);" />
+                <img data-defer-src="content/achievements/A-7.png" src="" loading="lazy" alt="Dr. Farhin Achievement Certificate A-7" loading="lazy" />
               </div>
               <div class="gallery-card__overlay">
                 <h4 class="gallery-card__hover-title">Achievements</h4>
@@ -836,10 +870,10 @@
           </div>
 
 <!-- MEDIA CARD 7: Clipping 7 -->
-          <div class="gallery-card gallery-card--square" data-category="media-publications">
+          <div class="gallery-card" data-category="media-publications">
             <div class="gallery-card__inner" data-type="image" data-src="content/media/7.jpeg">
               <div class="gallery-card__media">
-                <img data-defer-src="content/media/7.jpeg" src="" loading="lazy" alt="Media Clipping 7" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 16px; background-color: var(--color-white);" />
+                <img data-defer-src="content/media/7.jpeg" src="" loading="lazy" alt="Media Clipping 7" loading="lazy" />
               </div>
               <div class="gallery-card__overlay">
                 <h4 class="gallery-card__hover-title">Publications</h4>
@@ -849,10 +883,10 @@
           </div>
 
 <!-- CARD 8: BEFORE & AFTER (BA-8) -->
-          <div class="gallery-card gallery-card--large-portrait" data-category="before-after">
+          <div class="gallery-card" data-category="before-after">
             <div class="gallery-card__inner" data-type="image" data-src="content/before-after/BA-8.jpeg">
               <div class="gallery-card__media">
-                <img data-defer-src="content/before-after/BA-8.jpeg" src="" loading="lazy" alt="Before &amp; After Patient Transformation BA-8" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 12px; background-color: var(--color-white);" />
+                <img data-defer-src="content/before-after/BA-8.jpeg" src="" loading="lazy" alt="Before &amp; After Patient Transformation BA-8" loading="lazy" />
               </div>
               <div class="gallery-card__overlay">
                 <h4 class="gallery-card__hover-title">Before &amp; After</h4>
@@ -862,7 +896,7 @@
           </div>
 
 <!-- CARD 16: DISPATCHING VIDEO 8 (Large Landscape) -->
-          <div class="gallery-card gallery-card--large-landscape" data-category="dispatching">
+          <div class="gallery-card" data-category="dispatching">
             <div class="gallery-card__inner" data-type="video" data-src="content/dispatching-vids/dispatch-8.mp4">
               <div class="gallery-card__media">
                 <video preload="metadata" muted playsinline data-defer-src="content/dispatching-vids/dispatch-8.mp4" src="" preload="none"></video>
@@ -880,10 +914,10 @@
           </div>
 
 <!-- PRODUCT CARD 8: P-8 -->
-          <div class="gallery-card gallery-card--square" data-category="products">
+          <div class="gallery-card" data-category="products">
             <div class="gallery-card__inner" data-type="image" data-src="content/products/P-8.jpeg">
               <div class="gallery-card__media">
-                <img data-defer-src="content/products/P-8.jpeg" src="" loading="lazy" alt="Homeo Elixir Product P-8" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 16px; background-color: var(--color-card-linen);" />
+                <img data-defer-src="content/products/P-8.jpeg" src="" loading="lazy" alt="Homeo Elixir Product P-8" loading="lazy" />
               </div>
 
               <div class="gallery-card__overlay">
@@ -894,10 +928,10 @@
           </div>
 
 <!-- CARD 36: ACHIEVEMENT (A-8) -->
-          <div class="gallery-card gallery-card--large-portrait" data-category="achievements">
+          <div class="gallery-card" data-category="achievements">
             <div class="gallery-card__inner" data-type="image" data-src="content/achievements/A-8.png">
               <div class="gallery-card__media">
-                <img data-defer-src="content/achievements/A-8.png" src="" loading="lazy" alt="Dr. Farhin Achievement Certificate A-8" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 16px; background-color: var(--color-white);" />
+                <img data-defer-src="content/achievements/A-8.png" src="" loading="lazy" alt="Dr. Farhin Achievement Certificate A-8" loading="lazy" />
               </div>
               <div class="gallery-card__overlay">
                 <h4 class="gallery-card__hover-title">Achievements</h4>
@@ -907,10 +941,10 @@
           </div>
 
 <!-- MEDIA CARD 8: Clipping 8 -->
-          <div class="gallery-card gallery-card--square" data-category="media-publications">
+          <div class="gallery-card" data-category="media-publications">
             <div class="gallery-card__inner" data-type="image" data-src="content/media/8.jpeg">
               <div class="gallery-card__media">
-                <img data-defer-src="content/media/8.jpeg" src="" loading="lazy" alt="Media Clipping 8" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 16px; background-color: var(--color-white);" />
+                <img data-defer-src="content/media/8.jpeg" src="" loading="lazy" alt="Media Clipping 8" loading="lazy" />
               </div>
               <div class="gallery-card__overlay">
                 <h4 class="gallery-card__hover-title">Publications</h4>
@@ -920,10 +954,10 @@
           </div>
 
 <!-- CARD 9: BEFORE & AFTER (BA-9) -->
-          <div class="gallery-card gallery-card--large-portrait" data-category="before-after">
+          <div class="gallery-card" data-category="before-after">
             <div class="gallery-card__inner" data-type="image" data-src="content/before-after/BA-9.jpeg">
               <div class="gallery-card__media">
-                <img data-defer-src="content/before-after/BA-9.jpeg" src="" loading="lazy" alt="Before &amp; After Patient Transformation BA-9" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 12px; background-color: var(--color-white);" />
+                <img data-defer-src="content/before-after/BA-9.jpeg" src="" loading="lazy" alt="Before &amp; After Patient Transformation BA-9" loading="lazy" />
               </div>
               <div class="gallery-card__overlay">
                 <h4 class="gallery-card__hover-title">Before &amp; After</h4>
@@ -933,7 +967,7 @@
           </div>
 
 <!-- CARD 17: DISPATCHING VIDEO 9 (Medium Landscape) -->
-          <div class="gallery-card gallery-card--medium-landscape" data-category="dispatching">
+          <div class="gallery-card" data-category="dispatching">
             <div class="gallery-card__inner" data-type="video" data-src="content/dispatching-vids/dispatch-9.mp4">
               <div class="gallery-card__media">
                 <video preload="metadata" muted playsinline data-defer-src="content/dispatching-vids/dispatch-9.mp4" src="" preload="none"></video>
@@ -951,10 +985,10 @@
           </div>
 
 <!-- PRODUCT CARD 9: P-9 -->
-          <div class="gallery-card gallery-card--square" data-category="products">
+          <div class="gallery-card" data-category="products">
             <div class="gallery-card__inner" data-type="video" data-src="content/products/P-9.mp4">
               <div class="gallery-card__media">
-                <video preload="metadata" muted playsinline data-defer-src="content/products/P-9.mp4" src="" preload="none" style="width: 100%; height: 100%; object-fit: contain; padding: 16px; background-color: var(--color-card-linen);"></video>
+                <video preload="metadata" muted playsinline data-defer-src="content/products/P-9.mp4" src="" preload="none"></video>
               </div>
               <div class="gallery-card__play-indicator" aria-label="Play product video">
                 <svg width="14" height="14" viewBox="0 0 24 24">
@@ -969,10 +1003,10 @@
           </div>
 
 <!-- CARD 37: ACHIEVEMENT (A-9) -->
-          <div class="gallery-card gallery-card--large-portrait" data-category="achievements">
+          <div class="gallery-card" data-category="achievements">
             <div class="gallery-card__inner" data-type="image" data-src="content/achievements/A-9.jpeg">
               <div class="gallery-card__media">
-                <img data-defer-src="content/achievements/A-9.jpeg" src="" loading="lazy" alt="Dr. Farhin Achievement Certificate A-9" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 16px; background-color: var(--color-white);" />
+                <img data-defer-src="content/achievements/A-9.jpeg" src="" loading="lazy" alt="Dr. Farhin Achievement Certificate A-9" loading="lazy" />
               </div>
               <div class="gallery-card__overlay">
                 <h4 class="gallery-card__hover-title">Achievements</h4>
@@ -982,10 +1016,10 @@
           </div>
 
 <!-- CARD 10: BEFORE & AFTER (BA-10) -->
-          <div class="gallery-card gallery-card--large-portrait" data-category="before-after">
+          <div class="gallery-card" data-category="before-after">
             <div class="gallery-card__inner" data-type="image" data-src="content/before-after/BA-10.jpeg">
               <div class="gallery-card__media">
-                <img data-defer-src="content/before-after/BA-10.jpeg" src="" loading="lazy" alt="Before &amp; After Patient Transformation BA-10" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 12px; background-color: var(--color-white);" />
+                <img data-defer-src="content/before-after/BA-10.jpeg" src="" loading="lazy" alt="Before &amp; After Patient Transformation BA-10" loading="lazy" />
               </div>
               <div class="gallery-card__overlay">
                 <h4 class="gallery-card__hover-title">Before &amp; After</h4>
@@ -995,7 +1029,7 @@
           </div>
 
 <!-- CARD 18: DISPATCHING VIDEO 10 (Large Landscape) -->
-          <div class="gallery-card gallery-card--large-landscape" data-category="dispatching">
+          <div class="gallery-card" data-category="dispatching">
             <div class="gallery-card__inner" data-type="video" data-src="content/dispatching-vids/dispatch-10.mp4">
               <div class="gallery-card__media">
                 <video preload="metadata" muted playsinline data-defer-src="content/dispatching-vids/dispatch-10.mp4" src="" preload="none"></video>
@@ -1013,10 +1047,10 @@
           </div>
 
 <!-- PRODUCT CARD 10: P-10 -->
-          <div class="gallery-card gallery-card--square" data-category="products">
+          <div class="gallery-card" data-category="products">
             <div class="gallery-card__inner" data-type="image" data-src="content/products/P-10.jpeg">
               <div class="gallery-card__media">
-                <img data-defer-src="content/products/P-10.jpeg" src="" loading="lazy" alt="Homeo Elixir Product P-10" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 16px; background-color: var(--color-card-linen);" />
+                <img data-defer-src="content/products/P-10.jpeg" src="" loading="lazy" alt="Homeo Elixir Product P-10" loading="lazy" />
               </div>
 
               <div class="gallery-card__overlay">
@@ -1027,10 +1061,10 @@
           </div>
 
 <!-- CARD 11: BEFORE & AFTER (BA-11) -->
-          <div class="gallery-card gallery-card--large-portrait" data-category="before-after">
+          <div class="gallery-card" data-category="before-after">
             <div class="gallery-card__inner" data-type="image" data-src="content/before-after/BA-11.jpeg">
               <div class="gallery-card__media">
-                <img data-defer-src="content/before-after/BA-11.jpeg" src="" loading="lazy" alt="Before &amp; After Patient Transformation BA-11" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 12px; background-color: var(--color-white);" />
+                <img data-defer-src="content/before-after/BA-11.jpeg" src="" loading="lazy" alt="Before &amp; After Patient Transformation BA-11" loading="lazy" />
               </div>
               <div class="gallery-card__overlay">
                 <h4 class="gallery-card__hover-title">Before &amp; After</h4>
@@ -1040,7 +1074,7 @@
           </div>
 
 <!-- CARD 19: DISPATCHING VIDEO 11 (Medium Landscape) -->
-          <div class="gallery-card gallery-card--medium-landscape" data-category="dispatching">
+          <div class="gallery-card" data-category="dispatching">
             <div class="gallery-card__inner" data-type="video" data-src="content/dispatching-vids/dispatch-11.mp4">
               <div class="gallery-card__media">
                 <video preload="metadata" muted playsinline data-defer-src="content/dispatching-vids/dispatch-11.mp4" src="" preload="none"></video>
@@ -1058,10 +1092,10 @@
           </div>
 
 <!-- PRODUCT CARD 11: P-11 -->
-          <div class="gallery-card gallery-card--square" data-category="products">
+          <div class="gallery-card" data-category="products">
             <div class="gallery-card__inner" data-type="image" data-src="content/products/P-11.jpeg">
               <div class="gallery-card__media">
-                <img data-defer-src="content/products/P-11.jpeg" src="" loading="lazy" alt="Homeo Elixir Product P-11" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 16px; background-color: var(--color-card-linen);" />
+                <img data-defer-src="content/products/P-11.jpeg" src="" loading="lazy" alt="Homeo Elixir Product P-11" loading="lazy" />
               </div>
 
               <div class="gallery-card__overlay">
@@ -1072,10 +1106,10 @@
           </div>
 
 <!-- CARD 12: BEFORE & AFTER (BA-12) -->
-          <div class="gallery-card gallery-card--large-portrait" data-category="before-after">
+          <div class="gallery-card" data-category="before-after">
             <div class="gallery-card__inner" data-type="image" data-src="content/before-after/BA-12.jpeg">
               <div class="gallery-card__media">
-                <img data-defer-src="content/before-after/BA-12.jpeg" src="" loading="lazy" alt="Before &amp; After Patient Transformation BA-12" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 12px; background-color: var(--color-white);" />
+                <img data-defer-src="content/before-after/BA-12.jpeg" src="" loading="lazy" alt="Before &amp; After Patient Transformation BA-12" loading="lazy" />
               </div>
               <div class="gallery-card__overlay">
                 <h4 class="gallery-card__hover-title">Before &amp; After</h4>
@@ -1085,7 +1119,7 @@
           </div>
 
 <!-- CARD 20: DISPATCHING VIDEO 12 (Large Landscape) -->
-          <div class="gallery-card gallery-card--large-landscape" data-category="dispatching">
+          <div class="gallery-card" data-category="dispatching">
             <div class="gallery-card__inner" data-type="video" data-src="content/dispatching-vids/dispatch-12.mp4">
               <div class="gallery-card__media">
                 <video preload="metadata" muted playsinline data-defer-src="content/dispatching-vids/dispatch-12.mp4" src="" preload="none"></video>
@@ -1103,10 +1137,10 @@
           </div>
 
 <!-- PRODUCT CARD 12: P-12 -->
-          <div class="gallery-card gallery-card--square" data-category="products">
+          <div class="gallery-card" data-category="products">
             <div class="gallery-card__inner" data-type="image" data-src="content/products/P-12.jpeg">
               <div class="gallery-card__media">
-                <img data-defer-src="content/products/P-12.jpeg" src="" loading="lazy" alt="Homeo Elixir Product P-12" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 16px; background-color: var(--color-card-linen);" />
+                <img data-defer-src="content/products/P-12.jpeg" src="" loading="lazy" alt="Homeo Elixir Product P-12" loading="lazy" />
               </div>
 
               <div class="gallery-card__overlay">
@@ -1117,10 +1151,10 @@
           </div>
 
 <!-- CARD 13: BEFORE & AFTER (BA-13) -->
-          <div class="gallery-card gallery-card--large-portrait" data-category="before-after">
+          <div class="gallery-card" data-category="before-after">
             <div class="gallery-card__inner" data-type="image" data-src="content/before-after/BA-13.jpeg">
               <div class="gallery-card__media">
-                <img data-defer-src="content/before-after/BA-13.jpeg" src="" loading="lazy" alt="Before &amp; After Patient Transformation BA-13" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 12px; background-color: var(--color-white);" />
+                <img data-defer-src="content/before-after/BA-13.jpeg" src="" loading="lazy" alt="Before &amp; After Patient Transformation BA-13" loading="lazy" />
               </div>
               <div class="gallery-card__overlay">
                 <h4 class="gallery-card__hover-title">Before &amp; After</h4>
@@ -1130,7 +1164,7 @@
           </div>
 
 <!-- CARD 21: DISPATCHING VIDEO 13 (Medium Landscape) -->
-          <div class="gallery-card gallery-card--medium-landscape" data-category="dispatching">
+          <div class="gallery-card" data-category="dispatching">
             <div class="gallery-card__inner" data-type="video" data-src="content/dispatching-vids/dispatch-13.mp4">
               <div class="gallery-card__media">
                 <video preload="metadata" muted playsinline data-defer-src="content/dispatching-vids/dispatch-13.mp4" src="" preload="none"></video>
@@ -1148,10 +1182,10 @@
           </div>
 
 <!-- PRODUCT CARD 13: P-13 -->
-          <div class="gallery-card gallery-card--square" data-category="products">
+          <div class="gallery-card" data-category="products">
             <div class="gallery-card__inner" data-type="image" data-src="content/products/P-13.jpeg">
               <div class="gallery-card__media">
-                <img data-defer-src="content/products/P-13.jpeg" src="" loading="lazy" alt="Homeo Elixir Product P-13" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 16px; background-color: var(--color-card-linen);" />
+                <img data-defer-src="content/products/P-13.jpeg" src="" loading="lazy" alt="Homeo Elixir Product P-13" loading="lazy" />
               </div>
 
               <div class="gallery-card__overlay">
@@ -1162,10 +1196,10 @@
           </div>
 
 <!-- CARD 14: BEFORE & AFTER (BA-14) -->
-          <div class="gallery-card gallery-card--large-portrait" data-category="before-after">
+          <div class="gallery-card" data-category="before-after">
             <div class="gallery-card__inner" data-type="image" data-src="content/before-after/BA-14.jpeg">
               <div class="gallery-card__media">
-                <img data-defer-src="content/before-after/BA-14.jpeg" src="" loading="lazy" alt="Before &amp; After Patient Transformation BA-14" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 12px; background-color: var(--color-white);" />
+                <img data-defer-src="content/before-after/BA-14.jpeg" src="" loading="lazy" alt="Before &amp; After Patient Transformation BA-14" loading="lazy" />
               </div>
               <div class="gallery-card__overlay">
                 <h4 class="gallery-card__hover-title">Before &amp; After</h4>
@@ -1175,7 +1209,7 @@
           </div>
 
 <!-- CARD 22: DISPATCHING VIDEO 14 (Large Landscape) -->
-          <div class="gallery-card gallery-card--large-landscape" data-category="dispatching">
+          <div class="gallery-card" data-category="dispatching">
             <div class="gallery-card__inner" data-type="video" data-src="content/dispatching-vids/dispatch-14.mp4">
               <div class="gallery-card__media">
                 <video preload="metadata" muted playsinline data-defer-src="content/dispatching-vids/dispatch-14.mp4" src="" preload="none"></video>
@@ -1193,10 +1227,10 @@
           </div>
 
 <!-- PRODUCT CARD 14: P-14 -->
-          <div class="gallery-card gallery-card--square" data-category="products">
+          <div class="gallery-card" data-category="products">
             <div class="gallery-card__inner" data-type="image" data-src="content/products/P-14.jpeg">
               <div class="gallery-card__media">
-                <img data-defer-src="content/products/P-14.jpeg" src="" loading="lazy" alt="Homeo Elixir Product P-14" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 16px; background-color: var(--color-card-linen);" />
+                <img data-defer-src="content/products/P-14.jpeg" src="" loading="lazy" alt="Homeo Elixir Product P-14" loading="lazy" />
               </div>
 
               <div class="gallery-card__overlay">
@@ -1207,10 +1241,10 @@
           </div>
 
 <!-- CARD 15: BEFORE & AFTER (BA-15) -->
-          <div class="gallery-card gallery-card--large-portrait" data-category="before-after">
+          <div class="gallery-card" data-category="before-after">
             <div class="gallery-card__inner" data-type="image" data-src="content/before-after/BA-15.jpeg">
               <div class="gallery-card__media">
-                <img data-defer-src="content/before-after/BA-15.jpeg" src="" loading="lazy" alt="Before &amp; After Patient Transformation BA-15" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 12px; background-color: var(--color-white);" />
+                <img data-defer-src="content/before-after/BA-15.jpeg" src="" loading="lazy" alt="Before &amp; After Patient Transformation BA-15" loading="lazy" />
               </div>
               <div class="gallery-card__overlay">
                 <h4 class="gallery-card__hover-title">Before &amp; After</h4>
@@ -1220,7 +1254,7 @@
           </div>
 
 <!-- CARD 23: DISPATCHING VIDEO 15 (Medium Landscape) -->
-          <div class="gallery-card gallery-card--medium-landscape" data-category="dispatching">
+          <div class="gallery-card" data-category="dispatching">
             <div class="gallery-card__inner" data-type="video" data-src="content/dispatching-vids/dispatch-15.mp4">
               <div class="gallery-card__media">
                 <video preload="metadata" muted playsinline data-defer-src="content/dispatching-vids/dispatch-15.mp4" src="" preload="none"></video>
@@ -1238,10 +1272,10 @@
           </div>
 
 <!-- PRODUCT CARD 15: P-15 -->
-          <div class="gallery-card gallery-card--square" data-category="products">
+          <div class="gallery-card" data-category="products">
             <div class="gallery-card__inner" data-type="image" data-src="content/products/P-15.jpeg">
               <div class="gallery-card__media">
-                <img data-defer-src="content/products/P-15.jpeg" src="" loading="lazy" alt="Homeo Elixir Product P-15" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 16px; background-color: var(--color-card-linen);" />
+                <img data-defer-src="content/products/P-15.jpeg" src="" loading="lazy" alt="Homeo Elixir Product P-15" loading="lazy" />
               </div>
 
               <div class="gallery-card__overlay">
@@ -1252,10 +1286,10 @@
           </div>
 
 <!-- CARD 16: BEFORE & AFTER (BA-16) -->
-          <div class="gallery-card gallery-card--large-portrait" data-category="before-after">
+          <div class="gallery-card" data-category="before-after">
             <div class="gallery-card__inner" data-type="image" data-src="content/before-after/BA-16.jpeg">
               <div class="gallery-card__media">
-                <img data-defer-src="content/before-after/BA-16.jpeg" src="" loading="lazy" alt="Before &amp; After Patient Transformation BA-16" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 12px; background-color: var(--color-white);" />
+                <img data-defer-src="content/before-after/BA-16.jpeg" src="" loading="lazy" alt="Before &amp; After Patient Transformation BA-16" loading="lazy" />
               </div>
               <div class="gallery-card__overlay">
                 <h4 class="gallery-card__hover-title">Before &amp; After</h4>
@@ -1265,7 +1299,7 @@
           </div>
 
 <!-- CARD 24: DISPATCHING VIDEO 16 (Large Landscape) -->
-          <div class="gallery-card gallery-card--large-landscape" data-category="dispatching">
+          <div class="gallery-card" data-category="dispatching">
             <div class="gallery-card__inner" data-type="video" data-src="content/dispatching-vids/dispatch-16.mp4">
               <div class="gallery-card__media">
                 <video preload="metadata" muted playsinline data-defer-src="content/dispatching-vids/dispatch-16.mp4" src="" preload="none"></video>
@@ -1283,10 +1317,10 @@
           </div>
 
 <!-- PRODUCT CARD 16: P-16 -->
-          <div class="gallery-card gallery-card--square" data-category="products">
+          <div class="gallery-card" data-category="products">
             <div class="gallery-card__inner" data-type="image" data-src="content/products/P-16.jpeg">
               <div class="gallery-card__media">
-                <img data-defer-src="content/products/P-16.jpeg" src="" loading="lazy" alt="Homeo Elixir Product P-16" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 16px; background-color: var(--color-card-linen);" />
+                <img data-defer-src="content/products/P-16.jpeg" src="" loading="lazy" alt="Homeo Elixir Product P-16" loading="lazy" />
               </div>
 
               <div class="gallery-card__overlay">
@@ -1297,10 +1331,10 @@
           </div>
 
 <!-- CARD 17: BEFORE & AFTER (BA-17) -->
-          <div class="gallery-card gallery-card--large-portrait" data-category="before-after">
+          <div class="gallery-card" data-category="before-after">
             <div class="gallery-card__inner" data-type="image" data-src="content/before-after/BA-17.jpeg">
               <div class="gallery-card__media">
-                <img data-defer-src="content/before-after/BA-17.jpeg" src="" loading="lazy" alt="Before &amp; After Patient Transformation BA-17" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 12px; background-color: var(--color-white);" />
+                <img data-defer-src="content/before-after/BA-17.jpeg" src="" loading="lazy" alt="Before &amp; After Patient Transformation BA-17" loading="lazy" />
               </div>
               <div class="gallery-card__overlay">
                 <h4 class="gallery-card__hover-title">Before &amp; After</h4>
@@ -1310,7 +1344,7 @@
           </div>
 
 <!-- CARD 25: DISPATCHING VIDEO 17 (Medium Landscape) -->
-          <div class="gallery-card gallery-card--medium-landscape" data-category="dispatching">
+          <div class="gallery-card" data-category="dispatching">
             <div class="gallery-card__inner" data-type="video" data-src="content/dispatching-vids/dispatch-17.mp4">
               <div class="gallery-card__media">
                 <video preload="metadata" muted playsinline data-defer-src="content/dispatching-vids/dispatch-17.mp4" src="" preload="none"></video>
@@ -1328,10 +1362,10 @@
           </div>
 
 <!-- PRODUCT CARD 17: P-17 -->
-          <div class="gallery-card gallery-card--square" data-category="products">
+          <div class="gallery-card" data-category="products">
             <div class="gallery-card__inner" data-type="image" data-src="content/products/P-17.jpeg">
               <div class="gallery-card__media">
-                <img data-defer-src="content/products/P-17.jpeg" src="" loading="lazy" alt="Homeo Elixir Product P-17" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 16px; background-color: var(--color-card-linen);" />
+                <img data-defer-src="content/products/P-17.jpeg" src="" loading="lazy" alt="Homeo Elixir Product P-17" loading="lazy" />
               </div>
 
               <div class="gallery-card__overlay">
@@ -1342,7 +1376,7 @@
           </div>
 
 <!-- CARD 26: DISPATCHING VIDEO 18 (Large Landscape) -->
-          <div class="gallery-card gallery-card--large-landscape" data-category="dispatching">
+          <div class="gallery-card" data-category="dispatching">
             <div class="gallery-card__inner" data-type="video" data-src="content/dispatching-vids/dispatch-18.mp4">
               <div class="gallery-card__media">
                 <video preload="metadata" muted playsinline data-defer-src="content/dispatching-vids/dispatch-18.mp4" src="" preload="none"></video>
@@ -1360,10 +1394,10 @@
           </div>
 
 <!-- PRODUCT CARD 18: P-18 -->
-          <div class="gallery-card gallery-card--square" data-category="products">
+          <div class="gallery-card" data-category="products">
             <div class="gallery-card__inner" data-type="image" data-src="content/products/P-18.jpeg">
               <div class="gallery-card__media">
-                <img data-defer-src="content/products/P-18.jpeg" src="" loading="lazy" alt="Homeo Elixir Product P-18" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 16px; background-color: var(--color-card-linen);" />
+                <img data-defer-src="content/products/P-18.jpeg" src="" loading="lazy" alt="Homeo Elixir Product P-18" loading="lazy" />
               </div>
 
               <div class="gallery-card__overlay">
@@ -1374,7 +1408,7 @@
           </div>
 
 <!-- CARD 27: DISPATCHING VIDEO 19 (Medium Landscape) -->
-          <div class="gallery-card gallery-card--medium-landscape" data-category="dispatching">
+          <div class="gallery-card" data-category="dispatching">
             <div class="gallery-card__inner" data-type="video" data-src="content/dispatching-vids/dispatch-19.mp4">
               <div class="gallery-card__media">
                 <video preload="metadata" muted playsinline data-defer-src="content/dispatching-vids/dispatch-19.mp4" src="" preload="none"></video>
@@ -1392,10 +1426,10 @@
           </div>
 
 <!-- PRODUCT CARD 19: P-19 -->
-          <div class="gallery-card gallery-card--square" data-category="products">
+          <div class="gallery-card" data-category="products">
             <div class="gallery-card__inner" data-type="image" data-src="content/products/P-19.jpeg">
               <div class="gallery-card__media">
-                <img data-defer-src="content/products/P-19.jpeg" src="" loading="lazy" alt="Homeo Elixir Product P-19" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 16px; background-color: var(--color-card-linen);" />
+                <img data-defer-src="content/products/P-19.jpeg" src="" loading="lazy" alt="Homeo Elixir Product P-19" loading="lazy" />
               </div>
 
               <div class="gallery-card__overlay">
@@ -1406,7 +1440,7 @@
           </div>
 
 <!-- CARD 28: DISPATCHING VIDEO 20 (Large Landscape) -->
-          <div class="gallery-card gallery-card--large-landscape" data-category="dispatching">
+          <div class="gallery-card" data-category="dispatching">
             <div class="gallery-card__inner" data-type="video" data-src="content/dispatching-vids/dispatch-20.mp4">
               <div class="gallery-card__media">
                 <video preload="metadata" muted playsinline data-defer-src="content/dispatching-vids/dispatch-20.mp4" src="" preload="none"></video>
@@ -1424,10 +1458,10 @@
           </div>
 
 <!-- PRODUCT CARD 20: P-20 -->
-          <div class="gallery-card gallery-card--square" data-category="products">
+          <div class="gallery-card" data-category="products">
             <div class="gallery-card__inner" data-type="image" data-src="content/products/P-20.jpeg">
               <div class="gallery-card__media">
-                <img data-defer-src="content/products/P-20.jpeg" src="" loading="lazy" alt="Homeo Elixir Product P-20" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 16px; background-color: var(--color-card-linen);" />
+                <img data-defer-src="content/products/P-20.jpeg" src="" loading="lazy" alt="Homeo Elixir Product P-20" loading="lazy" />
               </div>
 
               <div class="gallery-card__overlay">
@@ -1438,10 +1472,10 @@
           </div>
 
 <!-- PRODUCT CARD 21: P-21 -->
-          <div class="gallery-card gallery-card--square" data-category="products">
+          <div class="gallery-card" data-category="products">
             <div class="gallery-card__inner" data-type="image" data-src="content/products/P-21.jpeg">
               <div class="gallery-card__media">
-                <img data-defer-src="content/products/P-21.jpeg" src="" loading="lazy" alt="Homeo Elixir Product P-21" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 16px; background-color: var(--color-card-linen);" />
+                <img data-defer-src="content/products/P-21.jpeg" src="" loading="lazy" alt="Homeo Elixir Product P-21" loading="lazy" />
               </div>
 
               <div class="gallery-card__overlay">
@@ -1452,10 +1486,10 @@
           </div>
 
 <!-- PRODUCT CARD 22: P-22 -->
-          <div class="gallery-card gallery-card--square" data-category="products">
+          <div class="gallery-card" data-category="products">
             <div class="gallery-card__inner" data-type="image" data-src="content/products/P-22.jpeg">
               <div class="gallery-card__media">
-                <img data-defer-src="content/products/P-22.jpeg" src="" loading="lazy" alt="Homeo Elixir Product P-22" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 16px; background-color: var(--color-card-linen);" />
+                <img data-defer-src="content/products/P-22.jpeg" src="" loading="lazy" alt="Homeo Elixir Product P-22" loading="lazy" />
               </div>
 
               <div class="gallery-card__overlay">
@@ -1466,10 +1500,10 @@
           </div>
 
 <!-- PRODUCT CARD 23: P-23 -->
-          <div class="gallery-card gallery-card--square" data-category="products">
+          <div class="gallery-card" data-category="products">
             <div class="gallery-card__inner" data-type="image" data-src="content/products/P-23.jpeg">
               <div class="gallery-card__media">
-                <img data-defer-src="content/products/P-23.jpeg" src="" loading="lazy" alt="Homeo Elixir Product P-23" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 16px; background-color: var(--color-card-linen);" />
+                <img data-defer-src="content/products/P-23.jpeg" src="" loading="lazy" alt="Homeo Elixir Product P-23" loading="lazy" />
               </div>
 
               <div class="gallery-card__overlay">
@@ -1480,10 +1514,10 @@
           </div>
 
 <!-- PRODUCT CARD 24: P-24 -->
-          <div class="gallery-card gallery-card--square" data-category="products">
+          <div class="gallery-card" data-category="products">
             <div class="gallery-card__inner" data-type="image" data-src="content/products/P-24.jpeg">
               <div class="gallery-card__media">
-                <img data-defer-src="content/products/P-24.jpeg" src="" loading="lazy" alt="Homeo Elixir Product P-24" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 16px; background-color: var(--color-card-linen);" />
+                <img data-defer-src="content/products/P-24.jpeg" src="" loading="lazy" alt="Homeo Elixir Product P-24" loading="lazy" />
               </div>
 
               <div class="gallery-card__overlay">

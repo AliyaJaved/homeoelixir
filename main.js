@@ -463,6 +463,45 @@ const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
     });
   }
 
+  // Side-card click navigation
+  cards.forEach((card) => {
+    card.addEventListener('click', (e) => {
+      if (card.classList.contains('is-prev')) {
+        e.preventDefault();
+        activeIndex = (activeIndex - 1 + total) % total;
+        updateCarousel();
+      } else if (card.classList.contains('is-next')) {
+        e.preventDefault();
+        activeIndex = (activeIndex + 1) % total;
+        updateCarousel();
+      }
+    });
+  });
+
+  // Touch swipe support
+  let touchStartX = 0;
+  let touchEndX = 0;
+
+  carousel.addEventListener('touchstart', (e) => {
+    touchStartX = e.changedTouches[0].screenX;
+  }, { passive: true });
+
+  carousel.addEventListener('touchend', (e) => {
+    touchEndX = e.changedTouches[0].screenX;
+    handleGesture();
+  }, { passive: true });
+
+  function handleGesture() {
+    const swipeThreshold = 40;
+    if (touchEndX < touchStartX - swipeThreshold) {
+      activeIndex = (activeIndex + 1) % total;
+      updateCarousel();
+    } else if (touchEndX > touchStartX + swipeThreshold) {
+      activeIndex = (activeIndex - 1 + total) % total;
+      updateCarousel();
+    }
+  }
+
   // Initialize carousel state
   updateCarousel();
 })();
