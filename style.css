@@ -419,14 +419,21 @@ button {
 
 @media (max-width: 768px) {
   .preloader__fallback {
-    gap: 12px;
+    gap: 10px;
+    width: 100%;
+    max-width: 290px;
+    padding: 0 16px;
+    box-sizing: border-box;
   }
   .preloader__fallback-logo {
-    width: clamp(120px, 24vw, 220px) !important;
+    width: clamp(110px, 22vw, 170px) !important;
   }
   .preloader__fallback-tagline {
-    font-size: 0.85rem;
-    letter-spacing: 0.1em;
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    line-height: 1.35;
+    max-width: 100%;
+    word-wrap: break-word;
   }
 }
 
