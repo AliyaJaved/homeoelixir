@@ -370,9 +370,9 @@ button {
     background-color: #5c7151 !important;
   }
   .preloader__video {
-    width: 100% !important;
+    width: calc(279.5vw - 90px) !important;
+    max-width: 177.7vh !important;
     height: auto !important;
-    max-height: 100% !important;
     object-fit: cover !important;
     object-position: center center !important;
     left: 50% !important;
