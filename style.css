@@ -672,6 +672,8 @@ button {
     transform var(--dur-base) var(--ease-luxury),
     opacity   var(--dur-base) var(--ease-luxury),
     visibility var(--dur-base) var(--ease-luxury);
+  max-height: calc(100vh - var(--header-h));
+  overflow-y: auto;
 }
 
 .header__mobile-nav.is-open {
@@ -6815,9 +6817,31 @@ button {
     display: none; /* We toggle this via mobile JS or let it sit expanded in drawer */
   }
   
-  /* For mobile drawer, let's keep all dropdown links visible or toggleable */
+  /* For mobile drawer, make the dropdown collapsible via accordion animation */
   .header__mobile-nav .header__dropdown .dropdown-menu {
     display: block;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    padding: 0 0 0 15px;
+    transition: max-height 0.35s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.35s ease, padding 0.35s ease;
+  }
+  
+  .header__mobile-nav .header__dropdown.is-active .dropdown-menu {
+    max-height: 600px;
+    opacity: 1;
+    padding: 10px 0 10px 15px;
+  }
+  
+  .header__mobile-nav .header__dropdown > .header__mobile-nav-link::after {
+    content: " \25BE"; /* Unicode down arrow */
+    display: inline-block;
+    margin-left: 6px;
+    transition: transform 0.3s ease;
+  }
+  
+  .header__mobile-nav .header__dropdown.is-active > .header__mobile-nav-link::after {
+    transform: rotate(180deg);
   }
   
   .header__mobile-nav .dropdown-menu__link {

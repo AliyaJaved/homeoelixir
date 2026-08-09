@@ -112,11 +112,8 @@ const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
 (function initStickyHeader() {
   const header  = $('#site-header');
   const infoBar = $('#info-bar');
-  const logoImg = $('#header-logo-img');
   if (!header) return;
 
-  const LOGO_LIGHT = 'assets/header-logo.svg'; // transparent header
-  const LOGO_DARK  = 'assets/header-logo.svg';   // solid/scrolled header
   const SCROLL_THRESHOLD = 40;
   let ticking = false;
   let wasScrolled = false; // track state to avoid redundant DOM writes
@@ -136,11 +133,6 @@ const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
     header.classList.toggle('is-scrolled', isScrolled);
     if (infoBar) {
       infoBar.classList.toggle('is-scrolled', isScrolled);
-    }
-
-    // Logo src swap — SVG rendered exactly as-is, no filter applied
-    if (logoImg) {
-      logoImg.src = isScrolled ? LOGO_DARK : LOGO_LIGHT;
     }
 
     ticking = false;
@@ -169,10 +161,6 @@ const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
 
   if (!hamburger || !mobileNav) return;
 
-  const logoImg = $('#header-logo-img');
-  const LOGO_LIGHT = 'assets/header-logo.svg';
-  const LOGO_DARK  = 'assets/main-logo.svg';
-
   function toggleNav(forceClose = false) {
     const isOpen = hamburger.getAttribute('aria-expanded') === 'true';
     const shouldOpen = forceClose ? false : !isOpen;
@@ -181,20 +169,27 @@ const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
     mobileNav.setAttribute('aria-hidden', String(!shouldOpen));
     mobileNav.classList.toggle('is-open', shouldOpen);
     header.classList.toggle('nav-open', shouldOpen);
-    document.body.style.overflow = shouldOpen ? 'hidden' : '';
-
-    // Swap logo: dark version on white drawer, light version when closed
-    // (only swap if header isn't already scrolled — scroll state takes precedence)
-    if (logoImg && !header.classList.contains('is-scrolled')) {
-      logoImg.src = shouldOpen ? LOGO_DARK : LOGO_LIGHT;
-    }
   }
 
   // Toggle on hamburger click
   hamburger.addEventListener('click', () => toggleNav());
 
-  // Close when a mobile nav link is clicked
-  $$('.header__mobile-nav-link, .header__mobile-cta').forEach(link => {
+  // Toggle collapsible Conditions menu inside mobile nav
+  const mobileConditionsLink = mobileNav.querySelector('.header__dropdown > .header__mobile-nav-link');
+  if (mobileConditionsLink) {
+    mobileConditionsLink.addEventListener('click', (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      const parentDropdown = mobileConditionsLink.closest('.header__dropdown');
+      if (parentDropdown) {
+        parentDropdown.classList.toggle('is-active');
+      }
+    });
+  }
+
+  // Close when a mobile nav link or sublink is clicked (except the collapsible parent)
+  $$('.header__mobile-nav-link, .dropdown-menu__link, .header__mobile-cta').forEach(link => {
+    if (link === mobileConditionsLink) return;
     link.addEventListener('click', () => toggleNav(true));
   });
 
