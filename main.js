@@ -572,39 +572,17 @@ const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
 
     // Construct the WhatsApp message
     const msgText = `Hello Dr. Farhin,
+I would like to book a consultation.
 
-I would like to book a consultation at Homeo Elixir.
+Name: ${name}
+Phone: ${mobile}
+Email: ${email}
+Condition: ${concern}
+Message: ${message}
 
-Patient Details:
+Please let me know the available consultation timings.`;
 
-Name:
-${name}
-
-Mobile:
-${mobile}
-
-Email:
-${email}
-
-Health Concern:
-${concern}
-
-Consultation Mode:
-${mode}
-
-Preferred Appointment Date:
-${date}
-
-Preferred Consultation Slot:
-${slot}
-
-Message:
-${message}
-
-Thank you.
-I look forward to your response.`;
-
-    const waUrl = `https://wa.me/918141277377?text=${encodeURIComponent(msgText)}`;
+    const waUrl = `https://wa.me/917874277377?text=${encodeURIComponent(msgText)}`;
     window.open(waUrl, '_blank');
   });
 })();
