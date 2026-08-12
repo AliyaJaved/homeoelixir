@@ -425,7 +425,7 @@ const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
 
   if (!cards.length) return;
 
-  let activeIndex = 0;
+  let activeIndex = 2;
   const total = cards.length;
 
   function updateCarousel() {
