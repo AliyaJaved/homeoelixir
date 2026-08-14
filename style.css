@@ -1783,6 +1783,7 @@ button {
 @media (max-width: 768px) {
   .doctor {
     padding-block: 72px;
+    overflow: visible !important;
   }
 
   .doctor__inner {
@@ -1824,6 +1825,9 @@ button {
     align-self: stretch;
     text-align: center;
     justify-content: center;
+    white-space: normal !important;
+    line-height: 1.4 !important;
+    padding-block: var(--space-3) !important;
   }
 }
 
@@ -2401,7 +2405,7 @@ button {
   .process__line {
     top: 0;
     bottom: 0;
-    left: 25px;
+    left: 62px; /* Mathematically aligned with the center of the 52px circle (36px padding-left + 26px half-width) */
     right: auto;
     width: 2px;
     height: 100%;
@@ -2447,6 +2451,11 @@ button {
     flex-shrink: 0;
   }
 
+  .process__step:nth-child(odd) .process__card {
+    text-align: left !important;
+    align-items: flex-start !important;
+  }
+
   .process__card {
     grid-column: auto !important;
     justify-self: stretch !important;
@@ -2457,7 +2466,6 @@ button {
     text-align: left !important;
     padding: var(--space-6) var(--space-5);
   }
-}
 
   .foundation, .why-us, .process {
     padding-block: 70px;
@@ -2470,13 +2478,21 @@ button {
     padding-left: 16px !important;
   }
   .process__line {
-    left: 5px !important;
+    left: 42px !important; /* Mathematically aligned with the center of the circle on mobile (16px padding-left + 26px half-width) */
   }
   .process__step {
     gap: var(--space-3) !important;
   }
   .process__card {
     padding: var(--space-4) var(--space-4) !important;
+  }
+  .process__step-title {
+    font-size: 1.1rem !important;
+    margin-bottom: var(--space-2) !important;
+  }
+  .process__step-desc {
+    font-size: 0.875rem !important;
+    line-height: 1.6 !important;
   }
 }
 
@@ -7787,6 +7803,94 @@ button {
 .faq-search-section {
   display: none !important; /* Hide old separate section */
 }
+
+/* ============================================================
+   RESPONSIVE & BUG FIXES OVERRIDES (APPENDED FOR ROBUSTNESS)
+   ============================================================ */
+
+/* ── FAQ PLUS ICON CENTERING ── */
+.faq-card__icon,
+.home-faq__icon {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  line-height: 0 !important;
+  overflow: hidden !important;
+}
+
+.faq-card__icon svg,
+.home-faq__icon svg {
+  display: block !important;
+  margin: 0 !important;
+  width: 18px !important;
+  height: 18px !important;
+  flex-shrink: 0 !important;
+  transform-origin: 12px 12px !important;
+}
+
+.faq-card__icon svg line,
+.home-faq__icon svg line {
+  transform-origin: 12px 12px !important;
+}
+
+/* ── GALLERY MOBILE & TABLET LAYOUTS ── */
+@media (max-width: 1024px) {
+  .gallery-grid {
+    column-count: 2 !important;
+    column-gap: 24px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 24px !important;
+  }
+}
+
+/* ── GLOBAL MOBILE RESPONSIVENESS OVERRIDES ── */
+
+/* why choose us features grid stack on mobile */
+@media (max-width: 768px) {
+  .why-us__grid {
+    grid-template-columns: 1fr !important;
+    gap: var(--space-6) !important;
+  }
+}
+
+/* doctor page timeline desc width expand on mobile */
+@media (max-width: 1024px) {
+  .doctor-timeline__desc {
+    max-width: 100% !important;
+  }
+}
+
+/* service detail page inner layout stack on mobile/tablet */
+@media (max-width: 1024px) {
+  .service-view {
+    grid-template-columns: 1fr !important;
+    gap: var(--space-6) !important;
+  }
+  .service-image-wrap {
+    max-width: 440px !important;
+    margin-inline: auto !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .services-accordion-content__inner {
+    padding: 24px 16px !important; /* reduce padding on small mobile screens */
+  }
+  .service-view__details .btn {
+    white-space: normal !important;
+    text-align: center;
+    line-height: 1.4 !important;
+    width: 100% !important;
+    justify-content: center !important;
+  }
+}
+
 
 
 
