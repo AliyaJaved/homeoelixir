@@ -4037,12 +4037,6 @@ button {
   transition: transform var(--dur-base) var(--ease-luxury), border-color var(--dur-base) var(--ease-soft), box-shadow var(--dur-base) var(--ease-soft);
 }
 
-.about-approach__node:hover {
-  transform: scale(1.08);
-  border-color: var(--color-gold);
-  box-shadow: var(--shadow-md);
-}
-
 .about-approach__node-text {
   font-family: var(--font-sans);
   font-size: 0.8125rem;
@@ -4057,9 +4051,6 @@ button {
   top: 0;
   left: 50%;
   transform: translate(-50%, 0);
-}
-.node--top:hover {
-  transform: translate(-50%, -8px) scale(1.08) !important;
 }
 
 .node--top-right {
@@ -4077,9 +4068,6 @@ button {
   left: 50%;
   transform: translate(-50%, 0);
 }
-.node--bottom:hover {
-  transform: translate(-50%, 8px) scale(1.08) !important;
-}
 
 .node--bottom-left {
   bottom: 20%;
@@ -4089,6 +4077,23 @@ button {
 .node--top-left {
   top: 20%;
   left: 5%;
+}
+
+/* Apply hover effects only on desktop devices with hover/pointer support */
+@media (hover: hover) and (pointer: fine) {
+  .about-approach__node:hover {
+    transform: scale(1.08);
+    border-color: var(--color-gold);
+    box-shadow: var(--shadow-md);
+  }
+  
+  .node--top:hover {
+    transform: translate(-50%, -8px) scale(1.08) !important;
+  }
+  
+  .node--bottom:hover {
+    transform: translate(-50%, 8px) scale(1.08) !important;
+  }
 }
 
 /* SECTION 6 — Why Homeo Elixir Was Founded */
