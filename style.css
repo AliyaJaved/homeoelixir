@@ -3808,7 +3808,7 @@ button {
   border-radius: var(--radius-lg);
   overflow: hidden;
   box-shadow: var(--shadow-lg);
-  aspect-ratio: 4 / 3;
+  margin-inline: auto;
   background-color: var(--color-secondary-bg);
 }
 
@@ -4360,9 +4360,7 @@ button {
     gap: var(--space-10);
   }
 
-  .about-story__img-wrapper {
-    aspect-ratio: 16 / 9;
-  }
+
 
   .about-doctor__portrait-wrapper {
     aspect-ratio: 16 / 9;
