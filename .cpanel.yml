@@ -1,0 +1,18 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/kp5yiine927c/public_html/
+    - /bin/cp -R assets $DEPLOYPATH
+    - /bin/cp -R conditions $DEPLOYPATH
+    - /bin/cp -R content $DEPLOYPATH
+    - /bin/cp about.html $DEPLOYPATH
+    - /bin/cp conditions.html $DEPLOYPATH
+    - /bin/cp contact.html $DEPLOYPATH
+    - /bin/cp doctor.html $DEPLOYPATH
+    - /bin/cp faq.html $DEPLOYPATH
+    - /bin/cp gallery.html $DEPLOYPATH
+    - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp main.js $DEPLOYPATH
+    - /bin/cp services.html $DEPLOYPATH
+    - /bin/cp style.css $DEPLOYPATH
+    - /bin/cp favicon.jpeg $DEPLOYPATH
