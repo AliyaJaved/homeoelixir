@@ -247,14 +247,18 @@
         <div class="about-story__grid">
           <div class="about-story__img-col">
             <div class="about-story__img-wrapper">
-              <img
-                src="content/our_story.jpeg"
-                alt="Homeo Elixir — Our Story"
-                width="905"
-                height="1280"
-                style="width: 100%; height: auto; display: block; object-fit: contain;"
-                draggable="false"
-              />
+              <picture>
+                <source srcset="content/our_story-sm.webp" media="(max-width: 600px)">
+                <img
+                  src="content/our_story.webp"
+                  alt="Homeo Elixir — Our Story"
+                  width="905"
+                  height="1280"
+                  style="width: 100%; height: auto; display: block; object-fit: contain;"
+                  draggable="false"
+                  loading="lazy"
+                />
+              </picture>
             </div>
           </div>
           <div class="about-story__content">

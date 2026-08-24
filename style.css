@@ -728,7 +728,7 @@ button {
 .hero__bg {
   position: absolute;
   inset: 0;
-  background-image: url('assets/landing-page.jpeg');
+  background-image: url('assets/landing-page.webp');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -736,6 +736,12 @@ button {
   transform-origin: center center;
   transition: transform 12s var(--ease-soft);
   will-change: transform;
+}
+
+@media (max-width: 600px) {
+  .hero__bg {
+    background-image: url('assets/landing-page-sm.webp');
+  }
 }
 
 .hero.is-visible .hero__bg {

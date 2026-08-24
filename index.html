@@ -320,12 +320,16 @@
         <!-- Left column: image placeholder with official logo -->
         <div class="about__media" aria-hidden="true">
           <div class="about__placeholder-card">
-            <img
-              src="content/our_story.jpeg"
-              alt="Homeo Elixir — Our Story"
-              style="width: 100%; height: auto; display: block; object-fit: contain;"
-              draggable="false"
-            />
+            <picture>
+              <source srcset="content/our_story-sm.webp" media="(max-width: 600px)">
+              <img
+                src="content/our_story.webp"
+                alt="Homeo Elixir — Our Story"
+                style="width: 100%; height: auto; display: block; object-fit: contain;"
+                draggable="false"
+                loading="lazy"
+              />
+            </picture>
           </div>
         </div>
 
@@ -450,7 +454,10 @@ personalized care.</p>
         <div class="doctor__portrait-col">
           <div class="doctor__portrait-card">
             <div class="doctor__portrait-img-wrap">
-              <img src="content/portraits/P-3.jpeg" alt="Dr. Farhin" class="doctor__portrait-img" />
+              <picture>
+                <source srcset="content/portraits/P-3-sm.webp" media="(max-width: 600px)">
+                <img src="content/portraits/P-3.webp" alt="Dr. Farhin" class="doctor__portrait-img" loading="lazy" />
+              </picture>
             </div>
 
             <!-- Decorative credential tag -->
@@ -644,7 +651,7 @@ lead healthier, more balanced lives through an integrated approach to wellness. 
             <!-- Card 1 -->
             <a class="guides__card" href="resources/Guide%20to%20constipation.pdf" target="_blank" data-filename="Guide to constipation.pdf">
               <div class="guides__card-preview">
-                <img src="assets/guides/Guide-to-constipation.jpg" alt="Guide to Constipation" loading="lazy">
+                <img src="assets/guides/Guide-to-constipation-sm.webp" alt="Guide to Constipation" loading="lazy">
               </div>
               <div class="guides__card-content">
                 <span class="guides__card-tag">FREE GUIDE</span>
@@ -657,7 +664,7 @@ lead healthier, more balanced lives through an integrated approach to wellness. 
             <!-- Card 2 -->
             <a class="guides__card" href="resources/Guide%20to%20Healthy%20Skin.pdf" target="_blank" data-filename="Guide to Healthy Skin.pdf">
               <div class="guides__card-preview">
-                <img src="assets/guides/Guide-to-Healthy-Skin.jpg" alt="Guide to Healthy Skin" loading="lazy">
+                <img src="assets/guides/Guide-to-Healthy-Skin-sm.webp" alt="Guide to Healthy Skin" loading="lazy">
               </div>
               <div class="guides__card-content">
                 <span class="guides__card-tag">FREE GUIDE</span>
@@ -670,7 +677,7 @@ lead healthier, more balanced lives through an integrated approach to wellness. 
             <!-- Card 3 -->
             <a class="guides__card" href="resources/Guide%20to%20Heart%20Health%20%26%20Wellness.pdf" target="_blank" data-filename="Guide to Heart Health & Wellness.pdf">
               <div class="guides__card-preview">
-                <img src="assets/guides/Guide-to-Heart-Health-and-Wellness.jpg" alt="Guide to Heart Health & Wellness" loading="lazy">
+                <img src="assets/guides/Guide-to-Heart-Health-and-Wellness-sm.webp" alt="Guide to Heart Health & Wellness" loading="lazy">
               </div>
               <div class="guides__card-content">
                 <span class="guides__card-tag">FREE GUIDE</span>
@@ -683,7 +690,7 @@ lead healthier, more balanced lives through an integrated approach to wellness. 
             <!-- Card 4 -->
             <a class="guides__card" href="resources/Guide%20to%20hypertension.pdf" target="_blank" data-filename="Guide to hypertension.pdf">
               <div class="guides__card-preview">
-                <img src="assets/guides/Guide-to-hypertension.jpg" alt="Guide to Hypertension" loading="lazy">
+                <img src="assets/guides/Guide-to-hypertension-sm.webp" alt="Guide to Hypertension" loading="lazy">
               </div>
               <div class="guides__card-content">
                 <span class="guides__card-tag">FREE GUIDE</span>
@@ -696,7 +703,7 @@ lead healthier, more balanced lives through an integrated approach to wellness. 
             <!-- Card 5 -->
             <a class="guides__card" href="resources/Guide%20to%20PCOD.pdf" target="_blank" data-filename="Guide to PCOD.pdf">
               <div class="guides__card-preview">
-                <img src="assets/guides/Guide-to-PCOD.jpg" alt="Guide to PCOD" loading="lazy">
+                <img src="assets/guides/Guide-to-PCOD-sm.webp" alt="Guide to PCOD" loading="lazy">
               </div>
               <div class="guides__card-content">
                 <span class="guides__card-tag">FREE GUIDE</span>
@@ -709,7 +716,7 @@ lead healthier, more balanced lives through an integrated approach to wellness. 
             <!-- Card 6 -->
             <a class="guides__card" href="resources/Guide%20to%20Thyroid%20dysfunction.pdf" target="_blank" data-filename="Guide to Thyroid dysfunction.pdf">
               <div class="guides__card-preview">
-                <img src="assets/guides/Guide-to-Thyroid-dysfunction.jpg" alt="Guide to Thyroid Dysfunction" loading="lazy">
+                <img src="assets/guides/Guide-to-Thyroid-dysfunction-sm.webp" alt="Guide to Thyroid Dysfunction" loading="lazy">
               </div>
               <div class="guides__card-content">
                 <span class="guides__card-tag">FREE GUIDE</span>
@@ -722,7 +729,7 @@ lead healthier, more balanced lives through an integrated approach to wellness. 
             <!-- Card 7 -->
             <a class="guides__card" href="resources/Guide-to-Acne-Diet-remedies.pdf" target="_blank" data-filename="Guide-to-Acne-Diet-remedies.pdf">
               <div class="guides__card-preview">
-                <img src="assets/guides/Guide-to-Acne-Diet-remedies.jpg" alt="Guide to Acne Diet Remedies" loading="lazy">
+                <img src="assets/guides/Guide-to-Acne-Diet-remedies-sm.webp" alt="Guide to Acne Diet Remedies" loading="lazy">
               </div>
               <div class="guides__card-content">
                 <span class="guides__card-tag">FREE GUIDE</span>
@@ -735,7 +742,7 @@ lead healthier, more balanced lives through an integrated approach to wellness. 
             <!-- Card 8 -->
             <a class="guides__card" href="resources/Guide-to-Acne-Medicines.pdf" target="_blank" data-filename="Guide-to-Acne-Medicines.pdf">
               <div class="guides__card-preview">
-                <img src="assets/guides/Guide-to-Acne-Medicines.jpg" alt="Guide to Acne Medicines" loading="lazy">
+                <img src="assets/guides/Guide-to-Acne-Medicines-sm.webp" alt="Guide to Acne Medicines" loading="lazy">
               </div>
               <div class="guides__card-content">
                 <span class="guides__card-tag">FREE GUIDE</span>
@@ -748,7 +755,7 @@ lead healthier, more balanced lives through an integrated approach to wellness. 
             <!-- Card 9 -->
             <a class="guides__card" href="resources/Guide-to-Acne-Mother-Tinctures.pdf" target="_blank" data-filename="Guide-to-Acne-Mother-Tinctures.pdf">
               <div class="guides__card-preview">
-                <img src="assets/guides/Guide-to-Acne-Mother-Tinctures.jpg" alt="Guide to Acne Mother Tinctures" loading="lazy">
+                <img src="assets/guides/Guide-to-Acne-Mother-Tinctures-sm.webp" alt="Guide to Acne Mother Tinctures" loading="lazy">
               </div>
               <div class="guides__card-content">
                 <span class="guides__card-tag">FREE GUIDE</span>
@@ -761,7 +768,7 @@ lead healthier, more balanced lives through an integrated approach to wellness. 
             <!-- Card 10 -->
             <a class="guides__card" href="resources/Guide-to-Diabetes-Mellitus-Diet-Remedies.pdf" target="_blank" data-filename="Guide-to-Diabetes-Mellitus-Diet-Remedies.pdf">
               <div class="guides__card-preview">
-                <img src="assets/guides/Guide-to-Diabetes-Mellitus-Diet-Remedies.jpg" alt="Guide to Diabetes Mellitus Diet Remedies" loading="lazy">
+                <img src="assets/guides/Guide-to-Diabetes-Mellitus-Diet-Remedies-sm.webp" alt="Guide to Diabetes Mellitus Diet Remedies" loading="lazy">
               </div>
               <div class="guides__card-content">
                 <span class="guides__card-tag">FREE GUIDE</span>
@@ -774,7 +781,7 @@ lead healthier, more balanced lives through an integrated approach to wellness. 
             <!-- Card 11 -->
             <a class="guides__card" href="resources/Guide-to-diabetes-mellitus-medicines.pdf" target="_blank" data-filename="Guide-to-diabetes-mellitus-medicines.pdf">
               <div class="guides__card-preview">
-                <img src="assets/guides/Guide-to-diabetes-mellitus-medicines.jpg" alt="Guide to Diabetes Mellitus Medicines" loading="lazy">
+                <img src="assets/guides/Guide-to-diabetes-mellitus-medicines-sm.webp" alt="Guide to Diabetes Mellitus Medicines" loading="lazy">
               </div>
               <div class="guides__card-content">
                 <span class="guides__card-tag">FREE GUIDE</span>
@@ -787,7 +794,7 @@ lead healthier, more balanced lives through an integrated approach to wellness. 
             <!-- Card 12 -->
             <a class="guides__card" href="resources/Guide-to-Infertility-Diet-Remedies.pdf" target="_blank" data-filename="Guide-to-Infertility-Diet-Remedies.pdf">
               <div class="guides__card-preview">
-                <img src="assets/guides/Guide-to-Infertility-Diet-Remedies.jpg" alt="Guide to Infertility Diet Remedies" loading="lazy">
+                <img src="assets/guides/Guide-to-Infertility-Diet-Remedies-sm.webp" alt="Guide to Infertility Diet Remedies" loading="lazy">
               </div>
               <div class="guides__card-content">
                 <span class="guides__card-tag">FREE GUIDE</span>
@@ -800,7 +807,7 @@ lead healthier, more balanced lives through an integrated approach to wellness. 
             <!-- Card 13 -->
             <a class="guides__card" href="resources/Guide-to-Infertility-Medicines.pdf" target="_blank" data-filename="Guide-to-Infertility-Medicines.pdf">
               <div class="guides__card-preview">
-                <img src="assets/guides/Guide-to-Infertility-Medicines.jpg" alt="Guide to Infertility Medicines" loading="lazy">
+                <img src="assets/guides/Guide-to-Infertility-Medicines-sm.webp" alt="Guide to Infertility Medicines" loading="lazy">
               </div>
               <div class="guides__card-content">
                 <span class="guides__card-tag">FREE GUIDE</span>
@@ -813,7 +820,7 @@ lead healthier, more balanced lives through an integrated approach to wellness. 
             <!-- Card 14 -->
             <a class="guides__card" href="resources/Guide-to-Infertility-Mother-Tinctures.pdf" target="_blank" data-filename="Guide-to-Infertility-Mother-Tinctures.pdf">
               <div class="guides__card-preview">
-                <img src="assets/guides/Guide-to-Infertility-Mother-Tinctures.jpg" alt="Guide to Infertility Mother Tinctures" loading="lazy">
+                <img src="assets/guides/Guide-to-Infertility-Mother-Tinctures-sm.webp" alt="Guide to Infertility Mother Tinctures" loading="lazy">
               </div>
               <div class="guides__card-content">
                 <span class="guides__card-tag">FREE GUIDE</span>
@@ -826,7 +833,7 @@ lead healthier, more balanced lives through an integrated approach to wellness. 
             <!-- Card 15 -->
             <a class="guides__card" href="resources/Guide-to-Telogen-Effluvium(Hairfall)-diet-remedies.pdf" target="_blank" data-filename="Guide-to-Telogen-Effluvium(Hairfall)-diet-remedies.pdf">
               <div class="guides__card-preview">
-                <img src="assets/guides/Guide-to-Telogen-EffluviumHairfall-diet-remedies.jpg" alt="Guide to Telogen Effluvium Diet Remedies" loading="lazy">
+                <img src="assets/guides/Guide-to-Telogen-EffluviumHairfall-diet-remedies-sm.webp" alt="Guide to Telogen Effluvium Diet Remedies" loading="lazy">
               </div>
               <div class="guides__card-content">
                 <span class="guides__card-tag">FREE GUIDE</span>
@@ -839,7 +846,7 @@ lead healthier, more balanced lives through an integrated approach to wellness. 
             <!-- Card 16 -->
             <a class="guides__card" href="resources/Guide-to-Telogen-Effluvium(Hairfall)-medicines.pdf" target="_blank" data-filename="Guide-to-Telogen-Effluvium(Hairfall)-medicines.pdf">
               <div class="guides__card-preview">
-                <img src="assets/guides/Guide-to-Telogen-EffluviumHairfall-medicines.jpg" alt="Guide to Telogen Effluvium Medicines" loading="lazy">
+                <img src="assets/guides/Guide-to-Telogen-EffluviumHairfall-medicines-sm.webp" alt="Guide to Telogen Effluvium Medicines" loading="lazy">
               </div>
               <div class="guides__card-content">
                 <span class="guides__card-tag">FREE GUIDE</span>
@@ -852,7 +859,7 @@ lead healthier, more balanced lives through an integrated approach to wellness. 
             <!-- Card 17 -->
             <a class="guides__card" href="resources/Guide-to-Weight-Loss.pdf" target="_blank" data-filename="Guide-to-Weight-Loss.pdf">
               <div class="guides__card-preview">
-                <img src="assets/guides/Guide-to-Weight-Loss.jpg" alt="Guide to Weight Loss" loading="lazy">
+                <img src="assets/guides/Guide-to-Weight-Loss-sm.webp" alt="Guide to Weight Loss" loading="lazy">
               </div>
               <div class="guides__card-content">
                 <span class="guides__card-tag">FREE GUIDE</span>
@@ -1277,7 +1284,7 @@ including:  </p>
 
                 <!-- Slide 1 -->
                 <div class="gallery-carousel__card">
-                  <div class="gallery-carousel__card-inner" style="background-image: url('content/achievements/A-9.jpeg');">
+                  <div class="gallery-carousel__card-inner" data-bg="content/achievements/A-9.webp">
                     <span class="gallery-carousel__tag">ACHIEVEMENTS</span>
                     <h3 class="gallery-carousel__title">Academic & Professional Milestones</h3>
                   </div>
@@ -1285,7 +1292,7 @@ including:  </p>
 
                 <!-- Slide 2 -->
                 <div class="gallery-carousel__card">
-                  <div class="gallery-carousel__card-inner" style="background-image: url('content/products/P-10.jpeg');">
+                  <div class="gallery-carousel__card-inner" data-bg="content/products/P-10.webp">
                     <span class="gallery-carousel__tag">PRODUCTS</span>
                     <h3 class="gallery-carousel__title">Premium Remedies & Products</h3>
                   </div>
@@ -1293,7 +1300,7 @@ including:  </p>
 
                 <!-- Slide 3 -->
                 <div class="gallery-carousel__card is-active">
-                  <div class="gallery-carousel__card-inner" style="background-image: url('content/portraits/P-5.jpeg');">
+                  <div class="gallery-carousel__card-inner" data-bg="content/portraits/P-5.webp">
                     <span class="gallery-carousel__tag">DOCTOR</span>
                     <h3 class="gallery-carousel__title">Dr. Farhin</h3>
                   </div>
@@ -1301,7 +1308,7 @@ including:  </p>
 
                 <!-- Slide 4 -->
                 <div class="gallery-carousel__card">
-                  <div class="gallery-carousel__card-inner" style="background-image: url('content/testimonials/T-5.jpeg');">
+                  <div class="gallery-carousel__card-inner" data-bg="content/testimonials/T-5.webp">
                     <span class="gallery-carousel__tag">TESTIMONIALS</span>
                     <h3 class="gallery-carousel__title">Patient Success Stories</h3>
                   </div>
@@ -1309,7 +1316,7 @@ including:  </p>
 
                 <!-- Slide 5 -->
                 <div class="gallery-carousel__card">
-                  <div class="gallery-carousel__card-inner" style="background-image: url('content/portraits/P-1.jpeg');">
+                  <div class="gallery-carousel__card-inner" data-bg="content/portraits/P-1.webp">
                     <span class="gallery-carousel__tag">JOURNEY</span>
                     <h3 class="gallery-carousel__title">Clinical Excellence & Care</h3>
                   </div>

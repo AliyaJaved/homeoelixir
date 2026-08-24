@@ -459,7 +459,7 @@ Through detailed consultations, constitutional homeopathic analysis, nutritional
             "Gentle, safe, and non-invasive care",
             "Suitable for patients of all age groups"
           ],
-          image: "content/services/homeopathy.jpg"
+          image: "content/services/homeopathy.webp"
         },
         nutrition: {
           title: "Clinical Nutrition",
@@ -470,7 +470,7 @@ Through detailed consultations, constitutional homeopathic analysis, nutritional
             "Sustainable healthy eating habits",
             "Improved energy and immunity"
           ],
-          image: "content/services/clinical-nutrition.jpg"
+          image: "content/services/clinical-nutrition.webp"
         },
         yoga: {
           title: "Yoga Therapy",
@@ -481,7 +481,7 @@ Through detailed consultations, constitutional homeopathic analysis, nutritional
             "Enhances physical strength",
             "Promotes overall wellbeing"
           ],
-          image: "content/services/yoga.png"
+          image: "content/services/yoga.webp"
         },
         counselling: {
           title: "Mental Health Counselling",
@@ -492,7 +492,7 @@ Through detailed consultations, constitutional homeopathic analysis, nutritional
             "Improved emotional resilience",
             "Better work-life balance"
           ],
-          image: "content/services/mental-health.png"
+          image: "content/services/mental-health.webp"
         },
         fitness: {
           title: "Personalized Fitness Guidance",
@@ -503,7 +503,7 @@ Through detailed consultations, constitutional homeopathic analysis, nutritional
             "Supports weight management",
             "Builds long-term healthy habits"
           ],
-          image: "content/services/personalised-fitness.jpg"
+          image: "content/services/personalised-fitness.webp"
         },
         meals: {
           title: "Healthy Meal Programs",
@@ -514,7 +514,7 @@ Through detailed consultations, constitutional homeopathic analysis, nutritional
             "Supports treatment outcomes",
             "Convenient healthy lifestyle"
           ],
-          image: "content/services/healthy-meal.jpg"
+          image: "content/services/healthy-meal.webp"
         },
         "skin-hair": {
           title: "Skin & Hair Wellness",
@@ -525,7 +525,7 @@ Through detailed consultations, constitutional homeopathic analysis, nutritional
             "Personalized treatment plans",
             "Supports healthy, lasting results"
           ],
-          image: "content/services/skin-and-hair.jpg"
+          image: "content/services/skin-and-hair.webp"
         },
         lifestyle: {
           title: "Lifestyle Consultation",
@@ -536,7 +536,7 @@ Through detailed consultations, constitutional homeopathic analysis, nutritional
             "Preventive healthcare support",
             "Sustainable wellness habits"
           ],
-          image: "content/services/lifestyle.png"
+          image: "content/services/lifestyle.webp"
         }
       };
 
@@ -568,7 +568,10 @@ Through detailed consultations, constitutional homeopathic analysis, nutritional
             
             <div class="service-view__media-col">
               <div class="service-image-wrap">
-                <img src="${serviceObj.image}" alt="${serviceObj.title} Photography" class="service-image" />
+                <picture>
+                  <source srcset="${serviceObj.image.replace('.webp', '-sm.webp')}" media="(max-width: 600px)">
+                  <img src="${serviceObj.image}" alt="${serviceObj.title} Photography" class="service-image" loading="lazy" />
+                </picture />
               </div>
             </div>
           </div>

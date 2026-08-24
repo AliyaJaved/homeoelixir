@@ -425,6 +425,34 @@ const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
 
   if (!cards.length) return;
 
+  // Lazy load card background images when the carousel enters the viewport
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver((entries, obs) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          cards.forEach(card => {
+            const inner = card.querySelector('.gallery-carousel__card-inner');
+            if (inner && inner.hasAttribute('data-bg')) {
+              inner.style.backgroundImage = `url('${inner.getAttribute('data-bg')}')`;
+              inner.removeAttribute('data-bg');
+            }
+          });
+          obs.unobserve(carousel);
+        }
+      });
+    }, { rootMargin: '150px' });
+    observer.observe(carousel);
+  } else {
+    // Fallback if IntersectionObserver is not supported
+    cards.forEach(card => {
+      const inner = card.querySelector('.gallery-carousel__card-inner');
+      if (inner && inner.hasAttribute('data-bg')) {
+        inner.style.backgroundImage = `url('${inner.getAttribute('data-bg')}')`;
+        inner.removeAttribute('data-bg');
+      }
+    });
+  }
+
   let activeIndex = 2;
   const total = cards.length;
 
