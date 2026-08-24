@@ -389,7 +389,7 @@ const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
 ────────────────────────────────────────── */
 (function initNewSectionsReveal() {
   const elements = $$(
-    '.foundation__card, .why-us__card, .process__step, .services-preview__card, .conditions-preview__card, .testimonials__card, .about-foundation__card, .about-values__card, .about-philosophy__card, .doctor-values__card, .doctor-expertise__card, .doctor-timeline__step, .doctor-credentials__card'
+    '.foundation__card, .why-us__card, .process__step, .services-preview__card, .conditions-preview__card, .testimonials__card, .about-foundation__card, .about-values__card, .about-philosophy__card, .doctor-values__card, .doctor-expertise__card, .doctor-timeline__step, .doctor-credentials__card, .guides__card'
   );
 
   if (!elements.length) return;
@@ -583,6 +583,127 @@ Please let me know the available consultation timings.`;
 })();
 
 /* ──────────────────────────────────────────
+   FREE GUIDES CAROUSEL & DOWNLOAD HANDLER
+   ────────────────────────────────────────── */
+(function initFreeGuidesCarousel() {
+  const carousel = document.getElementById('guides-carousel');
+  const prevBtn = document.getElementById('guides-prev-btn');
+  const nextBtn = document.getElementById('guides-next-btn');
+  const dotsContainer = document.getElementById('guides-dots');
+
+  if (!carousel) return;
+
+  const cards = Array.from(carousel.querySelectorAll('.guides__card'));
+  if (!cards.length) return;
+
+  // Dynamically calculate card width including flex gap
+  function getCardWidth() {
+    const card = cards[0];
+    const style = window.getComputedStyle(carousel);
+    const gap = parseFloat(style.gap) || 24;
+    return card.offsetWidth + gap;
+  }
+
+  // Generate pagination dots dynamically
+  if (dotsContainer) {
+    dotsContainer.innerHTML = '';
+    cards.forEach((_, index) => {
+      const dot = document.createElement('button');
+      dot.className = 'guides__dot';
+      dot.setAttribute('aria-label', `Go to guide ${index + 1}`);
+      dotsContainer.appendChild(dot);
+    });
+  }
+
+  // Update controls: active dot and arrow disabled status
+  function updateControls() {
+    const cardWidth = getCardWidth();
+    if (!cardWidth) return;
+
+    const scrollLeft = carousel.scrollLeft;
+    const activeIndex = Math.round(scrollLeft / cardWidth);
+
+    // Update active state on dots
+    if (dotsContainer) {
+      const dots = Array.from(dotsContainer.children);
+      dots.forEach((dot, index) => {
+        dot.classList.toggle('is-active', index === activeIndex);
+      });
+    }
+
+    // Disable navigation arrows at boundaries
+    const maxScrollLeft = carousel.scrollWidth - carousel.clientWidth;
+    if (prevBtn) {
+      prevBtn.disabled = scrollLeft <= 4;
+    }
+    if (nextBtn) {
+      nextBtn.disabled = scrollLeft >= maxScrollLeft - 4;
+    }
+  }
+
+  // Prev & Next Buttons Event Listeners
+  if (prevBtn) {
+    prevBtn.addEventListener('click', () => {
+      const cardWidth = getCardWidth();
+      carousel.scrollBy({ left: -cardWidth, behavior: 'smooth' });
+    });
+  }
+
+  if (nextBtn) {
+    nextBtn.addEventListener('click', () => {
+      const cardWidth = getCardWidth();
+      carousel.scrollBy({ left: cardWidth, behavior: 'smooth' });
+    });
+  }
+
+  // Pagination Dots Event Listeners
+  if (dotsContainer) {
+    dotsContainer.addEventListener('click', (e) => {
+      const dot = e.target.closest('.guides__dot');
+      if (!dot) return;
+      
+      const dots = Array.from(dotsContainer.children);
+      const index = dots.indexOf(dot);
+      if (index !== -1) {
+        const cardWidth = getCardWidth();
+        carousel.scrollTo({
+          left: index * cardWidth,
+          behavior: 'smooth'
+        });
+      }
+    });
+  }
+
+  // Scroll and Resize Event Listeners (with passive option)
+  carousel.addEventListener('scroll', updateControls, { passive: true });
+  window.addEventListener('resize', updateControls, { passive: true });
+
+  // Initialize controls layout
+  updateControls();
+  // Safe delay initialization in case layouts are shifting on load
+  setTimeout(updateControls, 300);
+
+  // Dual Action: Open in new tab and trigger direct download on click
+  cards.forEach(card => {
+    card.addEventListener('click', function(e) {
+      const filename = this.getAttribute('data-filename');
+      const href = this.getAttribute('href');
+      if (!filename || !href) return;
+
+      // Allow the default browser behavior of opening the link in target="_blank"
+      // to proceed natively. Simultaneously trigger file download:
+      const downloadLink = document.createElement('a');
+      downloadLink.href = href;
+      downloadLink.download = filename;
+      downloadLink.style.display = 'none';
+      document.body.appendChild(downloadLink);
+      downloadLink.click();
+      document.body.removeChild(downloadLink);
+    });
+  });
+})();
+
+/* ──────────────────────────────────────────
    COLLAPSE ALL DETAILS ON PAGE LOAD
    (Prevents browsers from restoring open state on refresh)
 ────────────────────────────────────────── */
@@ -591,7 +712,5 @@ Please let me know the available consultation timings.`;
     el.removeAttribute('open');
   });
 })();
-
-
 
 
