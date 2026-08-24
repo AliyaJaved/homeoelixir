@@ -15,4 +15,4 @@ deployment:
     - /bin/cp main.js $DEPLOYPATH
     - /bin/cp services.html $DEPLOYPATH
     - /bin/cp style.css $DEPLOYPATH
-    - /bin/cp favicon.svg $DEPLOYPATH
+    - /bin/cp favicon.png $DEPLOYPATH
