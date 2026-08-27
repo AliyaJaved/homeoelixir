@@ -711,24 +711,7 @@ Please let me know the available consultation timings.`;
   // Safe delay initialization in case layouts are shifting on load
   setTimeout(updateControls, 300);
 
-  // Dual Action: Open in new tab and trigger direct download on click
-  cards.forEach(card => {
-    card.addEventListener('click', function(e) {
-      const filename = this.getAttribute('data-filename');
-      const href = this.getAttribute('href');
-      if (!filename || !href) return;
 
-      // Allow the default browser behavior of opening the link in target="_blank"
-      // to proceed natively. Simultaneously trigger file download:
-      const downloadLink = document.createElement('a');
-      downloadLink.href = href;
-      downloadLink.download = filename;
-      downloadLink.style.display = 'none';
-      document.body.appendChild(downloadLink);
-      downloadLink.click();
-      document.body.removeChild(downloadLink);
-    });
-  });
 })();
 
 /* ──────────────────────────────────────────
