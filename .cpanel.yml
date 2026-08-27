@@ -5,6 +5,7 @@ deployment:
     - /bin/cp -R assets $DEPLOYPATH
     - /bin/cp -R conditions $DEPLOYPATH
     - /bin/cp -R content $DEPLOYPATH
+    - /bin/cp -R resources $DEPLOYPATH
     - /bin/cp about.html $DEPLOYPATH
     - /bin/cp conditions.html $DEPLOYPATH
     - /bin/cp contact.html $DEPLOYPATH
